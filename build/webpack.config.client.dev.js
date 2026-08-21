@@ -47,6 +47,12 @@ module.exports = {
   ],
   module: {
     rules: [
+      // Allow webpack 4 to consume dependencies shipped as .mjs (e.g. react-draggable)
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        type: "javascript/auto",
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
