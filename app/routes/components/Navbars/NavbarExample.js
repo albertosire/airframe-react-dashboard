@@ -54,7 +54,7 @@ const NavbarExample = ({ themeColor, themeStyle, navStyle }) => {
 
                 { /* END Navbar: Left Side */ }
                 { /* START Navbar: Right Side */ }
-                <Nav className="ml-auto" pills>
+                <Nav className="ms-auto" pills>
                     <NavbarMessages />
                     <NavbarActivityFeed />
                     { /* START Navbar: Dropdown */ }
@@ -93,7 +93,7 @@ const NavbarExample = ({ themeColor, themeStyle, navStyle }) => {
                 </h1>
                 
                 <Button color={ themeColor } className="px-4 my-sm-0">
-                    Download <i className="fa ml-1 fa-fw fa-download"></i>
+                    Download <i className="fa ms-1 fa-fw fa-download"></i>
                 </Button>
             </Navbar>
         </NavbarThemeProvider>

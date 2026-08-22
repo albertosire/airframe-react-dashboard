@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import { Card, Media, Avatar, AvatarAddOn } from "./../../../components";
 
 import { randomArray, randomAvatar } from "./../../../utilities";
@@ -12,11 +11,11 @@ const status = ["warning", "danger", "success", "secondary"];
 const ChatLeft = (props) => (
   <React.Fragment>
     <Media className="mb-2">
-      <Media left className="mr-3">
+      <Media left className="me-3">
         <Avatar.Image
           size="md"
           src={randomAvatar()}
-          className="mr-2"
+          className="me-2"
           addOns={[
             <AvatarAddOn.Icon
               className="fa fa-circle"
@@ -36,7 +35,7 @@ const ChatLeft = (props) => (
           <p className="mb-0">{faker.lorem.paragraph()}</p>
         </Card>
         <div className="mb-2">
-          <span className="text-inverse mr-2">
+          <span className="text-inverse me-2">
             {faker.person.firstName()} {faker.person.firstName()}
           </span>
           <span className="small">13-Jun-2015, 08:13</span>

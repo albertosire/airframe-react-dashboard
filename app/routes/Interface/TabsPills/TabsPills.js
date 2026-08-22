@@ -46,7 +46,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -82,7 +82,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Fill & Justify
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -138,7 +138,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Center
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -170,7 +170,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Right
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -202,7 +202,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -233,7 +233,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Left Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -244,7 +244,7 @@ const TabsPills = () => (
                             <Nav pills vertical>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Waiting
                                         </Badge> 
                                         Profile
@@ -252,7 +252,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Doing
                                         </Badge> 
                                         Settings
@@ -260,7 +260,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Safe
                                         </Badge> 
                                         Logout
@@ -273,7 +273,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Left & Right Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -328,7 +328,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Left Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.06
                                 </span>
                             </CardTitle>
@@ -339,19 +339,19 @@ const TabsPills = () => (
                             <Nav pills vertical>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <i className="fa fa-fw fa-user mr-2"></i>
+                                        <i className="fa fa-fw fa-user me-2"></i>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <i className="fa fa-fw fa-gear mr-2"></i>
+                                        <i className="fa fa-fw fa-gear me-2"></i>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <i className="fa fa-fw fa-sign-out mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out me-2"></i>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -366,7 +366,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Right Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.07
                                 </span>
                             </CardTitle>
@@ -378,19 +378,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active className="d-flex">
                                         Profile
-                                        <i className="fa fa-fw fa-user ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-user ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex">
                                         Settings
-                                        <i className="fa fa-fw fa-gear ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-gear ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" disabled>
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-sign-out ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -400,7 +400,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Left & Right Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.08
                                 </span>
                             </CardTitle>
@@ -411,23 +411,23 @@ const TabsPills = () => (
                             <Nav pills vertical>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" active>
-                                        <i className="fa fa-fw fa-user align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-user align-self-center me-2"></i>
                                         Profile
-                                        <i className="fa fa-fw fa-angle-right ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-angle-right ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex">
-                                        <i className="fa fa-fw fa-gear align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-gear align-self-center me-2"></i>
                                         Settings
-                                        <i className="fa fa-fw fa-angle-right ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-angle-right ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" disabled>
-                                        <i className="fa fa-fw fa-sign-out  align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out  align-self-center me-2"></i>
                                         Logout
-                                        <i className="fa fa-fw fa-angle-right ml-auto align-self-center"></i>
+                                        <i className="fa fa-fw fa-angle-right ms-auto align-self-center"></i>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -437,7 +437,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Right Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.09
                                 </span>
                             </CardTitle>
@@ -449,19 +449,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" active>
                                         Profile
-                                        <Badge color="secondary" pill className="ml-auto align-self-center">3</Badge>
+                                        <Badge color="secondary" pill className="ms-auto align-self-center">3</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex">
                                         Settings
-                                        <Badge color="secondary" pill className="ml-auto align-self-center">15</Badge>
+                                        <Badge color="secondary" pill className="ms-auto align-self-center">15</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" disabled>
                                         Logout
-                                        <Badge color="secondary" pill className="ml-auto align-self-center">986</Badge>
+                                        <Badge color="secondary" pill className="ms-auto align-self-center">986</Badge>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -471,7 +471,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Columns Right Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.10
                                 </span>
                             </CardTitle>
@@ -483,7 +483,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" active>
                                         Profile
-                                        <Badge color="secondary" className="ml-auto align-self-center">
+                                        <Badge color="secondary" className="ms-auto align-self-center">
                                             Added
                                         </Badge>
                                     </NavLink>
@@ -491,7 +491,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" className="d-flex">
                                         Settings
-                                        <Badge color="secondary" className="ml-auto align-self-center">
+                                        <Badge color="secondary" className="ms-auto align-self-center">
                                             Query
                                         </Badge>
                                     </NavLink>
@@ -499,7 +499,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" className="d-flex" disabled>
                                         Logout
-                                        <Badge color="secondary" className="ml-auto align-self-center">
+                                        <Badge color="secondary" className="ms-auto align-self-center">
                                             Done
                                         </Badge>
                                     </NavLink>
@@ -536,7 +536,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Left Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -548,19 +548,19 @@ const TabsPills = () => (
                             <Nav pills>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <i className="fa fa-fw fa-user mr-2"></i>
+                                        <i className="fa fa-fw fa-user me-2"></i>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <i className="fa fa-fw fa-gear mr-2"></i>
+                                        <i className="fa fa-fw fa-gear me-2"></i>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <i className="fa fa-fw fa-sign-out mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out me-2"></i>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -571,7 +571,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Right Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -584,19 +584,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <i className="fa fa-fw fa-user ml-2"></i>
+                                        <i className="fa fa-fw fa-user ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <i className="fa fa-fw fa-gear ml-2"></i>
+                                        <i className="fa fa-fw fa-gear ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out ml-2"></i>
+                                        <i className="fa fa-fw fa-sign-out ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -606,7 +606,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Only Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -638,7 +638,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Left Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.04
                                 </span>
                             </CardTitle>
@@ -650,19 +650,19 @@ const TabsPills = () => (
                             <Nav pills className="nav-justified">
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <i className="fa fa-fw fa-user mr-2"></i>
+                                        <i className="fa fa-fw fa-user me-2"></i>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <i className="fa fa-fw fa-gear mr-2"></i>
+                                        <i className="fa fa-fw fa-gear me-2"></i>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <i className="fa fa-fw fa-sign-out mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out me-2"></i>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -673,7 +673,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Right Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.05
                                 </span>
                             </CardTitle>
@@ -686,19 +686,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <i className="fa fa-fw fa-user ml-2"></i>
+                                        <i className="fa fa-fw fa-user ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <i className="fa fa-fw fa-gear ml-2"></i>
+                                        <i className="fa fa-fw fa-gear ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out ml-2"></i>
+                                        <i className="fa fa-fw fa-sign-out ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -708,7 +708,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Only Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.06
                                 </span>
                             </CardTitle>
@@ -740,7 +740,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Right Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.07
                                 </span>
                             </CardTitle>
@@ -753,19 +753,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <Badge color="secondary" pill className="align-self-center ml-2">3</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">3</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <Badge color="secondary" pill className="align-self-center ml-2">9</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">9</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <Badge color="secondary" pill className="align-self-center ml-2">87</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">87</Badge>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -777,7 +777,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Left Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.08
                                 </span>
                             </CardTitle>
@@ -789,19 +789,19 @@ const TabsPills = () => (
                             <Nav pills className="nav-justified">
                                 <NavItem>
                                     <NavLink href="#" active>
-                                         <Badge color="secondary" pill className="align-self-center mr-2">3</Badge>
+                                         <Badge color="secondary" pill className="align-self-center me-2">3</Badge>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" pill className="align-self-center mr-2">9</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">9</Badge>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" pill className="align-self-center mr-2">87</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">87</Badge>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -812,7 +812,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Left Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.09
                                 </span>
                             </CardTitle>
@@ -824,19 +824,19 @@ const TabsPills = () => (
                             <Nav pills>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                         <Badge color="secondary" pill className="align-self-center mr-2">1</Badge>
+                                         <Badge color="secondary" pill className="align-self-center me-2">1</Badge>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" pill className="align-self-center mr-2">2</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">2</Badge>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" pill className="align-self-center mr-2">3</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">3</Badge>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -847,7 +847,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Left Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.10
                                 </span>
                             </CardTitle>
@@ -859,7 +859,7 @@ const TabsPills = () => (
                             <Nav pills>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                         <Badge color="secondary" className="align-self-center mr-2">
+                                         <Badge color="secondary" className="align-self-center me-2">
                                             Done
                                          </Badge>
                                         Profile
@@ -867,7 +867,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Add
                                         </Badge>
                                         Settings
@@ -875,7 +875,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Failed
                                         </Badge>
                                         Logout
@@ -888,7 +888,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Left Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.11
                                 </span>
                             </CardTitle>
@@ -900,7 +900,7 @@ const TabsPills = () => (
                             <Nav pills className="nav-justified">
                                 <NavItem>
                                     <NavLink href="#" active>
-                                         <Badge color="secondary" className="align-self-center mr-2">
+                                         <Badge color="secondary" className="align-self-center me-2">
                                             Ready
                                          </Badge>
                                         Profile
@@ -908,7 +908,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Alert
                                         </Badge>
                                         Settings
@@ -916,7 +916,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Done
                                         </Badge>
                                         Logout
@@ -929,7 +929,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Justify Right Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.12
                                 </span>
                             </CardTitle>
@@ -942,7 +942,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             $3,2K
                                         </Badge>
                                     </NavLink>
@@ -950,7 +950,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             $821
                                         </Badge>
                                     </NavLink>
@@ -958,7 +958,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             $23
                                         </Badge>
                                     </NavLink>
@@ -970,7 +970,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Right Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.13
                                 </span>
                             </CardTitle>
@@ -983,7 +983,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             1
                                         </Badge>
                                     </NavLink>
@@ -991,7 +991,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             0
                                         </Badge>
                                     </NavLink>
@@ -999,7 +999,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             2
                                         </Badge>
                                     </NavLink>
@@ -1034,7 +1034,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -1068,7 +1068,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Justify
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -1121,7 +1121,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pills: Center
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </CardTitle>
@@ -1155,7 +1155,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Right
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.02
                                 </span>
                             </CardTitle>
@@ -1189,7 +1189,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Left Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.03
                                 </span>
                             </CardTitle>
@@ -1201,19 +1201,19 @@ const TabsPills = () => (
                             <Nav tabs>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <i className="fa fa-fw fa-user mr-2"></i>
+                                        <i className="fa fa-fw fa-user me-2"></i>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <i className="fa fa-fw fa-gear mr-2"></i>
+                                        <i className="fa fa-fw fa-gear me-2"></i>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <i className="fa fa-fw fa-sign-out mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out me-2"></i>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -1224,7 +1224,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Right Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.04
                                 </span>
                             </CardTitle>
@@ -1237,19 +1237,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <i className="fa fa-fw fa-user ml-2"></i>
+                                        <i className="fa fa-fw fa-user ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <i className="fa fa-fw fa-gear ml-2"></i>
+                                        <i className="fa fa-fw fa-gear ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out ml-2"></i>
+                                        <i className="fa fa-fw fa-sign-out ms-2"></i>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -1259,7 +1259,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Only Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.05
                                 </span>
                             </CardTitle>
@@ -1291,7 +1291,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Big Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.06
                                 </span>
                             </CardTitle>
@@ -1328,7 +1328,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Right Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.07
                                 </span>
                             </CardTitle>
@@ -1341,19 +1341,19 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <Badge color="secondary" pill className="align-self-center ml-2">3</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">3</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <Badge color="secondary" pill className="align-self-center ml-2">9</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">9</Badge>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <Badge color="secondary" pill className="align-self-center ml-2">87</Badge>
+                                        <Badge color="secondary" pill className="align-self-center ms-2">87</Badge>
                                     </NavLink>
                                 </NavItem>
                             </Nav>
@@ -1363,7 +1363,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Only Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.08
                                 </span>
                             </CardTitle>
@@ -1395,7 +1395,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Left Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.09
                                 </span>
                             </CardTitle>
@@ -1407,19 +1407,19 @@ const TabsPills = () => (
                             <Nav tabs>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <Badge color="secondary" pill className="align-self-center mr-2">1</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">1</Badge>
                                         Profile
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" pill className="align-self-center mr-2">2</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">2</Badge>
                                         Settings
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" pill className="align-self-center mr-2">3</Badge>
+                                        <Badge color="secondary" pill className="align-self-center me-2">3</Badge>
                                         Logout
                                     </NavLink>
                                 </NavItem>
@@ -1430,7 +1430,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Right Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.10
                                 </span>
                             </CardTitle>
@@ -1443,7 +1443,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" active>
                                         Profile
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             Added
                                         </Badge>
                                     </NavLink>
@@ -1451,7 +1451,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#">
                                         Settings
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             Query
                                         </Badge>
                                     </NavLink>
@@ -1459,7 +1459,7 @@ const TabsPills = () => (
                                 <NavItem>
                                     <NavLink href="#" disabled>
                                         Logout
-                                        <Badge color="secondary" className="align-self-center ml-2">
+                                        <Badge color="secondary" className="align-self-center ms-2">
                                             Ready
                                         </Badge>
                                     </NavLink>
@@ -1471,7 +1471,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Left Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.11
                                 </span>
                             </CardTitle>
@@ -1483,7 +1483,7 @@ const TabsPills = () => (
                             <Nav tabs>
                                 <NavItem>
                                     <NavLink href="#" active>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Wait
                                         </Badge>
                                         Profile
@@ -1491,7 +1491,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#">
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Do
                                         </Badge>
                                         Settings
@@ -1499,7 +1499,7 @@ const TabsPills = () => (
                                 </NavItem>
                                 <NavItem>
                                     <NavLink href="#" disabled>
-                                        <Badge color="secondary" className="align-self-center mr-2">
+                                        <Badge color="secondary" className="align-self-center me-2">
                                             Ok
                                         </Badge>
                                         Logout
@@ -1512,7 +1512,7 @@ const TabsPills = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Tabs: Only Badges
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.12
                                 </span>
                             </CardTitle>

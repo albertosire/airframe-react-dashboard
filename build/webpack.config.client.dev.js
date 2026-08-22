@@ -3,6 +3,7 @@ var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var CircularDependencyPlugin = require("circular-dependency-plugin");
 var ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+var ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 var config = require("./../config");
 
@@ -10,7 +11,7 @@ var BASE_PATH = process.env.BASE_PATH || "/";
 
 module.exports = {
   name: "client",
-  devtool: "cheap-eval-source-map",
+  devtool: "eval-cheap-module-source-map",
   target: "web",
   mode: "development",
   entry: {
@@ -21,9 +22,11 @@ module.exports = {
     chunkFilename: "[name].chunk.js",
     path: config.distDir,
     publicPath: BASE_PATH,
+    clean: false,
   },
   resolve: {
     modules: ["node_modules", config.srcDir],
+    extensions: [".js", ".jsx"],
   },
   plugins: [
     new CircularDependencyPlugin({
@@ -35,14 +38,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: config.srcHtmlLayout,
       inject: false,
-      chunksSortMode: "none",
     }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify("development"),
       "process.env.BASE_PATH": JSON.stringify(BASE_PATH),
     }),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
     new ExtractCssChunks(),
   ],
   module: {
@@ -56,9 +57,13 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader",
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true,
+          },
+        },
       },
-      // Modular Styles
       {
         test: /\.css$/,
         use: [
@@ -87,14 +92,11 @@ module.exports = {
             },
           },
           { loader: "postcss-loader" },
-          {
-            loader: "sass-loader",
-          },
+          { loader: "sass-loader" },
         ],
         exclude: [path.resolve(config.srcDir, "styles")],
         include: [config.srcDir],
       },
-      // Global Styles
       {
         test: /\.css$/,
         use: [ExtractCssChunks.loader, "css-loader", "postcss-loader"],
@@ -106,33 +108,31 @@ module.exports = {
           ExtractCssChunks.loader,
           "css-loader",
           "postcss-loader",
-          {
-            loader: "sass-loader",
-          },
+          "sass-loader",
         ],
         include: [path.resolve(config.srcDir, "styles")],
       },
-      // Fonts
       {
         test: /\.(ttf|eot|woff|woff2)$/,
-        loader: "file-loader",
-        options: {
-          name: "fonts/[name].[ext]",
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
         },
       },
-      // Files
       {
         test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
-        loader: "file-loader",
-        options: {
-          name: "static/[name].[ext]",
+        type: "asset/resource",
+        generator: {
+          filename: "static/[name][ext]",
         },
       },
     ],
   },
   devServer: {
     hot: true,
-    contentBase: config.serveDir,
+    static: {
+      directory: config.serveDir,
+    },
     compress: true,
     historyApiFallback: {
       index: BASE_PATH,

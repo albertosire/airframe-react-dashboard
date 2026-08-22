@@ -1,8 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import BootstrapTable from "react-bootstrap-table-next";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../../data/placeholders';
 const sortCaret = (order) => {
   if (!order) return <i className="fa fa-fw fa-sort text-muted"></i>;
   if (order) return <i className={`fa fa-fw text-muted fa-sort-${order}`}></i>;

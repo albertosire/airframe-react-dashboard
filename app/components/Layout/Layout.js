@@ -12,7 +12,7 @@ import { LayoutSidebar } from './LayoutSidebar';
 import { PageConfigContext } from './PageConfigContext';
 import { ThemeClass } from './../Theme';
 
-import config from './../../../config';
+import config from '../../siteConfig';
 
 const findChildByType = (children, targetType) => {
     let result;

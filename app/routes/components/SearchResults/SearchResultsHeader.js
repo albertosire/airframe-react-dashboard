@@ -11,11 +11,11 @@ const SearchResultsHeader = () => (
     <React.Fragment>
         <div className="mb-4">
             <h4 className="mt-2 mb-3">
-                <small className="mr-1">
+                <small className="me-1">
                     Search Results for
                 </small> "Content Designer" 
-                <small className="mr-2">
-                    <small className="ml-3">
+                <small className="me-2">
+                    <small className="ms-3">
                         About 1,370 result (0.13 seconds)
                     </small>
                 </small>

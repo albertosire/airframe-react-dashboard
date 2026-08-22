@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import {
@@ -41,7 +41,7 @@ const TrTableClients = (props) => (
       </td>
       <td className="align-middle">
         <Media>
-          <Media left className="align-self-center mr-3">
+          <Media left className="align-self-center me-3">
             <Avatar.Image
               size="md"
               src="http://bs4.webkom.co/img/avatars/2.jpg"
@@ -69,7 +69,7 @@ const TrTableClients = (props) => (
       </td>
       <td className="align-middle">{faker.internet.email()}</td>
       <td className="align-middle">{faker.phone.number()}</td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         <Badge pill color={randomArray(tag)}>
           {faker.commerce.department()}
         </Badge>

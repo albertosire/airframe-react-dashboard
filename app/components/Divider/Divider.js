@@ -5,7 +5,7 @@ import classNames from 'classnames';
 export const Divider = ({ position, children, className }) => {
     const dividerClass = classNames({
         'hr-text-center': position === 'center',
-        'hr-text-right': position === 'right'
+        'hr-text-end': position === 'right'
     }, 'hr-text', className);
 
     return (

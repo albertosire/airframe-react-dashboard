@@ -41,7 +41,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Primary
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.01
                             </span>
                         </h6>
@@ -57,7 +57,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Danger
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.02
                             </span>
                         </h6>
@@ -73,7 +73,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Info
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.03
                             </span>
                         </h6>
@@ -93,7 +93,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Warning
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.04
                             </span>
                         </h6>
@@ -109,7 +109,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Success
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.05
                             </span>
                         </h6>
@@ -125,7 +125,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Alert: Dark
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #1.06
                             </span>
                         </h6>
@@ -162,7 +162,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Primary
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.01
                             </span>
                         </h6>
@@ -178,7 +178,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Danger
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.02
                             </span>
                         </h6>
@@ -194,7 +194,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Dismissing: Info
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.03
                             </span>
                         </h6>
@@ -214,7 +214,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Warning
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.04
                             </span>
                         </h6>
@@ -230,7 +230,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Success
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.05
                             </span>
                         </h6>
@@ -246,7 +246,7 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Dark
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.06
                             </span>
                         </h6>
@@ -283,12 +283,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Primary
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.01
                             </span>
                         </h6>
                         <Alert color="primary">
-                            <i className="fa fa-play-circle mr-1 alert-icon"></i>
+                            <i className="fa fa-play-circle me-1 alert-icon"></i>
                             <span> 
                                 <strong className="alert-heading">Welcome!</strong> We're glad to see you again and wish you a nice day.
                             </span>
@@ -299,12 +299,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Danger
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.02
                             </span>
                         </h6>
                         <Alert color="danger">
-                            <i className="fa fa-times-circle mr-1 alert-icon"></i> 
+                            <i className="fa fa-times-circle me-1 alert-icon"></i> 
                             <span> 
                                 <strong className="alert-heading">Danger!</strong> Change a few things up and try submitting again.
                             </span>
@@ -315,12 +315,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Info
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.03
                             </span>
                         </h6>
                         <Alert color="info">
-                            <i className="fa fa-info-circle mr-1 alert-icon"></i>
+                            <i className="fa fa-info-circle me-1 alert-icon"></i>
                             <span> 
                                 <strong className="alert-heading">Information!</strong> This alert needs your attention, but it's not important.
                             </span>
@@ -335,12 +335,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Warning
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.04
                             </span>
                         </h6>
                         <Alert color="warning">
-                            <i className="fa fa-exclamation-circle mr-1 alert-icon"></i> 
+                            <i className="fa fa-exclamation-circle me-1 alert-icon"></i> 
                             <span>
                                 <strong className="alert-heading">Warning!</strong> Better check yourself, you're not looking too good.
                             </span>
@@ -351,12 +351,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Success
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.05
                             </span>
                         </h6>
                         <Alert color="success">
-                            <i className="fa fa-check-circle mr-1 alert-icon"></i>
+                            <i className="fa fa-check-circle me-1 alert-icon"></i>
                             <span>
                                 <strong className="alert-heading">Success!</strong> You successfully read this important alert message.
                             </span>
@@ -367,12 +367,12 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Small: Dark
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.06
                             </span>
                         </h6>
                         <Alert color="dark">
-                            <i className="fa fa-question-circle mr-1 alert-icon"></i>
+                            <i className="fa fa-question-circle me-1 alert-icon"></i>
                             <span>
                                 <strong className="alert-heading">Attention!</strong> This alert needs your attention, but it's not important.
                             </span>
@@ -404,13 +404,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Primary
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #2.01
                             </span>
                         </h6>
                         <Alert color="primary">
                             <Media>
-                                <Media left middle className="mr-2">
+                                <Media left middle className="me-2">
                                     <i className="fa fa-caret-right fa-fw fa-2x alert-icon"></i> 
                                 </Media>
                                 <Media body>
@@ -427,13 +427,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Danger
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.02
                             </span>
                         </h6>
                         <Alert color="danger">
                             <Media>
-                                <Media left middle className="mr-2">
+                                <Media left middle className="me-2">
                                     <i className="fa fa-close fa-fw fa-2x alert-icon"></i> 
                                 </Media>
                                 <Media body>
@@ -450,13 +450,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Info
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.03
                             </span>
                         </h6>
                         <Alert color="info">
                             <Media>
-                                <Media left middle className="mr-2">
+                                <Media left middle className="me-2">
                                     <i className="fa fa-info fa-fw fa-2x alert-icon"></i>
                                 </Media>
                                 <Media body>
@@ -477,13 +477,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Warning
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.04
                             </span>
                         </h6>
                         <Alert color="warning">
                             <Media>
-                                <Media left middle className="mr-2">
+                                <Media left middle className="me-2">
                                     <i className="fa fa-exclamation fa-fw fa-2x alert-icon"></i>
                                 </Media>
                                 <Media body>
@@ -500,13 +500,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Success
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.05
                             </span>
                         </h6>
                         <Alert color="success">
                             <Media>
-                                <Media left middle className="mr-2">
+                                <Media left middle className="me-2">
                                     <i className="fa fa-check fa-fw fa-2x alert-icon"></i>
                                 </Media>
                                 <Media body>
@@ -523,13 +523,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Dark
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.06
                             </span>
                         </h6>
                         <Alert color="dark">
                             <Media>
-                                <Media left top className="mr-2">
+                                <Media left top className="me-2">
                                     <i className="fa fa-question fa-fw fa-2x alert-icon"></i>
                                 </Media>
                                 <Media body>
@@ -567,13 +567,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                              Dismissing: Primary
-                             <span className="small ml-1 text-muted">
+                             <span className="small ms-1 text-muted">
                                 #5.01
                             </span>
                         </h6>
                         <Alert color="primary">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-stack-2x alert-bg-icon"></i>
                                         <i className="fa fa-caret-right fa-stack-1x fa-inverse alert-icon"></i>
@@ -597,13 +597,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Danger
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.02
                             </span>
                         </h6>
                         <Alert color="danger">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-fw fa-stack-2x alert-bg-icon"></i>
                                         <i className="fa fa-close fa-stack-1x fa-inverse alert-icon"></i>
@@ -627,13 +627,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Info
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.03
                             </span>
                         </h6>
                         <Alert color="info">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-fw fa-stack-2x alert-bg-icon"></i>
                                         <i className="fa fa-info fa-stack-1x fa-inverse alert-icon"></i>
@@ -661,13 +661,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Warning
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.04
                             </span>
                         </h6>
                         <Alert color="warning">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-fw fa-stack-2x alert-bg-icon"></i>
                                         <i className="fa fa-exclamation fa-stack-1x fa-inverse alert-icon"></i>
@@ -691,13 +691,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Success
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.05
                             </span>
                         </h6>
                         <Alert color="success">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-fw fa-stack-2x alert-bg-icon"></i>
                                         <i className="fa fa-check fa-stack-1x fa-inverse alert-icon"></i>
@@ -721,13 +721,13 @@ const Alerts = () => (
                     <div className="mb-4">
                         <h6>
                             Icon Big: Dark
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.06
                             </span>
                         </h6>
                         <Alert color="dark">
                             <Media>
-                                <Media left middle className="mr-3">
+                                <Media left middle className="me-3">
                                     <span className="fa-stack fa-lg">
                                         <i className="fa fa-circle fa-fw fa-stack-2x"></i>
                                         <i className="fa fa-question fa-stack-1x fa-inverse alert-icon"></i>

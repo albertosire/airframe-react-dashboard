@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Container, Row, Table, Col } from "./../../../components";
 
 import { HeaderMain } from "../../components/HeaderMain";

@@ -82,13 +82,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 SimpleBarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/30763kr7/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -105,13 +105,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 StackedBarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/90v76x08/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -130,13 +130,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 MixBarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/9hjfkp73/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -153,13 +153,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 PositiveAndNegativeBarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/q68cz43w/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -178,13 +178,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 BarChartStackedBySign
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.05
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/p82xhe2a/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -201,13 +201,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 BarChartHasBackground
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </h6>
                             <p>Bar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/q4eonc12/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -245,13 +245,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 SimpleLineChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </h6>
                             <p>Line Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/xqjtetw0/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -268,13 +268,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 DashedLineChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </h6>
                             <p>Line Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/nptzh7ez/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -293,13 +293,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 VerticalLineChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </h6>
                             <p>Line Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/rrr9q7x5/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -316,13 +316,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 CustomizedLabelLineChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </h6>
                             <p>Line Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/9y9zrpjp/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -360,13 +360,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 SimpleAreaChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </h6>
                             <p>Area Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/Lrffmzfc/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -383,13 +383,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 StackedAreaChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </h6>
                             <p>Area Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/c1rLyqj1/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -408,13 +408,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 PercentAreaChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </h6>
                             <p>Area Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/zsax2hyq/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -431,13 +431,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 AreaChartFillByValue
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.04
                                 </span>
                             </h6>
                             <p>Area Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/64v6ocdx/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -475,13 +475,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 TwoLevelPieChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </h6>
                             <p>Pie Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/w6wsrc52/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -498,13 +498,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 StraightAnglePieChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </h6>
                             <p>Pie Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/pb1jwdt1/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -522,11 +522,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             PieChartWithPaddingAngle
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #4.03
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/3Leoa7f4/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -542,11 +542,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             PieChartWithPaddingAngleHalf
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #4.04
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/3Leoa7f4/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -565,13 +565,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 PieChartWithCustomizedLabel
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.05
                                 </span>
                             </h6>
                             <p>Pie Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/c9pL8k61/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -609,13 +609,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 SpecifiedDomainRadarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </h6>
                             <p>Radar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/dpgb3xjq/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -632,13 +632,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 SimpleRadialBarChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.02
                                 </span>
                             </h6>
                             <p>Radar Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/9km41z5z/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -675,11 +675,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             LineBarAreaComposedChart
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #6.01
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/9xopwa9v/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -696,13 +696,13 @@ export const ReCharts = () => (
                         <div>
                             <h6 className="card-title mb-1">
                                 VerticalComposedChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.02
                                 </span>
                             </h6>
                             <p>Composed Charts</p>
                         </div>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/shjsn5su/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -739,11 +739,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             TinyLineChart
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #7.01
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/exh283uh/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -759,11 +759,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             TinyAreaChart
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #7.02
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/tv8zfzxo/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -779,11 +779,11 @@ export const ReCharts = () => (
                     <div className="d-flex align-items-center mb-3">
                         <h6 className="card-title mb-1">
                             TinyBarChart
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #7.03
                             </span>
                         </h6>
-                        <span className="ml-auto">
+                        <span className="ms-auto">
                             <Button color="link" href="https://jsfiddle.net/alidingling/9kd8rssL/" target="_blank">
                                 <i className="fa fa-external-link"></i>
                             </Button>
@@ -802,11 +802,11 @@ export const ReCharts = () => (
                         <div className="d-flex align-items-center mb-3">
                             <h6 className="card-title mb-1">
                                 TinyDonutChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.05
                                 </span>
                             </h6>
-                            <span className="ml-auto">
+                            <span className="ms-auto">
                                 <Button color="link" href="https://jsfiddle.net/alidingling/9kd8rssL/" target="_blank">
                                     <i className="fa fa-external-link"></i>
                                 </Button>
@@ -824,11 +824,11 @@ export const ReCharts = () => (
                         <div className="d-flex align-items-center mb-3">
                             <h6 className="card-title mb-1">
                                 TinyPieChart
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.06
                                 </span>
                             </h6>
-                            <span className="ml-auto">
+                            <span className="ms-auto">
                                 <Button color="link" href="https://jsfiddle.net/alidingling/9kd8rssL/" target="_blank">
                                     <i className="fa fa-external-link"></i>
                                 </Button>

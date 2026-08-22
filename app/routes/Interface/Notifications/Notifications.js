@@ -1,6 +1,6 @@
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import _ from "lodash";
 
 import {
@@ -45,7 +45,7 @@ const initialState = {
 // eslint-disable-next-line react/prop-types
 const contentSuccess = ({ closeToast }) => (
   <Media>
-    <Media middle left className="mr-3">
+    <Media middle left className="me-3">
       <i className="fa fa-fw fa-2x fa-check"></i>
     </Media>
     <Media body>
@@ -67,7 +67,7 @@ const contentSuccess = ({ closeToast }) => (
           onClick={() => {
             closeToast;
           }}
-          className="ml-2 text-success"
+          className="ms-2 text-success"
         >
           Cancel
         </Button>
@@ -78,7 +78,7 @@ const contentSuccess = ({ closeToast }) => (
 // eslint-disable-next-line react/prop-types
 const contentError = ({ closeToast }) => (
   <Media>
-    <Media middle left className="mr-3">
+    <Media middle left className="me-3">
       <i className="fa fa-fw fa-2x fa-close"></i>
     </Media>
     <Media body>
@@ -100,7 +100,7 @@ const contentError = ({ closeToast }) => (
           onClick={() => {
             closeToast;
           }}
-          className="ml-2 text-danger"
+          className="ms-2 text-danger"
         >
           Cancel
         </Button>
@@ -111,7 +111,7 @@ const contentError = ({ closeToast }) => (
 // eslint-disable-next-line react/prop-types
 const contentInfo = ({ closeToast }) => (
   <Media>
-    <Media middle left className="mr-3">
+    <Media middle left className="me-3">
       <i className="fa fa-fw fa-2x fa-info"></i>
     </Media>
     <Media body>
@@ -133,7 +133,7 @@ const contentInfo = ({ closeToast }) => (
           onClick={() => {
             closeToast;
           }}
-          className="ml-2 text-primary"
+          className="ms-2 text-primary"
         >
           Cancel
         </Button>
@@ -144,7 +144,7 @@ const contentInfo = ({ closeToast }) => (
 // eslint-disable-next-line react/prop-types
 const contentWarning = ({ closeToast }) => (
   <Media>
-    <Media middle left className="mr-3">
+    <Media middle left className="me-3">
       <i className="fa fa-fw fa-2x fa-exclamation"></i>
     </Media>
     <Media body>
@@ -167,7 +167,7 @@ const contentWarning = ({ closeToast }) => (
           onClick={() => {
             closeToast;
           }}
-          className="ml-2 text-warning"
+          className="ms-2 text-warning"
         >
           Cancel
         </Button>
@@ -178,7 +178,7 @@ const contentWarning = ({ closeToast }) => (
 // eslint-disable-next-line react/prop-types
 const contentDefault = ({ closeToast }) => (
   <Media>
-    <Media middle left className="mr-3">
+    <Media middle left className="me-3">
       <i className="fa fa-fw fa-2x fa-question"></i>
     </Media>
     <Media body>
@@ -201,7 +201,7 @@ const contentDefault = ({ closeToast }) => (
           onClick={() => {
             closeToast;
           }}
-          className="ml-2 text-secondary"
+          className="ms-2 text-secondary"
         >
           Cancel
         </Button>
@@ -243,7 +243,7 @@ export class Notifications extends React.Component {
                   />
                 ))}
               </FormGroup>
-              <FormGroup className="ml-5">
+              <FormGroup className="ms-5">
                 <h6 className="mb-3">Type</h6>
                 {_.map(types, (type) => (
                   <CustomInput
@@ -266,14 +266,14 @@ export class Notifications extends React.Component {
               <Button
                 color="link"
                 onClick={this._clearHandler}
-                className="ml-2"
+                className="ms-2"
               >
                 Clear All
               </Button>
               <Button
                 color="link"
                 onClick={this._resetHandler}
-                className="ml-2"
+                className="ms-2"
               >
                 Reset
               </Button>

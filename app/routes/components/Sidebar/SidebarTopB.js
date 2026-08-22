@@ -6,8 +6,6 @@ import {
     UncontrolledTooltip
 } from './../../../components';
 
-import { VersionSelector } from '../VersionSelector';
-
 const SidebarTopB = () => (
     <React.Fragment>
         { /* START Sidebar TOP: B */ }
@@ -15,30 +13,21 @@ const SidebarTopB = () => (
             <Sidebar.HideSlim>
                 <div>
                     <div className="d-flex">
-                        <Link to="/" className="align-self-center sidebar__brand" id="tooltipBackToHome">
+                        <Link to="/dashboards/projects" className="align-self-center sidebar__brand" id="tooltipBackToHome">
                             <i className="fa fa-send fa-fw fa-2x"></i>
                         </Link>
                         <UncontrolledTooltip placement="right" target="tooltipBackToHome">
                             Back to Home
                         </UncontrolledTooltip>
 
-                        <VersionSelector
-                            down
-                            sidebar
-                            dashboard="Airframe"
-                            render={(currentVersion) => (
-                                <React.Fragment>
-                                    <div className="h4 fw-600 sidebar-logo mb-1 text-left">
-                                        react.bs4 <i className="fa fa-angle-down ml-1 sidebar__link--muted"></i>
-                                    </div>
-                                    <div
-                                        className="job-title small text-left sidebar__link--muted"
-                                    >
-                                        Version: {currentVersion.label}, {currentVersion.version}
-                                    </div>
-                                </React.Fragment>
-                            )}
-                        />
+                        <div className="ms-3">
+                            <div className="h4 fw-600 sidebar-logo mb-1 text-start">
+                                Airframe Dashboard
+                            </div>
+                            <div className="job-title small text-start sidebar__link--muted">
+                                Painel de Relatórios
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Sidebar.HideSlim>
@@ -46,7 +35,7 @@ const SidebarTopB = () => (
             { /* START SLIM Only View */ }
             <Sidebar.ShowSlim>
                 <div className="text-center">
-                    <Link to="/">
+                    <Link to="/dashboards/projects">
                         <i className="fa fa-send fa-fw text-primary" id="tooltipBackToHomeSlim"></i>
                     </Link>
                     <UncontrolledTooltip placement="right" target="tooltipBackToHomeSlim">

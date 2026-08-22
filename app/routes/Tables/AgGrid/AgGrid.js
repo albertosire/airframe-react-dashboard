@@ -1,6 +1,5 @@
 import React from 'react';
 import { chain, reduce } from 'lodash';
-import fetch from 'node-fetch';
 
 import {
     Container,
@@ -18,11 +17,11 @@ import {
     HeaderMain,
 } from './../../components/HeaderMain';
 import colors from './../../../colors';
+import sampleData from './sampleData';
 
 /*
     CONSTS
 */
-const DATA_URL = "https://api.myjson.com/bins/18oni9";
 
 const COUNTRY_CODES = {
     Ireland: "ie",
@@ -132,7 +131,7 @@ class SkillFilter {
 
         const createCheckMarkElement = () => {
             var eCheckMark = document.createElement('i');
-            eCheckMark.className = "fa fa-check fa-fw ml-auto text-success";
+            eCheckMark.className = "fa fa-check fa-fw ms-auto text-success";
 
             return eCheckMark;
         }
@@ -148,7 +147,7 @@ class SkillFilter {
             const eImg = document.createElement("img");
             eImg.src = '//www.ag-grid.com/images/skills/' + skill + '.png';
             eImg.height = 20;
-            eImg.className = "mr-2";
+            eImg.className = "me-2";
 
             const eName = document.createElement('span');
             eName.innerText = skillName;
@@ -287,17 +286,13 @@ export default class AgGridExample extends React.Component {
     }
 
     componentDidMount() {
-        fetch(DATA_URL)
-            .then(res => res.json())
-            .then(fetchedData => {
-                this.setState({ rowData: fetchedData });
-            });
+        this.setState({ rowData: sampleData });
     }
 
     componentDidUpdate(prevProps, prevState) {
         if (this.gridApi) {
             if (this.state.quickFilterValue !== prevState.quickFilterValue) {
-                this.gridApi.setQuickFilter(this.state.quickFilterValue);
+                this.gridApi.setGridOption('quickFilterText', this.state.quickFilterValue);
             }
         }
     }
@@ -338,7 +333,7 @@ export default class AgGridExample extends React.Component {
                     <CardHeader tag="h6" className="d-flex justify-content-between align-items-center bg-white bb-0">
                         <span>AgGrid Example</span>
                         <div className="d-flex align-items-center">
-                            <span className="mr-3 text-nowrap small">
+                            <span className="me-3 text-nowrap small">
                                 { visibleCount } / { rowData.length }
                             </span>
 
@@ -352,7 +347,7 @@ export default class AgGridExample extends React.Component {
                             </InputGroup>
                         </div>
                     </CardHeader>
-                    <div className="ag-theme-bootstrap" style={{ height: '600px' }}>
+                    <div className="ag-theme-alpine" style={{ height: '600px' }}>
                         <AgGridReact
                             rowData={ rowData }
                             rowSelection="multiple"

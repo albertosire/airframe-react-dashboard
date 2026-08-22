@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Button,
   Sidebar,
@@ -27,10 +26,10 @@ const SidebarBottomB = () => (
         <UncontrolledButtonDropdown direction="up" className="mb-3">
           <DropdownToggle
             color="link"
-            className="btn-profile text-left pl-0 pb-0"
+            className="btn-profile text-start ps-0 pb-0"
           >
             <Media>
-              <Media left middle className="mr-3">
+              <Media left middle className="me-3">
                 <Avatar.Image
                   size="md"
                   src={randomAvatar()}
@@ -51,7 +50,7 @@ const SidebarBottomB = () => (
               <Media body>
                 <span className="mt-0 d-flex h6 mb-1 text-truncate">
                   {faker.person.firstName()} {faker.person.lastName()}{" "}
-                  <i className="fa fa-fw fa-angle-up ml-1"></i>
+                  <i className="fa fa-fw fa-angle-up ms-1"></i>
                 </span>
                 <p className="small text-truncate">{faker.person.jobTitle()}</p>
               </Media>
@@ -65,7 +64,7 @@ const SidebarBottomB = () => (
       <Sidebar.ShowSlim>
         <div className="text-center">
           <UncontrolledButtonDropdown direction="right" className="mb-3">
-            <DropdownToggle color="link" className="text-left pl-0 pb-0">
+            <DropdownToggle color="link" className="text-start ps-0 pb-0">
               <Avatar.Image
                 size="sm"
                 src={randomAvatar()}

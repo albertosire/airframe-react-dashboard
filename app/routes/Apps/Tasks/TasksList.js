@@ -23,7 +23,7 @@ const TasksList = () => (
                             <th className="align-middle bt-0">Title & Description</th>
                             <th className="align-middle bt-0">People</th>
                             <th className="align-middle bt-0">Update</th>
-                            <th className="align-middle bt-0 text-right">
+                            <th className="align-middle bt-0 text-end">
                                 Actions
                             </th>
                         </tr>

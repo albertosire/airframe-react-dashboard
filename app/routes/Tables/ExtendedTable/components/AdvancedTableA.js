@@ -7,7 +7,7 @@ import filterFactory, {
 } from "react-bootstrap-table2-filter";
 import ToolkitProvider from "react-bootstrap-table2-toolkit";
 import _ from "lodash";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import moment from "moment";
 
 import {
@@ -273,8 +273,8 @@ export class AdvancedTableA extends React.Component {
           <React.Fragment>
             <div className="d-flex justify-content-end align-items-center mb-2">
               <h6 className="my-0">AdvancedTable A</h6>
-              <div className="d-flex ml-auto">
-                <CustomSearch className="mr-2" {...props.searchProps} />
+              <div className="d-flex ms-auto">
+                <CustomSearch className="me-2" {...props.searchProps} />
                 <ButtonGroup>
                   <CustomExportCSV {...props.csvProps}>Export</CustomExportCSV>
                   <Button

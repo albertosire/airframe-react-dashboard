@@ -69,14 +69,14 @@
 ));
 
 @include generate-colors((
-    'primary':      theme-color("primary"),
-    'success':      theme-color("success"),
-    'info':         theme-color("info"),
-    'warning':      theme-color("warning"),
-    'danger':       theme-color("danger"),
-    'secondary':    theme-color("secondary"),
-    'dark':         theme-color("dark"),
-    'light':        theme-color("light"),
+    'primary':      $primary,
+    'success':      $success,
+    'info':         $info,
+    'warning':      $warning,
+    'danger':       $danger,
+    'secondary':    $secondary,
+    'dark':         $dark,
+    'light':        $light,
     'white':        $white,
     'black':        $black,
 ));

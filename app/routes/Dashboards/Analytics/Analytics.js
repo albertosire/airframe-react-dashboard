@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import _ from "lodash";
 import {
   Container,
@@ -85,16 +85,16 @@ export class Analytics extends React.Component {
         <Container fluid={false}>
           <div className="d-flex mt-3 mb-5">
             <HeaderMain title="Analytics" className="mt-0" />
-            <ButtonToolbar className="ml-auto">
-              <ButtonGroup className="align-self-start mr-2">
-                <UncontrolledButtonDropdown className="ml-auto flex-column">
+            <ButtonToolbar className="ms-auto">
+              <ButtonGroup className="align-self-start me-2">
+                <UncontrolledButtonDropdown className="ms-auto flex-column">
                   <DropdownToggle
                     color="link"
-                    className="text-left pl-0 text-decoration-none mb-2"
+                    className="text-start ps-0 text-decoration-none mb-2"
                   >
-                    <i className="fa fa-globe text-body mr-2"></i>
+                    <i className="fa fa-globe text-body me-2"></i>
                     www.webkom.co
-                    <i className="fa fa-angle-down text-body ml-2" />
+                    <i className="fa fa-angle-down text-body ms-2" />
                   </DropdownToggle>
                   <div className="small">Last 30 Days vs Previous Period</div>
                   <DropdownMenu>
@@ -103,21 +103,21 @@ export class Analytics extends React.Component {
                     <DropdownItem>www.spin.webkom.co</DropdownItem>
                     <DropdownItem divider />
                     <DropdownItem>
-                      <i className="fa fa-fw fa-plus mr-2"></i>
+                      <i className="fa fa-fw fa-plus me-2"></i>
                       Add New
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledButtonDropdown>
               </ButtonGroup>
-              <ButtonGroup className="align-self-start mr-2">
-                <UncontrolledButtonDropdown className="ml-auto flex-column">
+              <ButtonGroup className="align-self-start me-2">
+                <UncontrolledButtonDropdown className="ms-auto flex-column">
                   <DropdownToggle
                     color="link"
-                    className="text-left pl-0 text-decoration-none mb-2"
+                    className="text-start ps-0 text-decoration-none mb-2"
                   >
-                    <i className="fa fa-calendar-o text-body mr-2"></i>
+                    <i className="fa fa-calendar-o text-body me-2"></i>
                     Last Month
-                    <i className="fa fa-angle-down text-body ml-2" />
+                    <i className="fa fa-angle-down text-body ms-2" />
                   </DropdownToggle>
                   <div className="small">Jan 01, 2017 to Jan 31, 2017</div>
                   <DropdownMenu>
@@ -131,15 +131,15 @@ export class Analytics extends React.Component {
                   </DropdownMenu>
                 </UncontrolledButtonDropdown>
               </ButtonGroup>
-              <ButtonGroup className="align-self-start mr-2">
-                <UncontrolledButtonDropdown className="ml-auto flex-column">
+              <ButtonGroup className="align-self-start me-2">
+                <UncontrolledButtonDropdown className="ms-auto flex-column">
                   <DropdownToggle
                     color="link"
-                    className="text-left pl-0 text-decoration-none mb-2"
+                    className="text-start ps-0 text-decoration-none mb-2"
                   >
-                    <i className="fa fa-calendar-o text-body mr-2"></i>
+                    <i className="fa fa-calendar-o text-body me-2"></i>
                     Previous Period
-                    <i className="fa fa-angle-down text-body ml-2" />
+                    <i className="fa fa-angle-down text-body ms-2" />
                   </DropdownToggle>
                   <div className="small">Jan 01, 2017 to Jan 31, 2017</div>
                   <DropdownMenu>
@@ -154,7 +154,7 @@ export class Analytics extends React.Component {
                 </UncontrolledButtonDropdown>
               </ButtonGroup>
               <ButtonGroup className="align-self-start">
-                <Button color="primary" className="mb-2 mr-2 px-3">
+                <Button color="primary" className="mb-2 me-2 px-3">
                   Apply
                 </Button>
               </ButtonGroup>
@@ -180,7 +180,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("metric-v-target-users", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 pb-0 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v text-body mr-2"></i> Users
+                  <i className="fa fa-ellipsis-v text-body me-2"></i> Users
                 </CardHeader>
                 <CardBody className="pt-2">
                   <MetricVsTarget
@@ -193,7 +193,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -210,7 +210,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("metric-v-target-sessions", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 pb-0 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v text-body mr-2"></i> Sessions
+                  <i className="fa fa-ellipsis-v text-body me-2"></i> Sessions
                 </CardHeader>
                 <CardBody className="pt-2">
                   <MetricVsTarget
@@ -224,7 +224,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -241,7 +241,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("metric-v-target-pageviews", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 pb-0 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v text-body mr-2"></i> Pageviews
+                  <i className="fa fa-ellipsis-v text-body me-2"></i> Pageviews
                 </CardHeader>
                 <CardBody className="pt-2">
                   <MetricVsTarget
@@ -255,7 +255,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -272,7 +272,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("analytics-audience-metrics", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 pb-4 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v mr-2 text-body"></i> Analytics
+                  <i className="fa fa-ellipsis-v me-2 text-body"></i> Analytics
                   Audience Metrics
                 </CardHeader>
                 <CardBody className="d-flex flex-column">
@@ -283,7 +283,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -300,7 +300,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("traffic-channels", layouts)}>
               <Card className="d-flex flex-column">
                 <CardHeader className="bb-0 pt-3 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v text-body mr-2"></i> Traffic
+                  <i className="fa fa-ellipsis-v text-body me-2"></i> Traffic
                   Channels
                 </CardHeader>
                 <Table responsive className="table mb-0">
@@ -315,10 +315,10 @@ export class Analytics extends React.Component {
                       <th scope="col" className="bt-0">
                         Prev Period
                       </th>
-                      <th scope="col" className="text-right bt-0">
+                      <th scope="col" className="text-end bt-0">
                         Change
                       </th>
-                      <th scope="col" className="bt-0 text-right">
+                      <th scope="col" className="bt-0 text-end">
                         Trend
                       </th>
                     </tr>
@@ -332,11 +332,11 @@ export class Analytics extends React.Component {
                       <td className="align-middle">
                         <span data-faker="[[finance.amount]]">949.00</span>
                       </td>
-                      <td className="align-middle text-right">
+                      <td className="align-middle text-end">
                         -75,0%
-                        <i className="fa fa-caret-down text-danger ml-1"></i>
+                        <i className="fa fa-caret-down text-danger ms-1"></i>
                       </td>
-                      <td className="text-right align-middle">
+                      <td className="text-end align-middle">
                         <TinyAreaChart />
                       </td>
                     </tr>
@@ -346,11 +346,11 @@ export class Analytics extends React.Component {
                       <td className="align-middle">
                         <span data-faker="[[finance.amount]]">157.11</span>
                       </td>
-                      <td className="align-middle text-right">
+                      <td className="align-middle text-end">
                         82,1%
-                        <i className="fa fa-caret-up text-success ml-1"></i>
+                        <i className="fa fa-caret-up text-success ms-1"></i>
                       </td>
-                      <td className="text-right align-middle">
+                      <td className="text-end align-middle">
                         <TinyAreaChart />
                       </td>
                     </tr>
@@ -362,11 +362,11 @@ export class Analytics extends React.Component {
                       <td className="align-middle">
                         <span data-faker="[[finance.amount]]">949.00</span>
                       </td>
-                      <td className="align-middle text-right">
+                      <td className="align-middle text-end">
                         -75,0%
-                        <i className="fa fa-caret-down text-danger ml-1"></i>
+                        <i className="fa fa-caret-down text-danger ms-1"></i>
                       </td>
-                      <td className="text-right align-middle">
+                      <td className="text-end align-middle">
                         <TinyAreaChart />
                       </td>
                     </tr>
@@ -375,7 +375,7 @@ export class Analytics extends React.Component {
                 <CardFooter className="mt-auto flex-grow-0">
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -392,7 +392,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("sessions", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 pb-0 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v text-body mr-2"></i> Sessions
+                  <i className="fa fa-ellipsis-v text-body me-2"></i> Sessions
                   by Device Type
                 </CardHeader>
                 <CardBody className="d-flex flex-column">
@@ -444,7 +444,7 @@ export class Analytics extends React.Component {
                 <CardFooter className={`${classes["sessions-info"]} mt-auto`}>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -462,9 +462,9 @@ export class Analytics extends React.Component {
               <Card>
                 <CardHeader className="d-flex bb-0 pt-3 bg-none">
                   <span className="h6">
-                    <i className="fa fa-ellipsis-v text-body mr-2"></i> Spend
+                    <i className="fa fa-ellipsis-v text-body me-2"></i> Spend
                   </span>
-                  <span className="ml-auto text-right">
+                  <span className="ms-auto text-end">
                     Dec 22, 2016 to
                     <br />
                     Dec 31, 2016 <i>(prev.)</i>
@@ -474,7 +474,7 @@ export class Analytics extends React.Component {
                   <div className="text-center mb-4">
                     <h2>$2,890.12</h2>
                     <div className="mb-1 text-success">
-                      <i className="fa mr-1 fa-caret-up"></i>
+                      <i className="fa me-1 fa-caret-up"></i>
                       23.34%
                     </div>
                     <div>vs {faker.finance.amount()} (prev.)</div>
@@ -486,7 +486,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -503,7 +503,7 @@ export class Analytics extends React.Component {
             <Grid.Col {...applyColumn("website-performance", layouts)}>
               <Card>
                 <CardHeader className="bb-0 pt-3 bg-none" tag="h6">
-                  <i className="fa fa-ellipsis-v mr-2"></i> Website Performance
+                  <i className="fa fa-ellipsis-v me-2"></i> Website Performance
                 </CardHeader>
                 <ListGroup flush>
                   <ListGroupItem className="bt-0">
@@ -544,7 +544,7 @@ export class Analytics extends React.Component {
                 <CardFooter className="flex-grow-0 mt-auto">
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and
@@ -562,7 +562,7 @@ export class Analytics extends React.Component {
               <Card>
                 <CardHeader className="d-flex bb-0 pt-3 bg-none">
                   <Media>
-                    <Media left className="mr-3">
+                    <Media left className="me-3">
                       <i className="fa fa-ellipsis-v"></i>
                     </Media>
                     <Media body>
@@ -581,7 +581,7 @@ export class Analytics extends React.Component {
                     <h6>Organics Sessons</h6>
                     <h2>46,982</h2>
                     <div className="mb-1 text-success">
-                      <i className="fa mr-1 fa-caret-up"></i>
+                      <i className="fa me-1 fa-caret-up"></i>
                       23.34%{" "}
                       <span>
                         {" "}
@@ -596,7 +596,7 @@ export class Analytics extends React.Component {
                 <CardFooter>
                   <Media className="small">
                     <Media left>
-                      <i className="fa fa-fw fa-info-circle mr-2"></i>
+                      <i className="fa fa-fw fa-info-circle me-2"></i>
                     </Media>
                     <Media body>
                       How do your users (visitors), sessions (visits) and

@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Link } from "react-router-dom";
 import _ from "lodash";
 
@@ -42,7 +42,7 @@ const Inbox = () => (
           <Card className="mb-3">
             <CardBody>
               <div className="d-lg-flex justify-content-end">
-                <div className="mr-auto d-flex align-items-center mb-3 mb-lg-0">
+                <div className="me-auto d-flex align-items-center mb-3 mb-lg-0">
                   <InputGroup>
                     <Input placeholder="Search for..." />
                     <InputGroupAddon addonType="append">
@@ -53,7 +53,7 @@ const Inbox = () => (
                   </InputGroup>
                 </div>
                 <ButtonToolbar>
-                  <ButtonGroup className="mr-2">
+                  <ButtonGroup className="me-2">
                     <Button
                       color="link"
                       className="text-decoration-none align-self-center"
@@ -111,7 +111,7 @@ const Inbox = () => (
                       Delete
                     </UncontrolledTooltip>
                   </ButtonGroup>
-                  <ButtonGroup className="ml-auto ml-lg-0">
+                  <ButtonGroup className="ms-auto ml-lg-0">
                     <Button
                       color="primary"
                       className="align-self-center"
@@ -139,7 +139,7 @@ const Inbox = () => (
                   <th className="bt-0"></th>
                   <th className="bt-0">From</th>
                   <th className="bt-0">Subject</th>
-                  <th className="text-right bt-0">Date</th>
+                  <th className="text-end bt-0">Date</th>
                 </tr>
               </thead>
               <tbody>

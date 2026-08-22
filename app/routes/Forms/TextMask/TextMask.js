@@ -43,7 +43,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="uSPhoneNumber">
                                 US Phone Number
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </Label>
@@ -59,7 +59,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="uSPhoneNumberWith">
                                 US Phone Number With Masked Input
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </Label>
@@ -75,7 +75,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="date">
                                 Date
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </Label>
@@ -92,7 +92,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="dateAuto">
                                 Date (Auto-Corrected)
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </Label>
@@ -110,13 +110,13 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="uSDollarAmount">
                                 US dollar amount
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.05
                                 </span>
                             </Label>
                             <Input
                                 mask={ dolarsMask }
-                                className='text-right form-control'
+                                className='text-end form-control'
                                 placeholder='Enter an amount'
                                 tag={ MaskedInput }
                                 id="uSDollarAmount"
@@ -127,13 +127,13 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="uSDollarAmountAllows">
                                 US dollar amount (allows decimal)
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </Label>
                             <Input
                                 mask={ dolarsMaskDecimal }
-                                className='text-right form-control'
+                                className='text-end form-control'
                                 placeholder='Enter an amount'
                                 tag={ MaskedInput }
                                 id="uSDollarAmountAllows"
@@ -145,13 +145,13 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="percentageAmount">
                                 Percentage Amount
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.07
                                 </span>
                             </Label>
                             <Input
                                 mask={ percentageMask }
-                                className='text-right form-control'
+                                className='text-end form-control'
                                 placeholder='Enter an amount'
                                 tag={ MaskedInput }
                                 id="percentageAmount"
@@ -162,7 +162,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="email">
                                 Email
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.08
                                 </span>
                             </Label>
@@ -178,7 +178,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="uSZipCode">
                                 US Zip Code
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.09
                                 </span>
                             </Label>
@@ -195,7 +195,7 @@ export const TextMask = () => (
                         <FormGroup>
                             <Label for="canadianPostal">
                                 Canadian Postal Code
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.10
                                 </span>
                             </Label>

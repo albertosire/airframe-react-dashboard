@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../../data/placeholders';
 import {
   Badge,
   Avatar,
@@ -24,7 +23,7 @@ const TrTableFilesList = () => (
       <td className="align-middle">
         <Media>
           <Media left middle>
-            <i className="fa fa-fw fa-folder-o fa-3x mr-2"></i>
+            <i className="fa fa-fw fa-folder-o fa-3x me-2"></i>
           </Media>
           <Media body>
             <div className="text-inverse">{faker.commerce.department()}</div>
@@ -56,42 +55,42 @@ const TrTableFilesList = () => (
         />
       </td>
       <td className="align-middle">
-        <Badge color={randomArray(badges)} pill className="mr-1">
+        <Badge color={randomArray(badges)} pill className="me-1">
           {faker.commerce.department()}
         </Badge>
-        <Badge color={randomArray(badges)} pill className="mr-1">
+        <Badge color={randomArray(badges)} pill className="me-1">
           {faker.commerce.department()}
         </Badge>
-        <Badge color={randomArray(badges)} pill className="mr-1">
+        <Badge color={randomArray(badges)} pill className="me-1">
           {faker.commerce.department()}
         </Badge>
       </td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         <UncontrolledButtonDropdown>
           <DropdownToggle color="link">
             <i className="fa fa-gear" />
-            <i className="fa fa-angle-down ml-2" />
+            <i className="fa fa-angle-down ms-2" />
           </DropdownToggle>
           <DropdownMenu right>
             <DropdownItem>
-              <i className="fa fa-fw fa-reply mr-2"></i>
+              <i className="fa fa-fw fa-reply me-2"></i>
               Share
             </DropdownItem>
             <DropdownItem>
-              <i className="fa fa-fw fa-download mr-2"></i>
+              <i className="fa fa-fw fa-download me-2"></i>
               Download
             </DropdownItem>
             <DropdownItem>
-              <i className="fa fa-fw fa-trash mr-2"></i>
+              <i className="fa fa-fw fa-trash me-2"></i>
               Delete
             </DropdownItem>
             <DropdownItem>
-              <i className="fa fa-fw fa-pencil mr-2"></i>
+              <i className="fa fa-fw fa-pencil me-2"></i>
               Edit
             </DropdownItem>
             <DropdownItem divider />
             <DropdownItem>
-              <i className="fa fa-fw fa-files-o mr-2"></i>
+              <i className="fa fa-fw fa-files-o me-2"></i>
               Copy
             </DropdownItem>
           </DropdownMenu>

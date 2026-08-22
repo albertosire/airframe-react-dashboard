@@ -55,7 +55,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Basic Example
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #1.01
                             </span>
                         </CardTitle>
@@ -89,7 +89,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Behaviors
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.01
                             </span>
                         </CardTitle>
@@ -106,7 +106,7 @@ export const Typeahead = () => (
                     <CardBody>
                         <CardTitle tag="h6">
                             Controlling Selections
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.02
                             </span>
                         </CardTitle>
@@ -127,7 +127,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Input Size
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.03
                             </span>
                         </CardTitle>
@@ -148,7 +148,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Menu Alignment
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.04
                             </span>
                         </CardTitle>
@@ -169,7 +169,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Input Groups and Validation States
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.05
                             </span>
                         </CardTitle>
@@ -189,7 +189,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Pagination
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #2.06
                             </span>
                         </CardTitle>
@@ -209,7 +209,7 @@ export const Typeahead = () => (
             <Col>
                 <CardTitle tag="h6">
                     Body Container
-                    <span className="small ml-1 text-muted">
+                    <span className="small ms-1 text-muted">
                         #2.07
                     </span>
                 </CardTitle>
@@ -240,7 +240,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Rendering
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.01
                             </span>
                         </CardTitle>
@@ -261,7 +261,7 @@ export const Typeahead = () => (
                     <CardBody>
                         <CardTitle tag="h6">
                             LabelKey
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #3.02
                             </span>
                         </CardTitle>
@@ -296,7 +296,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Filtering
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #4.01
                             </span>
                         </CardTitle>
@@ -318,7 +318,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Custom Filtering
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #4.02
                             </span>
                         </CardTitle>
@@ -353,7 +353,7 @@ export const Typeahead = () => (
                     <CardBody>
                         <CardTitle tag="h6">
                             Custom Selections
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #5.01
                             </span>
                         </CardTitle>
@@ -389,7 +389,7 @@ export const Typeahead = () => (
                     <CardBody className="pb-0">
                         <CardTitle tag="h6">
                             Asynchronous Searching
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #6.01
                             </span>
                         </CardTitle>
@@ -411,7 +411,7 @@ export const Typeahead = () => (
                     <CardBody>
                         <CardTitle tag="h6">
                             Pagination
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #6.02
                             </span>
                         </CardTitle>
@@ -433,7 +433,7 @@ export const Typeahead = () => (
                     <CardBody>
                         <CardTitle tag="h6">
                             Public Methods
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #6.03
                             </span>
                         </CardTitle>

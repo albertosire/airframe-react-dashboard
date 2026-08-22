@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Card,
   CardBody,
@@ -42,13 +41,13 @@ const FilesCardGrid = () => (
           12:34 PM
         </div>
         <div className="mb-3">
-          <Badge color={randomArray(badges)} pill className="mr-1">
+          <Badge color={randomArray(badges)} pill className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge color={randomArray(badges)} pill className="mr-1">
+          <Badge color={randomArray(badges)} pill className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge color={randomArray(badges)} pill className="mr-1">
+          <Badge color={randomArray(badges)} pill className="me-1">
             {faker.commerce.department()}
           </Badge>
         </div>
@@ -56,7 +55,7 @@ const FilesCardGrid = () => (
           <Avatar.Image
             size="md"
             src={randomAvatar()}
-            className="mr-3"
+            className="me-3"
             addOns={[
               <AvatarAddOn.Icon
                 className="fa fa-circle"
@@ -73,7 +72,7 @@ const FilesCardGrid = () => (
           <Avatar.Image
             size="md"
             src={randomAvatar()}
-            className="mr-3"
+            className="me-3"
             addOns={[
               <AvatarAddOn.Icon
                 className="fa fa-circle"
@@ -90,7 +89,7 @@ const FilesCardGrid = () => (
           <Avatar.Image
             size="md"
             src={randomAvatar()}
-            className="mr-3"
+            className="me-3"
             addOns={[
               <AvatarAddOn.Icon
                 className="fa fa-circle"
@@ -109,33 +108,33 @@ const FilesCardGrid = () => (
       <CardFooter>
         <div className="d-flex">
           <a href="#" className="align-self-center text-decoration-none">
-            Details<i className="fa fa-fw fa-angle-right ml-1"></i>
+            Details<i className="fa fa-fw fa-angle-right ms-1"></i>
           </a>
-          <UncontrolledButtonDropdown className="align-self-center ml-auto">
-            <DropdownToggle color="link" size="sm" className="pr-0">
+          <UncontrolledButtonDropdown className="align-self-center ms-auto">
+            <DropdownToggle color="link" size="sm" className="pe-0">
               <i className="fa fa-gear" />
-              <i className="fa fa-angle-down ml-2" />
+              <i className="fa fa-angle-down ms-2" />
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem>
-                <i className="fa fa-fw fa-reply mr-2"></i>
+                <i className="fa fa-fw fa-reply me-2"></i>
                 Share
               </DropdownItem>
               <DropdownItem>
-                <i className="fa fa-fw fa-download mr-2"></i>
+                <i className="fa fa-fw fa-download me-2"></i>
                 Download
               </DropdownItem>
               <DropdownItem>
-                <i className="fa fa-fw fa-trash mr-2"></i>
+                <i className="fa fa-fw fa-trash me-2"></i>
                 Delete
               </DropdownItem>
               <DropdownItem>
-                <i className="fa fa-fw fa-pencil mr-2"></i>
+                <i className="fa fa-fw fa-pencil me-2"></i>
                 Edit
               </DropdownItem>
               <DropdownItem divider />
               <DropdownItem>
-                <i className="fa fa-fw fa-files-o mr-2"></i>
+                <i className="fa fa-fw fa-files-o me-2"></i>
                 Copy
               </DropdownItem>
             </DropdownMenu>

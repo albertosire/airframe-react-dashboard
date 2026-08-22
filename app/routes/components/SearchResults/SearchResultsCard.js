@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import { Card, CardBody } from "./../../../components";
 
 import { randomArray } from "./../../../utilities";

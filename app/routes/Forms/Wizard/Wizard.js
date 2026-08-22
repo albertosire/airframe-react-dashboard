@@ -78,7 +78,7 @@ const WizardStep1 = () => (
                         <th>#</th>
                         <th>Description</th>
                         <th>Qty</th>
-                        <th className="text-right">Total</th>
+                        <th className="text-end">Total</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,7 +94,7 @@ const WizardStep1 = () => (
                                 <td>
                                     { item.quantity }
                                 </td>
-                                <td className="text-right">
+                                <td className="text-end">
                                     { item.price }
                                 </td>
                             </tr>
@@ -104,14 +104,14 @@ const WizardStep1 = () => (
                         <td colSpan={3}></td>
                         <td>
                             <Row tag="dl">
-                                <dt className="col-sm-6 text-right">Sub-Total</dt>
-                                <dd className="col-sm-6 text-right">$114.00</dd>
+                                <dt className="col-sm-6 text-end">Sub-Total</dt>
+                                <dd className="col-sm-6 text-end">$114.00</dd>
 
-                                <dt className="col-sm-6 text-right">VAT</dt>
-                                <dd className="col-sm-6 text-right">$876.78</dd>
+                                <dt className="col-sm-6 text-end">VAT</dt>
+                                <dd className="col-sm-6 text-end">$876.78</dd>
 
-                                <dt className="col-sm-6 mt-3 text-right h4 mb-0">Total</dt>
-                                <dd className="col-sm-6 mt-3 text-right h4 mb-0">$986.78</dd>
+                                <dt className="col-sm-6 mt-3 text-end h4 mb-0">Total</dt>
+                                <dd className="col-sm-6 mt-3 text-end h4 mb-0">$986.78</dd>
                             </Row>
                         </td>
                     </tr>
@@ -271,7 +271,7 @@ const WizardStep3 = () => (
                             <th>#</th>
                             <th>Description</th>
                             <th>Qty</th>
-                            <th className="text-right">Total</th>
+                            <th className="text-end">Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -287,14 +287,14 @@ const WizardStep3 = () => (
                                     <td>
                                         { item.quantity }
                                     </td>
-                                    <td className="text-right">
+                                    <td className="text-end">
                                         { item.price }
                                     </td>
                                 </tr>
                             ))
                         }
                         <tr>
-                            <td colSpan={4} className='text-right'>
+                            <td colSpan={4} className='text-end'>
                                 <strong>$986.78</strong>
                             </td>
                         </tr>
@@ -331,9 +331,9 @@ const WizardStep3 = () => (
                     <div className="d-flex justify-content-between align-items-center pb-3">
                         <h5>Credit Card</h5>
                         <div className="d-flex align-items-start">
-                            <i className="fa fa-lg fa-cc-visa text-primary mr-1"></i>
-                            <i className="fa fa-lg fa-cc-mastercard text-muted mr-1"></i>
-                            <i className="fa fa-lg fa-cc-jcb text-muted mr-1"></i>
+                            <i className="fa fa-lg fa-cc-visa text-primary me-1"></i>
+                            <i className="fa fa-lg fa-cc-mastercard text-muted me-1"></i>
+                            <i className="fa fa-lg fa-cc-jcb text-muted me-1"></i>
                         </div>
                     </div>
                     <Form>
@@ -379,7 +379,7 @@ const WizardStep3 = () => (
                                     </UncontrolledDropdown>
                                 </div>
                             </FormGroup>
-                            <FormGroup className='text-right'>
+                            <FormGroup className='text-end'>
                                 <Label for="cvcCode">
                                     CVC Code <span className="text-danger">*</span>
                                 </Label>
@@ -408,7 +408,7 @@ const WizardStep4 = () => (
                             <th>#</th>
                             <th>Description</th>
                             <th>Qty</th>
-                            <th className="text-right">Total</th>
+                            <th className="text-end">Total</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -424,14 +424,14 @@ const WizardStep4 = () => (
                                     <td>
                                         { item.quantity }
                                     </td>
-                                    <td className="text-right">
+                                    <td className="text-end">
                                         { item.price }
                                     </td>
                                 </tr>
                             ))
                         }
                         <tr>
-                            <td colSpan={4} className='text-right'>
+                            <td colSpan={4} className='text-end'>
                                 <strong>$986.78</strong>
                             </td>
                         </tr>
@@ -456,7 +456,7 @@ const WizardStep4 = () => (
 
                 <dt className="col-sm-4"></dt>
                 <dd className="col-sm-8">
-                    <Button color='link' className="p-0"><i className="fa fa-angle-left mr-1"></i> Change</Button>
+                    <Button color='link' className="p-0"><i className="fa fa-angle-left me-1"></i> Change</Button>
                 </dd>
             </Row>
             <h6 className="my-3">Billing Address</h6>
@@ -481,20 +481,20 @@ const WizardStep4 = () => (
 
                 <dt className="col-sm-4"></dt>
                 <dd className="col-sm-8">
-                    <Button color='link' className="p-0"><i className="fa fa-angle-left mr-1"></i> Change</Button>
+                    <Button color='link' className="p-0"><i className="fa fa-angle-left me-1"></i> Change</Button>
                 </dd>
             </Row>
             <h6 className="my-3">Credit Card</h6>
             <Row tag="dl">
                 <dt className="col-sm-4">Card Name</dt>
-                <dd className="col-sm-8"><i className="fa fa-cc-visa text-primary mr-1"></i> Visa </dd>
+                <dd className="col-sm-8"><i className="fa fa-cc-visa text-primary me-1"></i> Visa </dd>
 
                 <dt className="col-sm-4">Card Number</dt>
                 <dd className="col-sm-8">**** **** **** 6765</dd>
 
                 <dt className="col-sm-4"></dt>
                 <dd className="col-sm-8">
-                    <Button color='link' className="p-0"><i className="fa fa-angle-left mr-1"></i> Change</Button>
+                    <Button color='link' className="p-0"><i className="fa fa-angle-left me-1"></i> Change</Button>
                 </dd>
             </Row>
         </Col>
@@ -573,17 +573,17 @@ export class WizardExample extends React.Component {
                         <div className="d-flex">
                             {
                                 currentStep !== sequence[0] && (
-                                    <Button onClick={() => {this._prevStep()}} color="link" className='mr-3'>
-                                        <i className='fa fa-angle-left mr-2'></i>
+                                    <Button onClick={() => {this._prevStep()}} color="link" className='me-3'>
+                                        <i className='fa fa-angle-left me-2'></i>
                                         Previous
                                     </Button>
                                 )
                             }
                             {
                                 currentStep !== sequence[sequence.length - 1] && (
-                                    <Button color='primary' onClick={() => {this._nextStep()}} className="ml-auto px-4">
+                                    <Button color='primary' onClick={() => {this._nextStep()}} className="ms-auto px-4">
                                         Next
-                                        <i className='fa fa-angle-right ml-2'></i>
+                                        <i className='fa fa-angle-right ms-2'></i>
                                     </Button>
                                 )
                             }

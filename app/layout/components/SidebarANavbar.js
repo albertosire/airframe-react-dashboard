@@ -15,7 +15,7 @@ import { NavbarUser } from './NavbarUser';
 export const SidebarANavbar = () => (
     <Navbar light expand="xs" fluid>
         <Nav navbar>
-            <NavItem className="mr-3">
+            <NavItem className="me-3">
                 <SidebarTrigger/>
             </NavItem>
             <NavItem className="navbar-brand h5 mb-0 d-lg-none">
@@ -24,10 +24,10 @@ export const SidebarANavbar = () => (
                 </Link>
             </NavItem>
         </Nav>
-        <Nav navbar className="ml-auto">
+        <Nav navbar className="ms-auto">
             <NavbarActivityFeed />
-            <NavbarMessages className="ml-2" />
-            <NavbarUser className="ml-2" />
+            <NavbarMessages className="ms-2" />
+            <NavbarUser className="ms-2" />
         </Nav>
     </Navbar>
 );

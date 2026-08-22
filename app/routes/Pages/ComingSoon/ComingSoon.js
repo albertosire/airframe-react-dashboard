@@ -28,15 +28,15 @@ const ComingSoon = () => (
             />
             { /* END Header */}
             <ul className="list-inline my-5 text-center">
-                <li className="list-inline-item text-center mr-2">
+                <li className="list-inline-item text-center me-2">
                     <h2 className="mb-0">16</h2>
                     <div>Days</div>
                 </li>
-                <li className="list-inline-item text-center mr-2">
+                <li className="list-inline-item text-center me-2">
                     <h2 className="mb-0">34</h2>
                     <div>Hours</div>
                 </li>
-                <li className="list-inline-item text-center mr-2">
+                <li className="list-inline-item text-center me-2">
                     <h2 className="mb-0">10</h2>
                     <div>Min</div>
                 </li>
@@ -74,9 +74,9 @@ const ComingSoon = () => (
             { /* START Bottom Links */}
             <div className="d-flex mb-5">
                 <Link to="/" className="text-decoration-none">
-                    <i className="fa fa-angle-left mr-2" /> Back to Home
+                    <i className="fa fa-angle-left me-2" /> Back to Home
                 </Link>
-                <Link to="/" className="ml-auto text-decoration-none">
+                <Link to="/" className="ms-auto text-decoration-none">
                     Contact
                 </Link>
             </div>

@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Container,
   Avatar,
@@ -56,13 +55,13 @@ const Images = () => (
           <small className="text-muted">#1.02</small>
         </h6>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
-          <CardImg className="img-thumbnail mr-2" />
+          <CardImg className="img-thumbnail me-2" />
         </HolderProvider.Icon>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
-          <CardImg className="img-thumbnail mr-2" />
+          <CardImg className="img-thumbnail me-2" />
         </HolderProvider.Icon>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
-          <CardImg className="img-thumbnail mr-2" />
+          <CardImg className="img-thumbnail me-2" />
         </HolderProvider.Icon>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
           <CardImg className="img-thumbnail" />
@@ -76,10 +75,10 @@ const Images = () => (
           <small className="text-muted">#1.03</small>
         </h6>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
-          <CardImg className="rounded float-left" />
+          <CardImg className="rounded float-start" />
         </HolderProvider.Icon>
         <HolderProvider.Icon iconChar="" size={32} width={200} height={200}>
-          <CardImg className="rounded float-right" />
+          <CardImg className="rounded float-end" />
         </HolderProvider.Icon>
       </Col>
       <Col lg={12} className="mb-5">
@@ -94,7 +93,7 @@ const Images = () => (
           Images: Figures
           <small className="text-muted">#1.04</small>
         </h6>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={400} height={400}>
             <CardImg className="figure-img img-fluid rounded" />
           </HolderProvider.Icon>
@@ -106,7 +105,7 @@ const Images = () => (
           <HolderProvider.Icon iconChar="" size={32} width={400} height={400}>
             <CardImg className="figure-img img-fluid rounded" />
           </HolderProvider.Icon>
-          <figcaption className="figure-caption text-right">
+          <figcaption className="figure-caption text-end">
             A caption for the above image.
           </figcaption>
         </figure>
@@ -118,7 +117,7 @@ const Images = () => (
           Images: Styles
           <small className="text-muted">#1.05</small>
         </h6>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded" />
           </HolderProvider.Icon>
@@ -126,7 +125,7 @@ const Images = () => (
             <code>.rounded</code>
           </figcaption>
         </figure>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded-top" />
           </HolderProvider.Icon>
@@ -134,7 +133,7 @@ const Images = () => (
             <code>.rounded-top</code>
           </figcaption>
         </figure>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded-right" />
           </HolderProvider.Icon>
@@ -142,7 +141,7 @@ const Images = () => (
             <code>.rounded-right</code>
           </figcaption>
         </figure>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded-bottom" />
           </HolderProvider.Icon>
@@ -150,7 +149,7 @@ const Images = () => (
             <code>.rounded-bottom</code>
           </figcaption>
         </figure>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded-left" />
           </HolderProvider.Icon>
@@ -158,7 +157,7 @@ const Images = () => (
             <code>.rounded-left</code>
           </figcaption>
         </figure>
-        <figure className="figure mr-2">
+        <figure className="figure me-2">
           <HolderProvider.Icon iconChar="" size={32} width={125} height={125}>
             <CardImg className="rounded-circle" />
           </HolderProvider.Icon>
@@ -192,7 +191,7 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">Default Title</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#2.01</span>
+              <span className="text-muted me-2 ">#2.01</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -201,7 +200,7 @@ const Images = () => (
           <CardBody>
             <CardTitle className="d-flex h6 mb-0">
               <span className="">Icon Right Title</span>
-              <i className="fa fa-info-circle ml-auto"></i>
+              <i className="fa fa-info-circle ms-auto"></i>
             </CardTitle>
           </CardBody>
           <HolderProvider.Icon iconChar="" size={32}>
@@ -209,7 +208,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2">#2.03</span>
+              <span className="text-muted me-2">#2.03</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -225,7 +224,7 @@ const Images = () => (
               <a href="#">Link Title</a>
             </CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#2.02</span>
+              <span className="text-muted me-2 ">#2.02</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -238,11 +237,11 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardTitle className="h6">
-              <i className="fa fa-play-circle mr-2"></i>
+              <i className="fa fa-play-circle me-2"></i>
               Icon Left Title
             </CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#2.03</span>
+              <span className="text-muted me-2 ">#2.03</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -275,7 +274,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.01</span>
+              <span className="text-muted me-2 ">#3.01</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -284,7 +283,7 @@ const Images = () => (
           <CardBody>
             <CardTitle className="d-flex h6 mb-0">
               Icon Right Title
-              <i className="fa fa-info-circle ml-auto"></i>
+              <i className="fa fa-info-circle ms-auto"></i>
             </CardTitle>
           </CardBody>
           <HolderProvider.Icon iconChar="" size={32}>
@@ -292,7 +291,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.04</span>
+              <span className="text-muted me-2 ">#3.04</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -310,7 +309,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.02</span>
+              <span className="text-muted me-2 ">#3.02</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -330,7 +329,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.03</span>
+              <span className="text-muted me-2 ">#3.03</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -340,7 +339,7 @@ const Images = () => (
         <Card className="mb-3">
           <CardBody>
             <CardTitle className="d-flex h6 mb-0">
-              <i className="fa fa-play-circle mr-2"></i>
+              <i className="fa fa-play-circle me-2"></i>
               Icon Left Title
             </CardTitle>
           </CardBody>
@@ -349,7 +348,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.05</span>
+              <span className="text-muted me-2 ">#3.05</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -362,7 +361,7 @@ const Images = () => (
                 type="checkbox"
                 id="checkboxRightTitle"
                 label=""
-                className="ml-auto mb-0"
+                className="ms-auto mb-0"
               />
             </CardTitle>
           </CardBody>
@@ -371,7 +370,7 @@ const Images = () => (
           </HolderProvider.Icon>
           <CardBody>
             <CardText>
-              <span className="text-muted mr-2 ">#3.06</span>
+              <span className="text-muted me-2 ">#3.06</span>
               {faker.lorem.sentences()}
             </CardText>
           </CardBody>
@@ -402,17 +401,17 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#4.01</span>
+              <span className="text-muted me-2 ">#4.01</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
           <CardFooter className="d-flex">
-            <div className="mr-auto">
-              <span className="mr-3">
-                <i className="fa-heart fa mr-1"></i> 9
+            <div className="me-auto">
+              <span className="me-3">
+                <i className="fa-heart fa me-1"></i> 9
               </span>
-              <span className="mr-3">
-                <i className="fa-comment fa mr-1"></i> 37
+              <span className="me-3">
+                <i className="fa-comment fa me-1"></i> 37
               </span>
             </div>
             <span>4 Minutes Ago</span>
@@ -425,16 +424,16 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#4.04</span>
+              <span className="text-muted me-2 ">#4.04</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
           <CardFooter className="d-flex">
             <a href="#">
               Read More
-              <i className="fa fa-angle-right ml-2"></i>
+              <i className="fa fa-angle-right ms-2"></i>
             </a>
-            <div className="align-self-center ml-auto">
+            <div className="align-self-center ms-auto">
               <i className="fa-star-o fa"></i>
             </div>
           </CardFooter>
@@ -448,16 +447,16 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#4.02</span>
+              <span className="text-muted me-2 ">#4.02</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
           <CardFooter className="d-flex">
-            <div className="mr-auto">
-              <i className="fa-heart-o fa mr-1"></i> 9
+            <div className="me-auto">
+              <i className="fa-heart-o fa me-1"></i> 9
             </div>
             <div>
-              <i className="fa-eye fa mr-1"></i> 87
+              <i className="fa-eye fa me-1"></i> 87
             </div>
           </CardFooter>
         </Card>
@@ -468,13 +467,13 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#4.05</span>
+              <span className="text-muted me-2 ">#4.05</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
           <CardFooter className="d-flex">
             <Media>
-              <Media left middle className="mr-3">
+              <Media left middle className="me-3">
                 <Avatar.Image
                   size="md"
                   src={randomAvatar()}
@@ -499,7 +498,7 @@ const Images = () => (
                 <p className="mb-0">2 Days Ago</p>
               </Media>
             </Media>
-            <div className="align-self-center ml-auto">
+            <div className="align-self-center ms-auto">
               <i className="fa-heart-o fa"></i>
             </div>
           </CardFooter>
@@ -513,14 +512,14 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2 ">#4.03</span>
+              <span className="text-muted me-2 ">#4.03</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
           <CardFooter className="d-flex">
-            <Button color="primary mr-auto">
+            <Button color="primary me-auto">
               Read More
-              <i className="fa fa-angle-right ml-2"></i>
+              <i className="fa fa-angle-right ms-2"></i>
             </Button>{" "}
             <div className="align-self-center">16 Min. Ago</div>
           </CardFooter>
@@ -532,7 +531,7 @@ const Images = () => (
           <CardBody>
             <CardTitle className="h6">{faker.lorem.sentence()}</CardTitle>
             <CardText>
-              <span className="text-muted mr-2">#4.06</span>
+              <span className="text-muted me-2">#4.06</span>
               {faker.lorem.paragraph()}
             </CardText>
           </CardBody>
@@ -541,7 +540,7 @@ const Images = () => (
               <Avatar.Image
                 size="md"
                 src={randomAvatar()}
-                className="mr-2"
+                className="me-2"
                 addOns={[
                   <AvatarAddOn.Icon
                     className="fa fa-circle"
@@ -558,7 +557,7 @@ const Images = () => (
               <Avatar.Image
                 size="md"
                 src={randomAvatar()}
-                className="mr-2"
+                className="me-2"
                 addOns={[
                   <AvatarAddOn.Icon
                     className="fa fa-circle"
@@ -575,7 +574,7 @@ const Images = () => (
               <Avatar.Image
                 size="md"
                 src={randomAvatar()}
-                className="mr-2"
+                className="me-2"
                 addOns={[
                   <AvatarAddOn.Icon
                     className="fa fa-circle"
@@ -590,7 +589,7 @@ const Images = () => (
                 ]}
               />
             </div>
-            <div className="align-self-center ml-auto">
+            <div className="align-self-center ms-auto">
               <i className="fa-heart-o fa"></i>
             </div>
           </CardFooter>
@@ -626,18 +625,18 @@ const Images = () => (
               <h6 className="mb-2">
                 <a href="#">
                   <span>{faker.commerce.productName()}</span>
-                  <span className="text-muted ml-2">#5.01</span>
+                  <span className="text-muted ms-2">#5.01</span>
                 </a>
               </h6>
               <p className="card-text text-dark">{faker.lorem.sentence()}</p>
             </span>
             <div className="d-flex">
-              <div className="ml-auto">
-                <span className="mr-3">
-                  <i className="fa-heart fa mr-1"></i> 34
+              <div className="ms-auto">
+                <span className="me-3">
+                  <i className="fa-heart fa me-1"></i> 34
                 </span>
-                <span className="mr-3">
-                  <i className="fa-comment fa mr-1"></i> 8
+                <span className="me-3">
+                  <i className="fa-comment fa me-1"></i> 8
                 </span>
               </div>
               <span>16 Minutes Ago</span>
@@ -661,7 +660,7 @@ const Images = () => (
               <h6 className="mb-2">
                 <a href="#">
                   <span>{faker.commerce.productName()}</span>
-                  <span className="text-muted ml-2">#5.02</span>
+                  <span className="text-muted ms-2">#5.02</span>
                 </a>
               </h6>
               <p className="card-text mb-3">{faker.lorem.sentence()}</p>
@@ -669,14 +668,14 @@ const Images = () => (
           </CardImgOverlay>
           <CardFooter className="d-flex">
             <div>
-              <span className="mr-3">
-                <i className="fa-heart fa mr-1"></i> 34
+              <span className="me-3">
+                <i className="fa-heart fa me-1"></i> 34
               </span>
-              <span className="mr-3">
-                <i className="fa-comment fa mr-1"></i> 8
+              <span className="me-3">
+                <i className="fa-comment fa me-1"></i> 8
               </span>
             </div>
-            <span className="ml-auto">4 Minutes Ago</span>
+            <span className="ms-auto">4 Minutes Ago</span>
           </CardFooter>
         </Card>
       </Col>

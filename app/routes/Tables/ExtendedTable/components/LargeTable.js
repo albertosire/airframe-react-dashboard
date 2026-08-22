@@ -1,8 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import BootstrapTable from "react-bootstrap-table-next";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../../data/placeholders';
 import classes from "./LargeTable.scss";
 import { Card, CardHeader } from "./../../../../components";
 

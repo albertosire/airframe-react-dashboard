@@ -25,7 +25,7 @@ const ProjectsList = () => (
                         <th className="align-middle bt-0">Status</th>
                         <th className="align-middle bt-0">Tasks Completed</th>
                         <th className="align-middle bt-0">People</th>
-                        <th className="align-middle bt-0 text-right">
+                        <th className="align-middle bt-0 text-end">
                             Actions
                         </th>
                     </tr>

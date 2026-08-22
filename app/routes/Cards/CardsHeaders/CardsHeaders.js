@@ -92,7 +92,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Default Small Text
-                                <Badge className="ml-2" color="primary">
+                                <Badge className="ms-2" color="primary">
                                     3
                                 </Badge>
                             </CardTitle>
@@ -107,7 +107,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="d-flex">
                                 Default Small Text
-                                <Badge className="ml-2 ml-auto" color="primary">
+                                <Badge className="ms-2 ms-auto" color="primary">
                                     Updated
                                 </Badge>
                             </CardTitle>
@@ -121,7 +121,7 @@ const Cards = () => (
                     <Card className="mb-3">
                         <CardBody>
                             <CardTitle tag="h6">
-                                <i className="fa fa-gear mr-2"></i> Header Left Icon
+                                <i className="fa fa-gear me-2"></i> Header Left Icon
                             </CardTitle>
                             <CardTextDemo 
                                 cardNo="1.05"
@@ -136,7 +136,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header Right Icon 
-                                <i className="fa fa-gear ml-2"></i>
+                                <i className="fa fa-gear ms-2"></i>
                             </CardTitle>
                             <CardTextDemo 
                                 cardNo="1.06"
@@ -149,7 +149,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="d-flex">
                                 Header Right Icon 
-                                <i className="fa fa-gear ml-auto"></i>
+                                <i className="fa fa-gear ms-auto"></i>
                             </CardTitle>
                             <CardTextDemo 
                                 cardNo="1.07"
@@ -190,7 +190,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="d-flex">
                                 Header Right Side Pill
-                                <Badge className="ml-2 ml-auto" color="primary" pill>
+                                <Badge className="ms-2 ms-auto" color="primary" pill>
                                     New
                                 </Badge>
                             </CardTitle>
@@ -205,7 +205,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header Left Pill
-                                <Badge className="ml-2" color="primary" pill>
+                                <Badge className="ms-2" color="primary" pill>
                                     4
                                 </Badge>
                             </CardTitle>
@@ -275,12 +275,12 @@ const Cards = () => (
                                 <Nav tabs className="card-header-tabs">
                                     <NavItem>
                                         <UncontrolledTabs.NavLink tabId="users202a">
-                                            <i className="fa fa-user mr-2"></i> Users
+                                            <i className="fa fa-user me-2"></i> Users
                                         </UncontrolledTabs.NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <UncontrolledTabs.NavLink tabId="settings202b">
-                                            <i className="fa fa-gear mr-2"></i> Settings
+                                            <i className="fa fa-gear me-2"></i> Settings
                                         </UncontrolledTabs.NavLink>
                                     </NavItem>
                                 </Nav>
@@ -377,12 +377,12 @@ const Cards = () => (
                                 <Nav pills className="mb-3">
                                     <NavItem>
                                         <UncontrolledTabs.NavLink tabId="users205a">
-                                            <i className="fa fa-user mr-2"></i> Users
+                                            <i className="fa fa-user me-2"></i> Users
                                         </UncontrolledTabs.NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <UncontrolledTabs.NavLink tabId="settings205b">
-                                            <i className="fa fa-gear mr-2"></i> Settings
+                                            <i className="fa fa-gear me-2"></i> Settings
                                         </UncontrolledTabs.NavLink>
                                     </NavItem>
                                 </Nav>
@@ -460,7 +460,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Pagination
                                 </CardTitle>
-                                <Pagination size="sm" aria-label="Page navigation example" className="ml-auto">                                    <PaginationItem>
+                                <Pagination size="sm" aria-label="Page navigation example" className="ms-auto">                                    <PaginationItem>
                                     <PaginationLink previous href="#">
                                         <i className="fa fa-angle-left"></i>
                                     </PaginationLink>
@@ -500,14 +500,14 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Group
                                 </CardTitle>
-                                <ButtonGroup className="ml-auto" size="sm">
+                                <ButtonGroup className="ms-auto" size="sm">
                                     <Button outline>
-                                        <i className="fa fa-angle-left mr-2"></i>
+                                        <i className="fa fa-angle-left me-2"></i>
                                         Prev
                                     </Button>
                                     <Button outline>
                                         Next
-                                        <i className="fa fa-angle-right ml-2"></i>
+                                        <i className="fa fa-angle-right ms-2"></i>
                                     </Button>
                                 </ButtonGroup>
                             </div>
@@ -524,7 +524,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Buttons Left
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-2">
+                                <Button outline size="sm" className="ms-2">
                                     Add
                                 </Button>
                             </div>
@@ -541,7 +541,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Right
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-auto">
+                                <Button outline size="sm" className="ms-auto">
                                     Button
                                 </Button>
                             </div>
@@ -558,7 +558,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Right
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-auto">
+                                <Button outline size="sm" className="ms-auto">
                                     <i className="fa fa-gear"></i>
                                 </Button>
                             </div>
@@ -575,7 +575,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Link Right Icon
                                 </CardTitle>
-                                <Button color="link" size="sm" className="ml-auto pt-0">
+                                <Button color="link" size="sm" className="ms-auto pt-0">
                                     <i className="fa fa-pencil"></i>
                                 </Button>
                             </div>
@@ -592,7 +592,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Vertical Button Group
                                 </CardTitle>
-                                <ButtonGroup vertical size="sm" className="ml-auto">
+                                <ButtonGroup vertical size="sm" className="ms-auto">
                                     <Button outline>
                                         <i className="fa fa-angle-up"></i>
                                     </Button>
@@ -614,7 +614,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Checkbox
                                 </CardTitle>
-                                <ButtonGroup className="ml-auto" size="sm">
+                                <ButtonGroup className="ms-auto" size="sm">
                                     <Button outline>
                                         All
                                     </Button>
@@ -639,7 +639,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Radio
                                 </CardTitle>
-                                <ButtonGroup className="ml-auto" size="sm">
+                                <ButtonGroup className="ms-auto" size="sm">
                                     <Button outline>
                                         <i className="fa fa-star-o"></i>
                                     </Button>
@@ -664,7 +664,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Buttons Nesting
                                 </CardTitle>
-                                <ButtonGroup className="ml-auto" size="sm">
+                                <ButtonGroup className="ms-auto" size="sm">
                                     <Button outline>
                                         Prev
                                     </Button>
@@ -700,8 +700,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Right Icon-Left
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-auto">
-                                    <i className="fa fa-plus mr-2"></i>Button
+                                <Button outline size="sm" className="ms-auto">
+                                    <i className="fa fa-plus me-2"></i>Button
                                 </Button>
                             </div>
                             <CardTextDemo 
@@ -717,8 +717,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Right Icon-Right
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-auto">
-                                    Button<i className="fa fa-copy ml-2"></i>
+                                <Button outline size="sm" className="ms-auto">
+                                    Button<i className="fa fa-copy ms-2"></i>
                                 </Button>
                             </div>
                             <CardTextDemo 
@@ -734,8 +734,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Right Toolbar
                                 </CardTitle>
-                                <ButtonToolbar className="ml-auto">
-                                    <Button color="primary" size="sm" className="mr-2">
+                                <ButtonToolbar className="ms-auto">
+                                    <Button color="primary" size="sm" className="me-2">
                                         Save
                                     </Button>
                                     <Button color="primary" outline size="sm">
@@ -756,8 +756,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Right Toolbar Icons Only
                                 </CardTitle>
-                                <ButtonToolbar className="ml-auto">
-                                    <Button color="primary" size="sm" className="mr-2">
+                                <ButtonToolbar className="ms-auto">
+                                    <Button color="primary" size="sm" className="me-2">
                                         <i className="fa fa-fw fa-check"></i>
                                     </Button>
                                     <Button color="primary" outline size="sm">
@@ -778,7 +778,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Button Icon-Left
                                 </CardTitle>
-                                <Button outline size="sm" className="ml-3">
+                                <Button outline size="sm" className="ms-3">
                                     <i className="fa fa-fw fa-gear"></i>
                                 </Button>
                             </div>
@@ -795,7 +795,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Button Left Icon-Left
                                 </CardTitle>
-                                <Button color="link" size="sm" className="ml-3">
+                                <Button color="link" size="sm" className="ms-3">
                                     Link
                                 </Button>
                             </div>
@@ -812,23 +812,23 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Dropdown
                                 </CardTitle>
-                                <UncontrolledButtonDropdown className="ml-auto">
+                                <UncontrolledButtonDropdown className="ms-auto">
                                     <DropdownToggle size="sm" outline caret>
                                        Menu
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem header>Menu</DropdownItem>
                                         <DropdownItem>
-                                            <i className="fa fa-user fa-fw mr-2"></i>
+                                            <i className="fa fa-user fa-fw me-2"></i>
                                             Profile
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <i className="fa fa-gear fa-fw mr-2"></i>
+                                            <i className="fa fa-gear fa-fw me-2"></i>
                                             Settings
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
-                                            <i className="fa fa-sign-out fa-fw mr-2"></i>
+                                            <i className="fa fa-sign-out fa-fw me-2"></i>
                                             Log Out
                                         </DropdownItem>
                                     </DropdownMenu>
@@ -847,23 +847,23 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Dropdown Icon
                                 </CardTitle>
-                                <UncontrolledButtonDropdown className="ml-auto">
+                                <UncontrolledButtonDropdown className="ms-auto">
                                     <DropdownToggle size="sm" outline caret>
-                                        <i className="fa fa-bars mr-1"></i>
+                                        <i className="fa fa-bars me-1"></i>
                                     </DropdownToggle>
                                     <DropdownMenu right>
                                         <DropdownItem header>Menu</DropdownItem>
                                         <DropdownItem>
-                                            <i className="fa fa-user fa-fw mr-2"></i>
+                                            <i className="fa fa-user fa-fw me-2"></i>
                                             Profile
                                         </DropdownItem>
                                         <DropdownItem>
-                                            <i className="fa fa-gear fa-fw mr-2"></i>
+                                            <i className="fa fa-gear fa-fw me-2"></i>
                                             Settings
                                         </DropdownItem>
                                         <DropdownItem divider />
                                         <DropdownItem>
-                                            <i className="fa fa-sign-out fa-fw mr-2"></i>
+                                            <i className="fa fa-sign-out fa-fw me-2"></i>
                                             Log Out
                                         </DropdownItem>
                                     </DropdownMenu>
@@ -882,8 +882,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Button Toolbar
                                 </CardTitle>
-                                <ButtonToolbar className="ml-auto">
-                                    <ButtonGroup size="sm" className="mr-2">
+                                <ButtonToolbar className="ms-auto">
+                                    <ButtonGroup size="sm" className="me-2">
                                         <Button outline>
                                             <i className="fa fa-fw fa-bold"></i>
                                         </Button>
@@ -936,7 +936,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Checkbox
                                 </CardTitle>
-                                <CustomInput type="checkbox" className="ml-auto" id="rightCheckbox" label="On/Off" />
+                                <CustomInput type="checkbox" className="ms-auto" id="rightCheckbox" label="On/Off" />
                             </div>
                             <CardTextDemo 
                                 cardNo="4.01"
@@ -951,8 +951,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Checkbox Inline
                                 </CardTitle>
-                                <div className="ml-auto d-flex">
-                                    <CustomInput type="checkbox" className="mr-3" id="rightCheckbox1" label="1" />
+                                <div className="ms-auto d-flex">
+                                    <CustomInput type="checkbox" className="me-3" id="rightCheckbox1" label="1" />
                                     <CustomInput type="checkbox" id="rightCheckbox2" label="2" />
                                 </div>
                             </div>
@@ -969,7 +969,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Checkbox Empty
                                 </CardTitle>
-                                <CustomInput type="checkbox" className="ml-auto" id="rightCheckboxEmpty" label="" />
+                                <CustomInput type="checkbox" className="ms-auto" id="rightCheckboxEmpty" label="" />
                             </div>
                             <CardTextDemo 
                                 cardNo="4.03"
@@ -982,7 +982,7 @@ const Cards = () => (
                         <CardBody>
                             <div className="d-flex">
                                 <CardTitle tag="h6">
-                                    <CustomInput type="checkbox" className="ml-auto" id="leftCheckbox" label="Left Checkbox" inline />
+                                    <CustomInput type="checkbox" className="ms-auto" id="leftCheckbox" label="Left Checkbox" inline />
                                 </CardTitle>
                             </div>
                             <CardTextDemo 
@@ -998,7 +998,7 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Radio
                                 </CardTitle>
-                                <CustomInput type="radio" className="ml-auto" id="rightRadio" label="Select" />
+                                <CustomInput type="radio" className="ms-auto" id="rightRadio" label="Select" />
                             </div>
                             <CardTextDemo 
                                 cardNo="4.05"
@@ -1011,7 +1011,7 @@ const Cards = () => (
                         <CardBody>
                             <div className="d-flex">
                                 <CardTitle tag="h6">
-                                    <CustomInput type="radio" className="ml-auto" id="leftRadio" label="Left Radio" />
+                                    <CustomInput type="radio" className="ms-auto" id="leftRadio" label="Left Radio" />
                                 </CardTitle>
                             </div>
                             <CardTextDemo 
@@ -1027,8 +1027,8 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Radio Inline
                                 </CardTitle>
-                                <div className="ml-auto d-flex">
-                                    <CustomInput type="radio" className="mr-3" name="rightRadioInline" id="rightRadioYes" label="Yes" />
+                                <div className="ms-auto d-flex">
+                                    <CustomInput type="radio" className="me-3" name="rightRadioInline" id="rightRadioYes" label="Yes" />
                                     <CustomInput type="radio" name="rightRadioInline" id="rightRadioNo" label="No" />
                                 </div>
                             </div>
@@ -1045,9 +1045,9 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="flex-grow-1">
                                     Right Custom Select
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
-                                        <CustomInput type="select" id="exampleCustomSelect" name="customSelect" bsSize="sm" className="ml-auto">
+                                        <CustomInput type="select" id="exampleCustomSelect" name="customSelect" bsSize="sm" className="ms-auto">
                                             <option value="">Select...</option>
                                             <option>One</option>
                                             <option>Two</option>
@@ -1071,9 +1071,9 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Input
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
-                                        <Input type="text" bsSize="sm" name="text" id="text" className="ml-auto" placeholder="Search..." />
+                                        <Input type="text" bsSize="sm" name="text" id="text" className="ms-auto" placeholder="Search..." />
                                     </FormGroup>
                                 </Form>
                             </div>
@@ -1090,11 +1090,11 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Input Addon
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="Enter Price..." />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="Enter Price..." />
                                         </InputGroup>
                                     </FormGroup>
                                 </Form>
@@ -1112,13 +1112,13 @@ const Cards = () => (
                                 <CardTitle tag="h6">
                                     Right Input Addon
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">
                                                 <i className="fa fa-fw fa-user"></i>
                                             </InputGroupAddon>
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="Enter Nick..." />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="Enter Nick..." />
                                         </InputGroup>
                                     </FormGroup>
                                 </Form>
@@ -1136,14 +1136,14 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Input Addon
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">
-                                                <i className="fa fa-fw fa-envelope-o mr-1"></i>
+                                                <i className="fa fa-fw fa-envelope-o me-1"></i>
                                                 Email
                                             </InputGroupAddon>
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="Enter..." />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="Enter..." />
                                         </InputGroup>
                                     </FormGroup>
                                 </Form>
@@ -1161,7 +1161,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Radio Addon
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">
@@ -1185,7 +1185,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Checkbox Addon
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">
@@ -1209,10 +1209,10 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Input Button
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="Enter..." />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="Enter..." />
                                             <InputGroupAddon addonType="append">
                                                 <Button color="primary">
                                                     Search
@@ -1235,10 +1235,10 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Input Button
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="Enter..." />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="Enter..." />
                                             <InputGroupAddon addonType="append">
                                                 <Button color="primary">
                                                     <i className="fa fa-fw fa-search"></i>
@@ -1261,7 +1261,7 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Input Button
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <Input placeholder="Left Folders..." id="rightSegmentedDropdown" />
@@ -1274,23 +1274,23 @@ const Cards = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1314,13 +1314,13 @@ const Cards = () => (
                                 <CardTitle tag="h6" className="mb-0 align-self-center">
                                     Right Addon & Button
                                 </CardTitle>
-                                <Form inline className="ml-auto">
+                                <Form inline className="ms-auto">
                                     <FormGroup>
                                         <InputGroup size="sm">
                                             <InputGroupAddon addonType="prepend">
                                                 $
                                             </InputGroupAddon>
-                                            <Input type="text" name="text" id="text" className="ml-auto" placeholder="0.00" />
+                                            <Input type="text" name="text" id="text" className="ms-auto" placeholder="0.00" />
                                             <InputGroupAddon addonType="append">
                                                 <Button color="primary">
                                                     Add
@@ -1363,7 +1363,7 @@ const Cards = () => (
                                         Right Progressbar
                                     </CardTitle>
                                 </Col>
-                                <Col lg={ 6 } className="text-right">
+                                <Col lg={ 6 } className="text-end">
                                     <Progress value={25}>25%</Progress>
                                 </Col>
                             </Row>

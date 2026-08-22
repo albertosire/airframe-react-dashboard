@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import _ from "lodash";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import uid from "uuid/v4";
-import { faker } from "@faker-js/faker";
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import { v4 as uid } from 'uuid';
+import { placeholder as faker } from '../../../../data/placeholders';
 import classNames from "classnames";
 import {
   Card,
@@ -62,10 +62,10 @@ const VerticalList = React.memo((props) => {
                   )}`}
                 >
                   <Media>
-                    <Media left className="align-self-center pr-3">
+                    <Media left className="align-self-center pe-3">
                       <i className="fa fa-ellipsis-v text-muted" />
                     </Media>
-                    <Media left middle className="mr-4 align-self-center">
+                    <Media left middle className="me-4 align-self-center">
                       <Avatar.Image
                         size="md"
                         className="d-block"
@@ -130,7 +130,7 @@ class Column extends React.Component {
             <Card className="h-100">
               <CardHeader {...provided.dragHandleProps} className="b-0 bg-none">
                 <CardTitle className="h6 mb-0">
-                  <i className="fa fa-ellipsis-v mr-3 text-muted" />
+                  <i className="fa fa-ellipsis-v me-3 text-muted" />
                   {title}
                 </CardTitle>
               </CardHeader>

@@ -12,7 +12,7 @@ export const Example = ({ title, exampleInput, children, no }) => (
         <Col sm={ 12 }>
             <h6>
                 { title }
-                <span className="small ml-1 text-muted">
+                <span className="small ms-1 text-muted">
                     #{ no }
                 </span>
             </h6>

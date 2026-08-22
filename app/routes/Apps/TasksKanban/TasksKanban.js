@@ -44,17 +44,17 @@ const TasksKanban = () => (
                                 <div className="mb-4">
                                     <CardTitle tag="h6">
                                         To-Do
-                                        <Badge pill color="secondary" className="ml-2">
+                                        <Badge pill color="secondary" className="ms-2">
                                             3
                                         </Badge>
                                     </CardTitle>
                                     <span className="small d-flex">
                                         16 Jun 2016 - 23 Aug 2016
-                                        <span className="ml-auto">
-                                            <a href="#" className="mr-2" id="TooltipSettings">
+                                        <span className="ms-auto">
+                                            <a href="#" className="me-2" id="TooltipSettings">
                                                 <i className="fa fa-gear"></i>
                                             </a>
-                                            <a href="#" className="mr-2" id="TooltipCollapse">
+                                            <a href="#" className="me-2" id="TooltipCollapse">
                                                 <i className="fa fa-angle-down"></i>
                                             </a>
                                             <a href="#" id="TooltipAddNew">
@@ -84,7 +84,7 @@ const TasksKanban = () => (
                             { /* START Card Footer */}
                             <CardFooter className="text-center">
                                 <a href="#">
-                                    <i className="fa fa-plus text-success mr-2"></i>
+                                    <i className="fa fa-plus text-success me-2"></i>
                                     Add Task
                                 </a>
                             </CardFooter>
@@ -98,17 +98,17 @@ const TasksKanban = () => (
                                 <div className="mb-4">
                                     <CardTitle tag="h6">
                                         Doing
-                                        <Badge pill color="secondary" className="ml-2">
+                                        <Badge pill color="secondary" className="ms-2">
                                             2
                                         </Badge>
                                     </CardTitle>
                                     <span className="small d-flex">
                                         16 Jun 2016 - 23 Aug 2016
-                                        <span className="ml-auto">
-                                            <a href="#" className="mr-2" id="TooltipSettings">
+                                        <span className="ms-auto">
+                                            <a href="#" className="me-2" id="TooltipSettings">
                                                 <i className="fa fa-gear"></i>
                                             </a>
-                                            <a href="#" className="mr-2" id="TooltipCollapse">
+                                            <a href="#" className="me-2" id="TooltipCollapse">
                                                 <i className="fa fa-angle-down"></i>
                                             </a>
                                             <a href="#" id="TooltipAddNew">
@@ -137,7 +137,7 @@ const TasksKanban = () => (
                             { /* START Card Footer */}
                             <CardFooter className="text-center">
                                 <a href="#">
-                                    <i className="fa fa-plus text-success mr-2"></i>
+                                    <i className="fa fa-plus text-success me-2"></i>
                                     Add Task
                                 </a>
                             </CardFooter>
@@ -151,17 +151,17 @@ const TasksKanban = () => (
                                 <div className="mb-4">
                                     <CardTitle tag="h6">
                                         Done
-                                        <Badge pill color="secondary" className="ml-2">
+                                        <Badge pill color="secondary" className="ms-2">
                                             1
                                         </Badge>
                                     </CardTitle>
                                     <span className="small d-flex">
                                         16 Jun 2016 - 23 Aug 2016
-                                        <span className="ml-auto">
-                                            <a href="#" className="mr-2" id="TooltipSettings">
+                                        <span className="ms-auto">
+                                            <a href="#" className="me-2" id="TooltipSettings">
                                                 <i className="fa fa-gear"></i>
                                             </a>
-                                            <a href="#" className="mr-2" id="TooltipCollapse">
+                                            <a href="#" className="me-2" id="TooltipCollapse">
                                                 <i className="fa fa-angle-down"></i>
                                             </a>
                                             <a href="#" id="TooltipAddNew">
@@ -187,7 +187,7 @@ const TasksKanban = () => (
                             { /* START Card Footer */}
                             <CardFooter className="text-center">
                                 <a href="#">
-                                    <i className="fa fa-plus text-success mr-2"></i>
+                                    <i className="fa fa-plus text-success me-2"></i>
                                     Add Task
                                 </a>
                             </CardFooter>
@@ -198,7 +198,7 @@ const TasksKanban = () => (
                         <Card type="border-dash">
                             <CardBody className="d-flex align-items-center justify-content-center">
                                 <a href="#" className="py-5">
-                                    <i className="fa fa-plus text-success mr-2"></i>
+                                    <i className="fa fa-plus text-success me-2"></i>
                                     Add New Column
                                 </a>
                             </CardBody>

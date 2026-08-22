@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 import { Link } from "react-router-dom";
 
@@ -72,28 +72,28 @@ const TrTableProjectsList = () => (
         <td className="align-middle">
           <Avatar.Image size="md" src={randomAvatar()} />
         </td>
-        <td className="align-middle text-right">
+        <td className="align-middle text-end">
           <UncontrolledButtonDropdown>
             <DropdownToggle color="link" outline>
               <i className="fa fa-gear" />
-              <i className="fa fa-angle-down ml-2" />
+              <i className="fa fa-angle-down ms-2" />
             </DropdownToggle>
             <DropdownMenu right>
               <DropdownItem>
-                <i className="fa fa-fw fa-folder-open mr-2"></i>
+                <i className="fa fa-fw fa-folder-open me-2"></i>
                 View
               </DropdownItem>
               <DropdownItem>
-                <i className="fa fa-fw fa-ticket mr-2"></i>
+                <i className="fa fa-fw fa-ticket me-2"></i>
                 Add Task
               </DropdownItem>
               <DropdownItem>
-                <i className="fa fa-fw fa-paperclip mr-2"></i>
+                <i className="fa fa-fw fa-paperclip me-2"></i>
                 Add Files
               </DropdownItem>
               <DropdownItem divider />
               <DropdownItem>
-                <i className="fa fa-fw fa-trash mr-2"></i>
+                <i className="fa fa-fw fa-trash me-2"></i>
                 Delete
               </DropdownItem>
             </DropdownMenu>

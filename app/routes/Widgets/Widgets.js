@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../data/placeholders';
 import {
   Container,
   Row,
@@ -29,7 +28,6 @@ import { HeaderDemo } from "../components/HeaderDemo";
 import { TasksCardGrid } from "../components/Tasks/TasksCardGrid";
 import { ProfileOverviewCard } from "../components/Profile/ProfileOverviewCard";
 import { GalleryCard } from "../components/Gallery/GalleryCard";
-import { UsersResultsCard } from "../components/SearchResults/UsersResultsCard";
 import { ImagesResultsCard } from "../components/SearchResults/ImagesResultsCard";
 import { Attachment } from "../components/Attachment";
 import { Comment } from "../components/Comment";
@@ -160,7 +158,6 @@ export const Widgets = () => (
     <CardColumns>
       <TasksCardGrid />
       <GalleryCard />
-      <UsersResultsCard />
       <ImagesResultsCard />
     </CardColumns>
     {/* START Section 2 */}
@@ -190,7 +187,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-0">
               Attachments
-              <span className="small ml-1 text-muted">#3.01</span>
+              <span className="small ms-1 text-muted">#3.01</span>
             </CardTitle>
           </CardBody>
           <ListGroup flush>
@@ -229,7 +226,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-3">
               Chat
-              <span className="small ml-1 text-muted">#3.03</span>
+              <span className="small ms-1 text-muted">#3.03</span>
             </CardTitle>
             <ChatLeft />
             <ChatRight />
@@ -245,7 +242,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-0">
               Messages
-              <span className="small ml-1 text-muted">#3.05</span>
+              <span className="small ms-1 text-muted">#3.05</span>
             </CardTitle>
           </CardBody>
           <ListGroup flush className="mb-4">
@@ -281,7 +278,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-3">
               Projects
-              <span className="small ml-1 text-muted">#3.07</span>
+              <span className="small ms-1 text-muted">#3.07</span>
             </CardTitle>
             <InputGroup>
               <Input placeholder="Search Projects..." />
@@ -345,7 +342,7 @@ export const Widgets = () => (
               className="text-center"
             >
               View All Projects
-              <i className="fa fa-angle-right ml-2"></i>
+              <i className="fa fa-angle-right ms-2"></i>
             </ListGroupItem>
           </ListGroup>
         </Card>
@@ -357,7 +354,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-4">
               Comments
-              <span className="small ml-1 text-muted">#3.02</span>
+              <span className="small ms-1 text-muted">#3.02</span>
             </CardTitle>
             <Comment />
             <Comment />
@@ -373,7 +370,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-0">
               Activity
-              <span className="small ml-1 text-muted">#3.04</span>
+              <span className="small ms-1 text-muted">#3.04</span>
             </CardTitle>
           </CardBody>
           <ListGroup flush className="mb-4">
@@ -417,7 +414,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-3">
               Tasks
-              <span className="small ml-1 text-muted">#3.06</span>
+              <span className="small ms-1 text-muted">#3.06</span>
             </CardTitle>
             <InputGroup>
               <Input placeholder="Search Tasks..." />
@@ -453,7 +450,7 @@ export const Widgets = () => (
               className="text-center"
             >
               View All Tasks
-              <i className="fa fa-angle-right ml-2"></i>
+              <i className="fa fa-angle-right ms-2"></i>
             </ListGroupItem>
           </ListGroup>
         </Card>
@@ -506,7 +503,7 @@ export const Widgets = () => (
               className="text-center"
             >
               Timeline Details
-              <i className="fa fa-angle-right ml-2"></i>
+              <i className="fa fa-angle-right ms-2"></i>
             </ListGroupItem>
           </ListGroup>
         </Card>
@@ -540,7 +537,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-4">
               Sessions by Device Type
-              <span className="small ml-1 text-muted">#4.01</span>
+              <span className="small ms-1 text-muted">#4.01</span>
             </CardTitle>
             <Row>
               <Col sm={4}>
@@ -576,7 +573,7 @@ export const Widgets = () => (
             </Progress>
           </CardBody>
           <CardFooter className="small">
-            <i className="fa fa-fw fa-info-circle mr-2"></i>
+            <i className="fa fa-fw fa-info-circle me-2"></i>
             How do your users (visitors), sessions (visits) and pageviews
             metrics for <abbr title="attribute">www.webkom.com</abbr> compare to
             your targets over the last 30 days?
@@ -588,7 +585,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-0">
               Website Performance
-              <span className="small ml-1 text-muted">#4.03</span>
+              <span className="small ms-1 text-muted">#4.03</span>
             </CardTitle>
           </CardBody>
           <ListGroup flush>
@@ -628,7 +625,7 @@ export const Widgets = () => (
             </ListGroupItem>
           </ListGroup>
           <CardFooter className="small">
-            <i className="fa fa-fw fa-info-circle mr-2"></i>
+            <i className="fa fa-fw fa-info-circle me-2"></i>
             How do your users (visitors), sessions (visits) and pageviews
             metrics for <abbr title="attribute">www.webkom.com</abbr> compare to
             your targets over the last 30 days?
@@ -641,9 +638,9 @@ export const Widgets = () => (
             <div className="d-flex mb-4">
               <CardTitle tag="h6">
                 Spend
-                <span className="small ml-1">#4.05</span>
+                <span className="small ms-1">#4.05</span>
               </CardTitle>
-              <span className="ml-auto text-right">
+              <span className="ms-auto text-end">
                 Dec 22, 2016 to
                 <br />
                 Dec 31, 2016 (prev.)
@@ -652,7 +649,7 @@ export const Widgets = () => (
             <div className="text-center mb-4">
               <h2>$2,890.12</h2>
               <div className="mb-1 text-success">
-                <i className="fa mr-1 fa-caret-up"></i>
+                <i className="fa me-1 fa-caret-up"></i>
                 23.34%
               </div>
               <div>vs {faker.finance.amount()} (prev.)</div>
@@ -670,7 +667,7 @@ export const Widgets = () => (
           <CardBody>
             <CardTitle tag="h6" className="mb-3">
               Metrics vs Targets
-              <span className="small ml-1 text-muted">#4.02</span>
+              <span className="small ms-1 text-muted">#4.02</span>
             </CardTitle>
             <MetricVsTarget
               title="Users"
@@ -680,7 +677,7 @@ export const Widgets = () => (
             />
           </CardBody>
           <CardFooter className="small">
-            <i className="fa fa-fw fa-info-circle mr-2"></i>
+            <i className="fa fa-fw fa-info-circle me-2"></i>
             How do your users (visitors), sessions (visits) and pageviews
             metrics for <abbr title="attribute">www.webkom.com</abbr> compare to
             your targets over the last 30 days?
@@ -694,16 +691,16 @@ export const Widgets = () => (
               <div>
                 <h6 className="mb-0">
                   How did my organic traffic perform?
-                  <span className="small ml-1 text-muted">#4.04</span>
+                  <span className="small ms-1 text-muted">#4.04</span>
                 </h6>
                 <span>Dec 22, 2016 to Dec 31, 2016 (prev.)</span>
               </div>
-              <span className="ml-auto text-right">
+              <span className="ms-auto text-end">
                 Goal:
-                <UncontrolledButtonDropdown className="ml-2">
+                <UncontrolledButtonDropdown className="ms-2">
                   <DropdownToggle color="link" className="text-decoration-none">
                     All
-                    <i className="fa fa-angle-down ml-2" />
+                    <i className="fa fa-angle-down ms-2" />
                   </DropdownToggle>
                   <DropdownMenu right>
                     <DropdownItem header>Select Goal:</DropdownItem>
@@ -719,14 +716,14 @@ export const Widgets = () => (
               <h6>Organics Sessons</h6>
               <h2>46,982</h2>
               <div className="mb-1 text-success">
-                <i className="fa mr-1 fa-caret-up"></i>
+                <i className="fa me-1 fa-caret-up"></i>
                 23.34% <span> vs {faker.finance.amount()} (prev.)</span>
               </div>
             </div>
             <SimpleLineChart />
           </CardBody>
           <CardFooter className="small">
-            <i className="fa fa-fw fa-info-circle mr-2"></i>
+            <i className="fa fa-fw fa-info-circle me-2"></i>
             How do your users (visitors), sessions (visits) and pageviews
             metrics for <abbr title="attribute">www.webkom.com</abbr> compare to
             your targets over the last 30 days?

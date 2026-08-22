@@ -37,7 +37,7 @@ export class DragAndDropElements extends React.Component {
                             className="mb-5 mt-4"
                         />
                     </div>
-                    <Button onClick={ this.onResetState } className="ml-auto align-self-center" color="primary" outline>
+                    <Button onClick={ this.onResetState } className="ms-auto align-self-center" color="primary" outline>
                         Reset Layout
                     </Button>
                 </div>

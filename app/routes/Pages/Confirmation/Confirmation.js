@@ -28,7 +28,7 @@ const Confirmation = () => (
             { /* START Bottom Links */}
             <div className="text-center mb-5">
                 <Link to="/" className="text-decoration-none">
-                    <i className="fa fa-angle-left mr-2"></i>Back to Home
+                    <i className="fa fa-angle-left me-2"></i>Back to Home
                 </Link>
             </div>
             { /* END Bottom Links */}

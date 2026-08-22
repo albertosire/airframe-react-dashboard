@@ -3,8 +3,7 @@ import BootstrapTable from "react-bootstrap-table-next";
 import ToolkitProvider from "react-bootstrap-table2-toolkit";
 import moment from "moment";
 import _ from "lodash";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../../data/placeholders';
 import {
   Avatar,
   Badge,
@@ -133,27 +132,27 @@ export class AdvancedTableB extends React.Component {
         <Row>
           <Col md={6}>
             <dl className="row">
-              <dt className="col-sm-6 text-right">Last Login</dt>
+              <dt className="col-sm-6 text-end">Last Login</dt>
               <dd className="col-sm-6">
                 {moment(row.lastLoginDate).format("DD-MMM-YYYY")}
               </dd>
 
-              <dt className="col-sm-6 text-right">IP Address</dt>
+              <dt className="col-sm-6 text-end">IP Address</dt>
               <dd className="col-sm-6">{row.ipAddress}</dd>
 
-              <dt className="col-sm-6 text-right">Browser</dt>
+              <dt className="col-sm-6 text-end">Browser</dt>
               <dd className="col-sm-6">{row.browser}</dd>
             </dl>
           </Col>
           <Col md={6}>
             <dl className="row">
-              <dt className="col-sm-6 text-right">Operating System</dt>
+              <dt className="col-sm-6 text-end">Operating System</dt>
               <dd className="col-sm-6">{row.os}</dd>
 
-              <dt className="col-sm-6 text-right">Selected Plan</dt>
+              <dt className="col-sm-6 text-end">Selected Plan</dt>
               <dd className="col-sm-6">{row.planSelected}</dd>
 
-              <dt className="col-sm-6 text-right">Plan Expiriation</dt>
+              <dt className="col-sm-6 text-end">Plan Expiriation</dt>
               <dd className="col-sm-6">
                 {moment(row.planEnd).format("DD-MMM-YYYY")}
               </dd>
@@ -188,8 +187,8 @@ export class AdvancedTableB extends React.Component {
           <React.Fragment>
             <div className="d-flex justify-content-end align-items-center mb-2">
               <h6 className="my-0">AdvancedTable B</h6>
-              <div className="d-flex ml-auto">
-                <CustomSearch className="mr-2" {...props.searchProps} />
+              <div className="d-flex ms-auto">
+                <CustomSearch className="me-2" {...props.searchProps} />
                 <ButtonGroup>
                   <CustomExportCSV {...props.csvProps}>Export</CustomExportCSV>
                   <Button

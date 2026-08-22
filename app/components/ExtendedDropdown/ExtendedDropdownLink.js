@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { DropdownContext } from 'reactstrap/es/DropdownContext';
+import { DropdownContext } from 'reactstrap';
 
 const ExtendedDropdownLink = (props) => {
     const { children, ...otherProps } = props;

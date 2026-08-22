@@ -42,7 +42,7 @@ const GalleryTable = () => (
                                     <th>Author</th>
                                     <th>Date</th>
                                     <th>Info</th>
-                                    <th className="text-right">Action</th>
+                                    <th className="text-end">Action</th>
                                 </tr>
                             </thead>
                             <tbody>

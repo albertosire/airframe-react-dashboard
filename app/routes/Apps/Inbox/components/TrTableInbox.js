@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -48,8 +48,8 @@ const TrTableInbox = (props) => (
       </td>
       <td className="align-middle">
         <Media>
-          <Media left className="d-flex align-self-center mr-3">
-            <div className="mr-2">
+          <Media left className="d-flex align-self-center me-3">
+            <div className="me-2">
               <a href="#" id="tooltipAddToFavorites">
                 <i className="fa fa-fw fa-star-o"></i>
               </a>
@@ -95,9 +95,9 @@ const TrTableInbox = (props) => (
         <Badge pill color={randomArray(tag)}>
           {faker.commerce.department()}
         </Badge>{" "}
-        <i className="fa fa-paperclip ml-2"></i>
+        <i className="fa fa-paperclip ms-2"></i>
       </td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         30-Jun-2014
         <br />
         01:54 PM

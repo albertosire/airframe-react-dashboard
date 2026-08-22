@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import { Media, UncontrolledTooltip } from "./../../../components";
 
 const TrResponsive = () => (
@@ -12,7 +11,7 @@ const TrResponsive = () => (
       </td>
       <td className="align-middle">
         <Media>
-          <Media left className="align-self-center mr-3">
+          <Media left className="align-self-center me-3">
             <i className="fa fa-fw fa-desktop fa-lg"></i>
           </Media>
           <Media body>
@@ -41,7 +40,7 @@ const TrResponsive = () => (
         <br />
         12:34 PM
       </td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         <a href="#" id="UncontrolledTooltipRevoke">
           <i className="fa fa-fw fa-close text-danger"></i>
         </a>

@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Container,
   Row,
@@ -108,7 +107,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Tooltip: Top
-                <span className="small ml-1 text-muted">#2.01</span>
+                <span className="small ms-1 text-muted">#2.01</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -132,7 +131,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Tooltip: Right
-                <span className="small ml-1 text-muted">#2.02</span>
+                <span className="small ms-1 text-muted">#2.02</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -156,7 +155,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Tooltip: Bottom
-                <span className="small ml-1 text-muted">#2.03</span>
+                <span className="small ms-1 text-muted">#2.03</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -180,7 +179,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Tooltip: Left
-                <span className="small ml-1 text-muted">#2.03</span>
+                <span className="small ms-1 text-muted">#2.03</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -225,7 +224,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Popover: Top
-                <span className="small ml-1 text-muted">#3.01</span>
+                <span className="small ms-1 text-muted">#3.01</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -250,7 +249,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Popover: Right
-                <span className="small ml-1 text-muted">#3.02</span>
+                <span className="small ms-1 text-muted">#3.02</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -275,7 +274,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Popover: Bottom
-                <span className="small ml-1 text-muted">#3.03</span>
+                <span className="small ms-1 text-muted">#3.03</span>
               </CardTitle>
               <Button
                 className="text-center"
@@ -300,7 +299,7 @@ const TooltipsPopovers = () => (
             <CardBody className="text-center">
               <CardTitle tag="h6" className="text-center mb-3">
                 Popover: Left
-                <span className="small ml-1 text-muted">#3.03</span>
+                <span className="small ms-1 text-muted">#3.03</span>
               </CardTitle>
               <Button
                 className="text-center"

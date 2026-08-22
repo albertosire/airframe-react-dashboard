@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 
 import { Badge } from "./../../../../components";
@@ -64,7 +64,7 @@ const TrTableContextual = () => (
             {faker.finance.accountName()}
           </Badge>
         </td>
-        <td className="align-middle text-right">{faker.location.country()}</td>
+        <td className="align-middle text-end">{faker.location.country()}</td>
       </tr>
     ))}
   </React.Fragment>

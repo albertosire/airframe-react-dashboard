@@ -9,8 +9,8 @@ import {
 
 const NavbarUser = (props) => (
     <NavItem { ...props }>
-        <NavLink tag={ Link } to="/pages/login">
-            <i className="fa fa-power-off"></i>
+        <NavLink tag={ Link } to="/dashboards/projects">
+            <i className="fa fa-home"></i>
         </NavLink>
     </NavItem>
 );

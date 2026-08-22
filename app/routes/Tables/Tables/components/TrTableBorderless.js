@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 
 import { Badge, UncontrolledTooltip } from "./../../../../components";
@@ -15,7 +15,7 @@ const payment = [
 /*eslint-enable */
 /*eslint-disable */
 const receipt = [
-  <td className="align-middle text-right">
+  <td className="align-middle text-end">
     <a href="#" id="UncontrolledTooltipDownload">
       <i className="fa fa-fw fa-download text-primary"></i>
     </a>
@@ -23,17 +23,17 @@ const receipt = [
       Download
     </UncontrolledTooltip>
   </td>,
-  <td className="align-middle text-right"></td>,
+  <td className="align-middle text-end"></td>,
 ];
 /*eslint-enable */
 /*eslint-disable */
 const paymentMethod = [
   <td className="align-middle">
-    <i className="fa fa-fw fa-paypal text-primary mr-2"></i>
+    <i className="fa fa-fw fa-paypal text-primary me-2"></i>
     {faker.internet.email()}
   </td>,
   <td className="align-middle">
-    <i className="fa fa-fw fa-credit-card-alt mr-2"></i>
+    <i className="fa fa-fw fa-credit-card-alt me-2"></i>
     Visa 4*** **** **** 9221
   </td>,
 ];

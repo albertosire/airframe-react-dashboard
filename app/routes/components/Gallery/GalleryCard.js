@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import {
@@ -34,7 +34,7 @@ const GalleryCard = (props) => (
               type="checkbox"
               id={`galleryCard-${props.id}`}
               label=""
-              className="pr-2"
+              className="pe-2"
             />
           </Media>
           <Media body>
@@ -49,7 +49,7 @@ const GalleryCard = (props) => (
           <Media right>
             <a
               href="#"
-              className="ml-auto"
+              className="ms-auto"
               id={`galleryCardTooltip-${props.id}`}
             >
               <i className="fa fa-download"></i>
@@ -63,7 +63,7 @@ const GalleryCard = (props) => (
           </Media>
         </Media>
         <Media className="mb-3">
-          <Media left className="align-self-center mr-3">
+          <Media left className="align-self-center me-3">
             <Avatar.Image
               size="md"
               src={randomAvatar()}
@@ -91,13 +91,13 @@ const GalleryCard = (props) => (
           </Media>
         </Media>
         <div>
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
         </div>

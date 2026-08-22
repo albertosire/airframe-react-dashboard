@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../../data/placeholders';
 const TrTableHoverable = () => (
   <React.Fragment>
     <tr>
@@ -11,7 +10,7 @@ const TrTableHoverable = () => (
         {faker.person.firstName()} {faker.person.lastName()}
       </td>
       <td className="align-middle">$ {faker.finance.amount()}</td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         {faker.date.weekday()}, 12 {faker.date.month()}, 2018
       </td>
     </tr>

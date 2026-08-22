@@ -46,7 +46,8 @@
 @mixin generate-badges($colorMap) {
     @each $name, $color in $colorMap {
         .badge-#{$name} {
-            @include badge-variant($color);
+            color: #fff;
+            background-color: $color;
         }
     }
 }

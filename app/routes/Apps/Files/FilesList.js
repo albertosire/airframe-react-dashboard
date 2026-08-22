@@ -20,7 +20,7 @@ const FilesList = () => (
                             <th className="align-middle bt-0">Last Change</th>
                             <th className="align-middle bt-0">Share</th>
                             <th className="align-middle bt-0">Tags</th>
-                            <th className="align-middle bt-0 text-right">
+                            <th className="align-middle bt-0 text-end">
                                 Actions
                             </th>
                         </tr>

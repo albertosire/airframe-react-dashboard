@@ -45,7 +45,7 @@ export const Breadcrumbs = () => (
                     <CardBody>
                         <CardTitle tag="h6" className="mb-3">
                             Breadcrumb: Default
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #1.01
                             </span>
                         </CardTitle>
@@ -66,7 +66,7 @@ export const Breadcrumbs = () => (
                     <CardBody>
                         <CardTitle tag="h6" className="mb-3">
                             Breadcrumb: Default
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #1.02
                             </span>
                         </CardTitle>
@@ -90,7 +90,7 @@ export const Breadcrumbs = () => (
                     <CardBody>
                         <CardTitle tag="h6" className="mb-3">
                             Breadcrumb: Default
-                            <span className="small ml-1 text-muted">
+                            <span className="small ms-1 text-muted">
                                 #1.03
                             </span>
                         </CardTitle>

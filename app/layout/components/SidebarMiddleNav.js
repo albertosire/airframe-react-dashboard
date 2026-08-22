@@ -124,11 +124,6 @@ export const SidebarMiddleNav = () => (
                 <SidebarMenu.Item title="Search Results" to="/apps/search-results" />
                 <SidebarMenu.Item title="Images Results" to="/apps/images-results" />
                 <SidebarMenu.Item title="Videos Results" to="/apps/videos-results" />
-                <SidebarMenu.Item title="Users Results" to="/apps/users-results" />
-            </SidebarMenu.Item>
-            <SidebarMenu.Item title="Users">
-                <SidebarMenu.Item title="Users List" to="/apps/users/list" />
-                <SidebarMenu.Item title="Users Grid" to="/apps/users/grid" />
             </SidebarMenu.Item>
             <SidebarMenu.Item title="Gallery">
                 <SidebarMenu.Item title="Gallery Grid" to="/apps/gallery-grid" />
@@ -139,14 +134,6 @@ export const SidebarMiddleNav = () => (
                 <SidebarMenu.Item title="New Email" to="/apps/new-email" />
                 <SidebarMenu.Item title="Email Details" to="/apps/email-details" />
             </SidebarMenu.Item>
-            <SidebarMenu.Item title="Profile">
-                <SidebarMenu.Item title="Profile Details" to="/apps/profile-details" />
-                <SidebarMenu.Item title="Profile Edit" to="/apps/profile-edit" />
-                <SidebarMenu.Item title="Account Edit" to="/apps/account-edit" />
-                <SidebarMenu.Item title="Billing Edit" to="/apps/billing-edit" />
-                <SidebarMenu.Item title="Settings Edit" to="/apps/settings-edit" />
-                <SidebarMenu.Item title="Sessions Edit" to="/apps/sessions-edit" />
-            </SidebarMenu.Item>
             <SidebarMenu.Item title="Clients" to="/apps/clients" exact />
             <SidebarMenu.Item title="Chat" to="/apps/chat" exact />
         </SidebarMenu.Item>
@@ -155,10 +142,6 @@ export const SidebarMiddleNav = () => (
             icon={<i className="fa fa-fw fa-copy"></i>}
             title="Pages"
         >
-            <SidebarMenu.Item title="Register" to="/pages/register" />
-            <SidebarMenu.Item title="Login" to="/pages/login" />
-            <SidebarMenu.Item title="Forgot Password" to="/pages/forgot-password" />
-            <SidebarMenu.Item title="Lock Screen" to="/pages/lock-screen" />
             <SidebarMenu.Item title="Error 404" to="/pages/error-404" />
             <SidebarMenu.Item title="Confirmation" to="/pages/confirmation" />
             <SidebarMenu.Item title="Success" to="/pages/success" />
@@ -171,22 +154,5 @@ export const SidebarMiddleNav = () => (
             title="Icons"
             to='/icons'
         />
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-bookmark-o"></i>}
-            title="Docs"
-            href='https://webkom.gitbook.io/spin/v/airframe/airframe-react/documentation-react'
-        />
-        { /* -------- Versions ---------*/ }
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-folder-open-o"></i>}
-            title="Versions"
-        >
-            <SidebarMenu.Item title="NextJS (React)" href='http://airframe.nextjs.webkom.co/' />
-            <SidebarMenu.Item title="React" href='http://dashboards.webkom.co/react/airframe' />
-            <SidebarMenu.Item title="jQuery" to="http://dashboards.webkom.co/jquery/airframe/" />
-            <SidebarMenu.Item title="Vue" to="http://dashboards.webkom.co/vue/airframe" />
-            <SidebarMenu.Item title="Angular" to="http://dashboards.webkom.co/angular/airframe" />
-            <SidebarMenu.Item title=".NET MVC" to="http://dashboards.webkom.co/net-mvc/airframe" />
-        </SidebarMenu.Item>
     </SidebarMenu >
 );

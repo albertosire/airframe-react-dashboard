@@ -70,10 +70,10 @@ const TrSystem = (props) => (
     <tr>
         <td style={{ width: '20%' }}>
             <span className="d-flex mb-2">
-                <h6 className="mb-0 mr-5">
+                <h6 className="mb-0 me-5">
                     { randomArray(name) }
                 </h6>
-                <Badge pill className="ml-auto align-self-center">
+                <Badge pill className="ms-auto align-self-center">
                     v. { randomArray(versions) }
                 </Badge>
             </span>
@@ -82,7 +82,7 @@ const TrSystem = (props) => (
                 <span className="text-inverse">
                     { randomArray(percents) }%
                 </span>
-                <span className="ml-auto text-right">
+                <span className="ms-auto text-end">
                     { randomArray(gbLeft) } GB Left
                 </span>
             </span>

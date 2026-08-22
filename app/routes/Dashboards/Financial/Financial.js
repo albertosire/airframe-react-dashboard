@@ -134,7 +134,7 @@ const Financial = () => (
                         <CardBody>
                             <CardTitle className="mb-4 d-flex">
                                 <h6>Money Map</h6>
-                                <UncontrolledDropdown className="ml-auto">
+                                <UncontrolledDropdown className="ms-auto">
                                     <DropdownToggle color="link" size="sm" caret className="pt-0">
                                         Last Month
                                     </DropdownToggle>
@@ -156,7 +156,7 @@ const Financial = () => (
                         <CardBody>
                             <CardTitle className="mb-1 d-flex">
                                 <h6>Recent Fundings</h6>
-                                <Button color="link" size="sm" className="pt-0 ml-auto">
+                                <Button color="link" size="sm" className="pt-0 ms-auto">
                                     View All <i className="fa fa-angle-right"></i>
                                 </Button>
                             </CardTitle>
@@ -167,7 +167,7 @@ const Financial = () => (
                                     <th className="bt-0">Company</th>
                                     <th className="bt-0">Amount</th>
                                     <th className="bt-0">Date</th>
-                                    <th className="bt-0 text-right">Action</th>
+                                    <th className="bt-0 text-end">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -180,7 +180,7 @@ const Financial = () => (
                     <CardBody>
                         <CardTitle className="mb-1 d-flex">
                             <h6>Invoices</h6>
-                            <Button color="link" size="sm" className="pt-0 ml-auto">
+                            <Button color="link" size="sm" className="pt-0 ms-auto">
                                 View All <i className="fa fa-angle-right"></i>
                             </Button>
                         </CardTitle>
@@ -193,7 +193,7 @@ const Financial = () => (
                                 <th className="bt-0">Date</th>
                                 <th className="bt-0">Contact</th>
                                 <th className="bt-0">Email</th>
-                                <th className="bt-0 text-right">Action</th>
+                                <th className="bt-0 text-end">Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -224,31 +224,31 @@ const Financial = () => (
                     <ListGroup flush>
                         <ListGroupItem className="d-flex">
                             <span>My Cash</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch" label="" className="ml-auto" />
+                            <CustomInput type="switch" id="exampleCustomSwitch" name="customSwitch" label="" className="ms-auto" />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>My Cap</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch1" name="customSwitch" label="" className="ml-auto" defaultChecked />
+                            <CustomInput type="switch" id="exampleCustomSwitch1" name="customSwitch" label="" className="ms-auto" defaultChecked />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>Client List</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch2" name="customSwitch" label="" className="ml-auto" defaultChecked />
+                            <CustomInput type="switch" id="exampleCustomSwitch2" name="customSwitch" label="" className="ms-auto" defaultChecked />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>Recent Fundings</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch3" name="customSwitch" label="" className="ml-auto" />
+                            <CustomInput type="switch" id="exampleCustomSwitch3" name="customSwitch" label="" className="ms-auto" />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>Invoice Creator</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch4" name="customSwitch" label="" className="ml-auto" />
+                            <CustomInput type="switch" id="exampleCustomSwitch4" name="customSwitch" label="" className="ms-auto" />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>Sales Lead</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch5" name="customSwitch" label="" className="ml-auto" defaultChecked />
+                            <CustomInput type="switch" id="exampleCustomSwitch5" name="customSwitch" label="" className="ms-auto" defaultChecked />
                         </ListGroupItem>
                         <ListGroupItem className="d-flex">
                             <span>Q&A</span>
-                            <CustomInput type="switch" id="exampleCustomSwitch6" name="customSwitch" label="" className="ml-auto" defaultChecked />
+                            <CustomInput type="switch" id="exampleCustomSwitch6" name="customSwitch" label="" className="ms-auto" defaultChecked />
                         </ListGroupItem>
                     </ListGroup>
                 </Card>

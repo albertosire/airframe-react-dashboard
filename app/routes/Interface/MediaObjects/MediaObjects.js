@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Checkable,
   Container,
@@ -53,10 +52,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Default
-                <span className="small ml-1 text-muted">#1.01</span>
+                <span className="small ms-1 text-muted">#1.01</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -82,7 +81,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -108,7 +107,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -139,10 +138,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Link
-                <span className="small ml-1 text-muted">#1.02</span>
+                <span className="small ms-1 text-muted">#1.02</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -170,7 +169,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -198,7 +197,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -231,10 +230,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Right Badge
-                <span className="small ml-1 text-muted">#1.03</span>
+                <span className="small ms-1 text-muted">#1.03</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -263,7 +262,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -292,7 +291,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -326,10 +325,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Right Checkbox
-                <span className="small ml-1 text-muted">#1.04</span>
+                <span className="small ms-1 text-muted">#1.04</span>
               </CardTitle>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -363,7 +362,7 @@ const MediaObjects = () => (
                 </Media>
               </Checkable>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -396,7 +395,7 @@ const MediaObjects = () => (
                 </Media>
               </Checkable>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -434,10 +433,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Right Radio
-                <span className="small ml-1 text-muted">#1.05</span>
+                <span className="small ms-1 text-muted">#1.05</span>
               </CardTitle>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -472,7 +471,7 @@ const MediaObjects = () => (
                 </Checkable.Trigger>
               </Checkable>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -506,7 +505,7 @@ const MediaObjects = () => (
                 </Media>
               </Checkable>
               <Checkable tag={Media}>
-                <Checkable.Trigger tag={Media} left top className="mr-4">
+                <Checkable.Trigger tag={Media} left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -545,10 +544,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Left Icons
-                <span className="small ml-1 text-muted">#1.06</span>
+                <span className="small ms-1 text-muted">#1.06</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x text-success"></i>
                     <i className="fa fa-check fa-stack-1x text-white"></i>
@@ -560,7 +559,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x text-danger"></i>
                     <i className="fa fa-close fa-stack-1x text-white"></i>
@@ -572,7 +571,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x text-warning"></i>
                     <i className="fa fa-exclamation fa-stack-1x text-white"></i>
@@ -589,10 +588,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Left Radio
-                <span className="small ml-1 text-muted">#1.07</span>
+                <span className="small ms-1 text-muted">#1.07</span>
               </CardTitle>
               <Media>
-                <Media left className="mr-3">
+                <Media left className="me-3">
                   <CustomInput
                     type="radio"
                     id="leftRadio1"
@@ -609,7 +608,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <CustomInput
                     type="radio"
                     id="leftRadio2"
@@ -625,7 +624,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <CustomInput
                     type="radio"
                     id="leftRadio3"
@@ -646,7 +645,7 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Left Default
-                <span className="small ml-1 text-muted">#1.08</span>
+                <span className="small ms-1 text-muted">#1.08</span>
               </CardTitle>
               <Media>
                 <Media body>
@@ -736,7 +735,7 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Media: Color Header
-                <span className="small ml-1 text-muted">#1.09</span>
+                <span className="small ms-1 text-muted">#1.09</span>
               </CardTitle>
               <Media>
                 <Media body>
@@ -822,7 +821,7 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Color Text
-                <span className="small ml-1 text-muted">#1.10</span>
+                <span className="small ms-1 text-muted">#1.10</span>
               </CardTitle>
               <Media>
                 <Media body>
@@ -908,10 +907,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Status Icon
-                <span className="small ml-1 text-muted">#1.12</span>
+                <span className="small ms-1 text-muted">#1.12</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -940,7 +939,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -969,7 +968,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1003,10 +1002,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Right Icon
-                <span className="small ml-1 text-muted">#1.13</span>
+                <span className="small ms-1 text-muted">#1.13</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1030,12 +1029,12 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <i className="fa fa-user"></i>
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1059,12 +1058,12 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <i className="fa fa-gear"></i>
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1088,7 +1087,7 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <i className="fa fa-exclamation-circle"></i>
                 </Media>
               </Media>
@@ -1098,10 +1097,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Right Button
-                <span className="small ml-1 text-muted">#1.14</span>
+                <span className="small ms-1 text-muted">#1.14</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1125,14 +1124,14 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <Button outline color="secondary" size="sm">
                     <i className="fa fa-user fa-fw"></i>
                   </Button>{" "}
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1156,14 +1155,14 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <Button outline color="secondary" size="sm">
                     <i className="fa fa-gear fa-fw"></i>
                   </Button>{" "}
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1187,7 +1186,7 @@ const MediaObjects = () => (
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
-                <Media left top className="ml-2">
+                <Media left top className="ms-2">
                   <Button outline color="secondary" size="sm">
                     <i className="fa fa-exclamation-circle fa-fw"></i>
                   </Button>{" "}
@@ -1199,10 +1198,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Left Icons Single
-                <span className="small ml-1 text-muted">#1.15</span>
+                <span className="small ms-1 text-muted">#1.15</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <i className="fa fa-file-pdf-o fa-fw fa-lg text-danger"></i>
                 </Media>
                 <Media body>
@@ -1211,7 +1210,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <i className="fa fa-file-word-o fa-fw fa-lg text-primary"></i>
                 </Media>
                 <Media body>
@@ -1220,7 +1219,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <i className="fa fa-file-excel-o fa-fw fa-lg text-success"></i>
                 </Media>
                 <Media body>
@@ -1234,10 +1233,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Left Checkbox
-                <span className="small ml-1 text-muted">#1.16</span>
+                <span className="small ms-1 text-muted">#1.16</span>
               </CardTitle>
               <Media>
-                <Media left className="mr-3">
+                <Media left className="me-3">
                   <CustomInput
                     type="checkbox"
                     id="leftCheckbox1"
@@ -1253,7 +1252,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <CustomInput
                     type="checkbox"
                     id="leftCheckbox2"
@@ -1269,7 +1268,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-3">
+                <Media left top className="me-3">
                   <CustomInput
                     type="checkbox"
                     id="leftCheckbox3"
@@ -1315,10 +1314,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Default
-                <span className="small ml-1 text-muted">#2.01</span>
+                <span className="small ms-1 text-muted">#2.01</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1349,7 +1348,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1380,7 +1379,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1416,10 +1415,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Default
-                <span className="small ml-1 text-muted">#2.02</span>
+                <span className="small ms-1 text-muted">#2.02</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1442,13 +1441,13 @@ const MediaObjects = () => (
                     <span className="mt-0 d-flex h6 mb-0">
                       {faker.person.firstName()} {faker.person.lastName()}
                     </span>
-                    <span className="small align-self-center ml-auto">Now</span>
+                    <span className="small align-self-center ms-auto">Now</span>
                   </span>
                   <p>{faker.lorem.sentence()}</p>
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1471,7 +1470,7 @@ const MediaObjects = () => (
                     <span className="mt-0 d-flex h6 mb-0">
                       {faker.person.firstName()} {faker.person.lastName()}
                     </span>
-                    <span className="small align-self-center ml-auto">
+                    <span className="small align-self-center ms-auto">
                       Yesterday
                     </span>
                   </span>
@@ -1479,7 +1478,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1502,7 +1501,7 @@ const MediaObjects = () => (
                     <span className="mt-0 d-flex h6 mb-0">
                       {faker.person.firstName()} {faker.person.lastName()}
                     </span>
-                    <span className="small align-self-center ml-auto">
+                    <span className="small align-self-center ms-auto">
                       12:23 PM
                     </span>
                   </span>
@@ -1515,10 +1514,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Header Small Below Text
-                <span className="small ml-1 text-muted">#2.03</span>
+                <span className="small ms-1 text-muted">#2.03</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1547,7 +1546,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1576,7 +1575,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1614,10 +1613,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Small Bottom Text
-                <span className="small ml-1 text-muted">#2.04</span>
+                <span className="small ms-1 text-muted">#2.04</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1649,7 +1648,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1681,7 +1680,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1718,10 +1717,10 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: Button Group Bottom
-                <span className="small ml-1 text-muted">#2.05</span>
+                <span className="small ms-1 text-muted">#2.05</span>
               </CardTitle>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1758,7 +1757,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1795,7 +1794,7 @@ const MediaObjects = () => (
                 </Media>
               </Media>
               <Media>
-                <Media left top className="mr-4">
+                <Media left top className="me-4">
                   <Avatar.Image
                     size="md"
                     src={randomAvatar()}
@@ -1862,13 +1861,13 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-0">
                 Media: List Group
-                <span className="small ml-1 text-muted">#3.01</span>
+                <span className="small ms-1 text-muted">#3.01</span>
               </CardTitle>
             </CardBody>
             <ListGroup flush>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1896,7 +1895,7 @@ const MediaObjects = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1924,7 +1923,7 @@ const MediaObjects = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1960,13 +1959,13 @@ const MediaObjects = () => (
             <CardBody>
               <CardTitle tag="h6" className="mb-4">
                 Media: List Group
-                <span className="small ml-1 text-muted">#3.01</span>
+                <span className="small ms-1 text-muted">#3.01</span>
               </CardTitle>
               <Nav vertical>
                 <NavItem>
                   <NavLink href="#" active>
                     <Media>
-                      <Media left top className="mr-4">
+                      <Media left top className="me-4">
                         <Avatar.Image
                           size="md"
                           src={randomAvatar()}
@@ -1996,7 +1995,7 @@ const MediaObjects = () => (
                 <NavItem>
                   <NavLink href="#">
                     <Media>
-                      <Media left top className="mr-4">
+                      <Media left top className="me-4">
                         <Avatar.Image
                           size="md"
                           src={randomAvatar()}
@@ -2026,7 +2025,7 @@ const MediaObjects = () => (
                 <NavItem>
                   <NavLink href="#">
                     <Media>
-                      <Media left top className="mr-4">
+                      <Media left top className="me-4">
                         <Avatar.Image
                           size="md"
                           src={randomAvatar()}
