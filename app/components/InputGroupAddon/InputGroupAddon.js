@@ -1,33 +1,31 @@
 import React from 'react';
 import _ from 'lodash';
+import PropTypes from 'prop-types';
+import { InputGroupText } from 'reactstrap';
 
-import {
-    InputGroupAddon as BsInputGroupAddon
-} from 'reactstrap';
-
-const InputGroupAddon = (props) => {
-    const { children, ...otherProps } = props;
+const InputGroupAddon = ({ children, addonType, ...otherProps }) => {
     const childArr = React.Children.toArray(children);
     const isFa = _.some(childArr, (child) =>
         React.isValidElement(child) && child.props.className && _.includes(child.props.className, 'fa'));
     const isCheckRadio = _.some(childArr, (child) =>
         React.isValidElement(child) && (child.props.type === 'radio' || child.props.type === 'checkbox'));
 
-    let child = isFa || isCheckRadio ? (
-        <div className="input-group-text">
+    const child = isFa || isCheckRadio ? (
+        <InputGroupText>
             { children }
-        </div>
+        </InputGroupText>
     ) : children;
 
     return (
-        <BsInputGroupAddon { ...otherProps }>
+        <div className={addonType ? `input-group-${addonType}` : undefined} {...otherProps}>
             { child }
-        </BsInputGroupAddon>
+        </div>
     );
-}
-InputGroupAddon.propTypes = {
-    ...BsInputGroupAddon.propTypes
 };
-InputGroupAddon.defaultProps = BsInputGroupAddon.defaultProps;
+
+InputGroupAddon.propTypes = {
+    children: PropTypes.node,
+    addonType: PropTypes.oneOf(['prepend', 'append']),
+};
 
 export { InputGroupAddon };

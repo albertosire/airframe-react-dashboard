@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { withRouter } from './../../utilities/withRouter';
 import _ from 'lodash';
 import classNames from 'classnames';
 

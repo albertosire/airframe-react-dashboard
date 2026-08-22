@@ -40,7 +40,7 @@ var program = new Command();
 
 program
     .option('-c, --clear [serve/dist]')
-    .option('-cr, --create [serve/dist]')
+    .option('--create [serve/dist]')
     .parse(process.argv);
 
 var options = program.opts();

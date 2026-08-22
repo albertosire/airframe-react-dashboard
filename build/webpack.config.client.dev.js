@@ -43,7 +43,9 @@ module.exports = {
       "process.env.NODE_ENV": JSON.stringify("development"),
       "process.env.BASE_PATH": JSON.stringify(BASE_PATH),
     }),
-    new ReactRefreshWebpackPlugin(),
+    new ReactRefreshWebpackPlugin({
+      overlay: false,
+    }),
     new ExtractCssChunks(),
   ],
   module: {
@@ -130,6 +132,7 @@ module.exports = {
   },
   devServer: {
     hot: true,
+    webSocketServer: 'ws',
     static: {
       directory: config.serveDir,
     },
