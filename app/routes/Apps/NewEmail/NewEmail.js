@@ -41,11 +41,11 @@ const NewEmail = () => (
                             <div className="flex-column flex-md-row d-flex mb-4">
                                 <div className="mr-md-auto mr-sm-0">
                                     <Button color="link" tag={ Link } to="/apps/inbox" className="text-decoration-none">
-                                        <i className="fa fa-angle-left mr-2"></i>  Inbox
+                                        <i className="fa fa-angle-left me-2"></i>  Inbox
                                     </Button>
                                 </div>
                                 <ButtonToolbar>
-                                    <ButtonGroup className="mr-2">
+                                    <ButtonGroup className="me-2">
                                         <Button color="link" tag={ Link } to="/apps/inbox" className="text-decoration-none">
                                             Cancel
                                         </Button>
@@ -104,7 +104,7 @@ const NewEmail = () => (
                             { /* START Attachments */}
                             <div>
                                 <div className="mb-3">
-                                    <span className="small mr-2">
+                                    <span className="small me-2">
                                         Attachments
                                     </span>
                                     <Badge pill color="secondary">3</Badge>
@@ -126,9 +126,9 @@ const NewEmail = () => (
                             </div>
 
                         </CardBody>
-                        <CardFooter className="text-right">
+                        <CardFooter className="text-end">
                             <Button color="link" className="text-decoration-none">
-                                <i className="fa fa-paperclip mr-2"></i>
+                                <i className="fa fa-paperclip me-2"></i>
                                 Add New Files
                             </Button>
                         </CardFooter>

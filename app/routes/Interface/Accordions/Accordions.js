@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Accordion,
   Container,
@@ -34,7 +33,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card with Links
-              <span className="small ml-1 text-muted">#1.01</span>
+              <span className="small ms-1 text-muted">#1.01</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -73,7 +72,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Normal Text
-              <span className="small ml-1 text-muted">#1.04</span>
+              <span className="small ms-1 text-muted">#1.04</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -110,7 +109,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card Left Icon
-              <span className="small ml-1 text-muted">#1.02</span>
+              <span className="small ms-1 text-muted">#1.02</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -120,7 +119,7 @@ const Accordions = () => (
             </p>
             <Accordion className="mb-2" initialOpen>
               <Accordion.Header className="h6">
-                <Accordion.Indicator className="mr-2" />
+                <Accordion.Indicator className="me-2" />
                 Accordion Card #1
               </Accordion.Header>
               <Accordion.Body>
@@ -130,7 +129,7 @@ const Accordions = () => (
 
             <Accordion className="mb-2">
               <Accordion.Header className="h6">
-                <Accordion.Indicator className="mr-2" />
+                <Accordion.Indicator className="me-2" />
                 Accordion Card #2
               </Accordion.Header>
               <Accordion.Body>
@@ -140,7 +139,7 @@ const Accordions = () => (
 
             <Accordion className="mb-2">
               <Accordion.Header className="h6">
-                <Accordion.Indicator className="mr-2" />
+                <Accordion.Indicator className="me-2" />
                 Accordion Card #3
               </Accordion.Header>
               <Accordion.Body>
@@ -153,7 +152,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card Right Icon
-              <span className="small ml-1 text-muted">#1.03</span>
+              <span className="small ms-1 text-muted">#1.03</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -164,7 +163,7 @@ const Accordions = () => (
             <Accordion className="mb-2" initialOpen>
               <Accordion.Header className="d-flex h6">
                 <span>Accordion Card #1</span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -174,7 +173,7 @@ const Accordions = () => (
             <Accordion className="mb-2">
               <Accordion.Header className="d-flex h6">
                 <span>Accordion Card #1</span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -184,7 +183,7 @@ const Accordions = () => (
             <Accordion className="mb-2">
               <Accordion.Header className="d-flex h6">
                 <span>Accordion Card #1</span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -196,7 +195,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card Right & Left Icon
-              <span className="small ml-1 text-muted">#1.05</span>
+              <span className="small ms-1 text-muted">#1.05</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -206,10 +205,10 @@ const Accordions = () => (
             <Accordion className="mb-2" initialOpen>
               <Accordion.Header className="d-flex align-items-center h6">
                 <span>
-                  <i className="fa fa-fw fa-bookmark-o mr-2"></i>
+                  <i className="fa fa-fw fa-bookmark-o me-2"></i>
                   Accordion Card #1
                 </span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -219,10 +218,10 @@ const Accordions = () => (
             <Accordion className="mb-2">
               <Accordion.Header className="d-flex align-items-center h6">
                 <span>
-                  <i className="fa fa-fw fa-clone mr-2"></i>
+                  <i className="fa fa-fw fa-clone me-2"></i>
                   Accordion Card #2
                 </span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -232,10 +231,10 @@ const Accordions = () => (
             <Accordion className="mb-2">
               <Accordion.Header className="d-flex align-items-center h6">
                 <span>
-                  <i className="fa fa-fw fa-copy mr-2"></i>
+                  <i className="fa fa-fw fa-copy me-2"></i>
                   Accordion Card #3
                 </span>
-                <Accordion.Indicator className="ml-auto" />
+                <Accordion.Indicator className="ms-auto" />
               </Accordion.Header>
               <Accordion.Body>
                 <CardText>{faker.lorem.paragraph()}</CardText>
@@ -267,7 +266,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card Colors Borders
-              <span className="small ml-1 text-muted">#2.01</span>
+              <span className="small ms-1 text-muted">#2.01</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -307,7 +306,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card Colors Backgrounds
-              <span className="small ml-1 text-muted">#2.02</span>
+              <span className="small ms-1 text-muted">#2.02</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}
@@ -348,7 +347,7 @@ const Accordions = () => (
           <div className="mb-5">
             <h6>
               Accordion: Card White Background
-              <span className="small ml-1 text-muted">#2.03</span>
+              <span className="small ms-1 text-muted">#2.03</span>
             </h6>
             <p>
               Below is an example of default accordion based on{" "}

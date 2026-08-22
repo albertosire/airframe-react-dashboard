@@ -51,7 +51,7 @@ const FormsLayouts = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Forms Horizontal: Basic Example
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -184,7 +184,7 @@ const FormsLayouts = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Forms Without Labels: Preview Example #1.03
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -286,7 +286,7 @@ const FormsLayouts = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Forms Vertical: Preview Example
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -432,7 +432,7 @@ const FormsLayouts = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Forms Inline: Preview Example
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>

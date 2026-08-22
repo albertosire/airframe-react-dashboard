@@ -45,7 +45,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Basic Example
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -83,7 +83,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Disabled State
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -121,7 +121,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Active State
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -181,7 +181,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -217,7 +217,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -257,7 +257,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -297,7 +297,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -339,7 +339,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -379,7 +379,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -442,7 +442,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Large
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -484,7 +484,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -526,7 +526,7 @@ const Paginations = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Pagination: Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>

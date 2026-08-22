@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Container,
   Row,
@@ -53,11 +52,11 @@ const Clients = () => (
                       </UncontrolledTabs.NavLink>
                     </NavItem>
                   </Nav>
-                  <ButtonToolbar className="ml-auto">
+                  <ButtonToolbar className="ms-auto">
                     <ButtonGroup>
                       <Button
                         color="link"
-                        className="align-self-center mr-2 text-decoration-none"
+                        className="align-self-center me-2 text-decoration-none"
                         id="tooltipSettings"
                       >
                         <i className="fa fa-fw fa-gear"></i>
@@ -95,8 +94,8 @@ const Clients = () => (
                         <th className="bt-0"></th>
                         <th className="bt-0">Name</th>
                         <th className="bt-0">Email</th>
-                        <th className="text-right bt-0">Phone</th>
-                        <th className="text-right bt-0">Label</th>
+                        <th className="text-end bt-0">Phone</th>
+                        <th className="text-end bt-0">Label</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -122,8 +121,8 @@ const Clients = () => (
                         <th className="bt-0"></th>
                         <th className="bt-0">Name</th>
                         <th className="bt-0">PM</th>
-                        <th className="text-right bt-0">Phone</th>
-                        <th className="text-right bt-0">Label</th>
+                        <th className="text-end bt-0">Phone</th>
+                        <th className="text-end bt-0">Label</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -152,7 +151,7 @@ const Clients = () => (
               </span>
               <Pagination
                 aria-label="Page navigation example"
-                className="ml-auto"
+                className="ms-auto"
               >
                 <PaginationItem>
                   <PaginationLink previous href="#">
@@ -212,7 +211,7 @@ const Clients = () => (
               <div className="mt-4 mb-2">
                 <span className="small">Profile</span>
               </div>
-              <p className="text-left">
+              <p className="text-start">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
                 sapiente earum, necessitatibus commodi eius pariatur repudiandae
                 cum sunt officiis ex!
@@ -220,14 +219,14 @@ const Clients = () => (
               <div className="mt-4 mb-2">
                 <span className="small">Labels</span>
               </div>
-              <div className="text-left mb-4">
-                <Badge pill color="primary" className="mr-1">
+              <div className="text-start mb-4">
+                <Badge pill color="primary" className="me-1">
                   {faker.commerce.department()}
                 </Badge>
-                <Badge pill color="secondary" className="mr-1">
+                <Badge pill color="secondary" className="me-1">
                   {faker.commerce.department()}
                 </Badge>
-                <Badge pill color="primary" className="mr-1">
+                <Badge pill color="primary" className="me-1">
                   {faker.commerce.department()}
                 </Badge>
               </div>
@@ -235,15 +234,15 @@ const Clients = () => (
                 <span className="small">Contact</span>
               </div>
               <DlRowContacts
-                leftSideClassName="text-left"
-                rightSideClassName="text-right text-inverse"
+                leftSideClassName="text-start"
+                rightSideClassName="text-end text-inverse"
               />
               <div className="mt-4 mb-2">
                 <span className="small">Address</span>
               </div>
               <DlRowAddress
-                leftSideClassName="text-left"
-                rightSideClassName="text-right text-inverse"
+                leftSideClassName="text-start"
+                rightSideClassName="text-end text-inverse"
               />
             </CardBody>
           </Card>

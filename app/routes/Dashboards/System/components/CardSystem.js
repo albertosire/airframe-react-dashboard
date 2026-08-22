@@ -51,7 +51,7 @@ const CardSystem = (props) => (
                         { randomArray(percents) } <small>{ props.unit }</small>
                     </h2>
                 </span>
-                <span className="text-right ml-auto">
+                <span className="text-end ms-auto">
                     <TinyDonutChart 
                         pieColor={props.pieColor}
                     />

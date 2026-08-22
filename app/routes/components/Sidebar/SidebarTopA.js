@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Link } from "react-router-dom";
 
 import {
@@ -17,10 +17,9 @@ const avatarImg = randomAvatar();
 
 const SidebarTopA = () => (
   <React.Fragment>
-    {/* START: Sidebar Default */}
     <Sidebar.HideSlim>
       <Sidebar.Section className="pt-0">
-        <Link to="/" className="d-block">
+        <Link to="/dashboards/projects" className="d-block">
           <Sidebar.HideSlim>
             <Avatar.Image
               size="lg"
@@ -44,29 +43,18 @@ const SidebarTopA = () => (
         <UncontrolledButtonDropdown>
           <DropdownToggle
             color="link"
-            className="pl-0 pb-0 btn-profile sidebar__link"
+            className="ps-0 pb-0 btn-profile sidebar__link"
           >
             {faker.person.firstName()} {faker.person.lastName()}
-            <i className="fa fa-angle-down ml-2"></i>
+            <i className="fa fa-angle-down ms-2"></i>
           </DropdownToggle>
           <DropdownMenu persist>
             <DropdownItem header>
               {faker.person.firstName()} {faker.person.lastName()}
             </DropdownItem>
             <DropdownItem divider />
-            <DropdownItem tag={Link} to="/apps/profile-details">
-              My Profile
-            </DropdownItem>
-            <DropdownItem tag={Link} to="/apps/settings-edit">
-              Settings
-            </DropdownItem>
-            <DropdownItem tag={Link} to="/apps/billing-edit">
-              Billings
-            </DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem tag={Link} to="/pages/login">
-              <i className="fa fa-fw fa-sign-out mr-2"></i>
-              Sign Out
+            <DropdownItem header>
+              Autenticação via OpenSSO
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledButtonDropdown>
@@ -75,9 +63,7 @@ const SidebarTopA = () => (
         </div>
       </Sidebar.Section>
     </Sidebar.HideSlim>
-    {/* END: Sidebar Default */}
 
-    {/* START: Sidebar Slim */}
     <Sidebar.ShowSlim>
       <Sidebar.Section>
         <Avatar.Image
@@ -98,7 +84,6 @@ const SidebarTopA = () => (
         />
       </Sidebar.Section>
     </Sidebar.ShowSlim>
-    {/* END: Sidebar Slim */}
   </React.Fragment>
 );
 

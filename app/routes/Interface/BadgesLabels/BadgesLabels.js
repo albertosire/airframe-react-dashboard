@@ -41,7 +41,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Primary
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -56,7 +56,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Secondary
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -71,7 +71,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Success
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -88,7 +88,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Danger
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </CardTitle>
@@ -103,7 +103,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Warning
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.05
                                 </span>
                             </CardTitle>
@@ -118,7 +118,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Info
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -135,7 +135,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Light
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.07
                                 </span>
                             </CardTitle>
@@ -150,7 +150,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Dark
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.08
                                 </span>
                             </CardTitle>
@@ -188,7 +188,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Pill
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -203,7 +203,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Without Rounded
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -218,7 +218,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Dropdown
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -235,7 +235,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Only Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -252,7 +252,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Only Icon Link
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -269,7 +269,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Only Icon Rounded
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.06
                                 </span>
                             </CardTitle>
@@ -288,7 +288,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge: Only Icon Rounded Link 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.07
                                 </span>
                             </CardTitle>
@@ -328,7 +328,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Primary 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -343,7 +343,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Secondary
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -358,7 +358,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Success
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -375,7 +375,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Danger
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.04
                                 </span>
                             </CardTitle>
@@ -390,7 +390,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Warning
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.05
                                 </span>
                             </CardTitle>
@@ -405,7 +405,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Info
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.06
                                 </span>
                             </CardTitle>
@@ -422,7 +422,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Light
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.07
                                 </span>
                             </CardTitle>
@@ -437,7 +437,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Dark
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.08
                                 </span>
                             </CardTitle>
@@ -475,7 +475,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Pill
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -490,7 +490,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Without Rounded
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -505,7 +505,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Dropdown
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.03
                                 </span>
                             </CardTitle>
@@ -522,7 +522,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Only Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.04
                                 </span>
                             </CardTitle>
@@ -539,7 +539,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Only Icon Link
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.05
                                 </span>
                             </CardTitle>
@@ -556,7 +556,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Only Icon Rounded
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.06
                                 </span>
                             </CardTitle>
@@ -575,7 +575,7 @@ const BadgesLabels = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Badge Border: Only Icon Rounded Link 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.07
                                 </span>
                             </CardTitle>

@@ -61,7 +61,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -89,7 +89,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Active
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -117,7 +117,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Disabled
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -166,7 +166,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Default Header
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -191,7 +191,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Header Left Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -204,7 +204,7 @@ const Dropdowns = () => (
                                 </DropdownToggle>
                                 <DropdownMenu persist>
                                     <DropdownItem header>
-                                        <i className="fa fa-angle-down mr-2"></i>
+                                        <i className="fa fa-angle-down me-2"></i>
                                         Menu
                                     </DropdownItem>
                                     <DropdownItem>Profile</DropdownItem>
@@ -223,7 +223,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Header Right Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -237,7 +237,7 @@ const Dropdowns = () => (
                                 <DropdownMenu persist>
                                     <DropdownItem header className="d-flex">
                                         Menu
-                                        <i className="fa fa-angle-down ml-auto"></i>
+                                        <i className="fa fa-angle-down ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem>Profile</DropdownItem>
                                     <DropdownItem>Settings</DropdownItem>
@@ -251,7 +251,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Header Left & Right Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -264,9 +264,9 @@ const Dropdowns = () => (
                                 </DropdownToggle>
                                 <DropdownMenu persist>
                                     <DropdownItem header className="d-flex">
-                                        <i className="fa fa-gear mr-2"></i>
+                                        <i className="fa fa-gear me-2"></i>
                                         Menu
-                                        <i className="fa fa-angle-down ml-auto"></i>
+                                        <i className="fa fa-angle-down ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem>Profile</DropdownItem>
                                     <DropdownItem>Settings</DropdownItem>
@@ -305,7 +305,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Left Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -319,16 +319,16 @@ const Dropdowns = () => (
                                 <DropdownMenu persist>
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem>
-                                        <i className="fa fa-fw fa-user mr-2"></i>
+                                        <i className="fa fa-fw fa-user me-2"></i>
                                         Profile
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <i className="fa fa-fw fa-gear mr-2"></i>
+                                        <i className="fa fa-fw fa-gear me-2"></i>
                                         Settings
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem>
-                                        <i className="fa fa-fw fa-sign-out mr-2"></i>
+                                        <i className="fa fa-fw fa-sign-out me-2"></i>
                                         Logout
                                     </DropdownItem>
                                 </DropdownMenu>
@@ -339,7 +339,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Right Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -354,16 +354,16 @@ const Dropdowns = () => (
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Profile
-                                        <i className="fa fa-fw fa-user align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-user align-self-center ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Settings
-                                        <i className="fa fa-fw fa-gear align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-gear align-self-center ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem className="d-flex">
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-sign-out align-self-center ms-auto"></i>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledButtonDropdown>
@@ -373,7 +373,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Right Badge
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -388,20 +388,20 @@ const Dropdowns = () => (
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Profile
-                                        <Badge color="primary" className="align-self-center ml-auto">
+                                        <Badge color="primary" className="align-self-center ms-auto">
                                             Done
                                         </Badge>
                                     </DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Settings
-                                        <Badge color="danger" className="align-self-center ml-auto">
+                                        <Badge color="danger" className="align-self-center ms-auto">
                                             Error
                                         </Badge>
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem className="d-flex">
                                         Logout
-                                        <Badge color="success" className="align-self-center ml-auto">
+                                        <Badge color="success" className="align-self-center ms-auto">
                                             Safe
                                         </Badge>
                                     </DropdownItem>
@@ -413,7 +413,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Right Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.04
                                 </span>
                             </CardTitle>
@@ -428,20 +428,20 @@ const Dropdowns = () => (
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Profile
-                                        <Badge pill color="primary" className="align-self-center ml-auto">
+                                        <Badge pill color="primary" className="align-self-center ms-auto">
                                             5
                                         </Badge>
                                     </DropdownItem>
                                     <DropdownItem className="d-flex">
                                         Settings
-                                        <Badge pill color="danger" className="align-self-center ml-auto">
+                                        <Badge pill color="danger" className="align-self-center ms-auto">
                                             12
                                         </Badge>
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem className="d-flex">
                                         Logout
-                                        <Badge pill color="success" className="align-self-center ml-auto">
+                                        <Badge pill color="success" className="align-self-center ms-auto">
                                             34
                                         </Badge>
                                     </DropdownItem>
@@ -453,7 +453,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Left Badge
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.05
                                 </span>
                             </CardTitle>
@@ -467,20 +467,20 @@ const Dropdowns = () => (
                                 <DropdownMenu persist>
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem>
-                                        <Badge color="primary" className="mr-2">
+                                        <Badge color="primary" className="me-2">
                                             Update
                                         </Badge>
                                         Profile
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <Badge color="success" className="mr-2">
+                                        <Badge color="success" className="me-2">
                                             Ready
                                         </Badge>
                                         Settings
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem>
-                                        <Badge color="secondary" className="mr-2">
+                                        <Badge color="secondary" className="me-2">
                                             Added
                                         </Badge>
                                         Logout
@@ -497,7 +497,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Left Pills
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.06
                                 </span>
                             </CardTitle>
@@ -511,20 +511,20 @@ const Dropdowns = () => (
                                 <DropdownMenu persist>
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem>
-                                        <Badge pill color="secondary" className="mr-2">
+                                        <Badge pill color="secondary" className="me-2">
                                             32
                                         </Badge>
                                         Profile
                                     </DropdownItem>
                                     <DropdownItem>
-                                        <Badge pill color="secondary" className="mr-2">
+                                        <Badge pill color="secondary" className="me-2">
                                             86
                                         </Badge>
                                         Settings
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem>
-                                        <Badge pill color="secondary" className="mr-2">
+                                        <Badge pill color="secondary" className="me-2">
                                             11
                                         </Badge>
                                         Logout
@@ -537,7 +537,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Right & Left Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.07
                                 </span>
                             </CardTitle>
@@ -551,20 +551,20 @@ const Dropdowns = () => (
                                 <DropdownMenu persist>
                                     <DropdownItem header>Menu</DropdownItem>
                                     <DropdownItem className="d-flex">
-                                        <i className="fa fa-fw fa-angle-right align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-angle-right align-self-center me-2"></i>
                                         Profile
-                                        <i className="fa fa-fw fa-user align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-user align-self-center ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem className="d-flex">
-                                        <i className="fa fa-fw fa-angle-right align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-angle-right align-self-center me-2"></i>
                                         Settings
-                                        <i className="fa fa-fw fa-gear align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-gear align-self-center ms-auto"></i>
                                     </DropdownItem>
                                     <DropdownItem divider />
                                     <DropdownItem className="d-flex">
-                                        <i className="fa fa-fw fa-angle-right align-self-center mr-2"></i>
+                                        <i className="fa fa-fw fa-angle-right align-self-center me-2"></i>
                                         Logout
-                                        <i className="fa fa-fw fa-sign-out align-self-center ml-auto"></i>
+                                        <i className="fa fa-fw fa-sign-out align-self-center ms-auto"></i>
                                     </DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledButtonDropdown>
@@ -574,7 +574,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Left Radios
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.08
                                 </span>
                             </CardTitle>
@@ -623,7 +623,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Left Checkboxes
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.09
                                 </span>
                             </CardTitle>
@@ -669,7 +669,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: Forms 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.10
                                 </span>
                             </CardTitle>
@@ -731,7 +731,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                  Dropdown: Dropup
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -762,7 +762,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                  Dropdown: Dropleft
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.03
                                 </span>
                             </CardTitle>
@@ -793,7 +793,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                  Dropdown: Dropright
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -845,7 +845,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: List Group (as Links)
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </CardTitle>
@@ -890,7 +890,7 @@ const Dropdowns = () => (
                                     <ExtendedDropdown.Section className="text-center">
                                         <Link to="/widgets">
                                             See All Notifications
-                                            <i className="fa fa-angle-right fa-fw ml-2" />
+                                            <i className="fa fa-angle-right fa-fw ms-2" />
                                         </Link>
                                     </ExtendedDropdown.Section>
                                 </ExtendedDropdown>
@@ -905,7 +905,7 @@ const Dropdowns = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Dropdown: List Group (as Buttons) 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.02
                                 </span>
                             </CardTitle>
@@ -950,7 +950,7 @@ const Dropdowns = () => (
                                     <ExtendedDropdown.Section className="text-center">
                                         <Link to="/apps/inbox">
                                             See All Messages
-                                            <i className="fa fa-angle-right fa-fw ml-2" />
+                                            <i className="fa fa-angle-right fa-fw ms-2" />
                                         </Link>
                                     </ExtendedDropdown.Section>
                                 </ExtendedDropdown>

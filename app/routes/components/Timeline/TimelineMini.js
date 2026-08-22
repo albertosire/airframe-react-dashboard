@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import { Badge } from "./../../../components";
@@ -25,7 +25,7 @@ const TimelineMini = (props) => (
             className={` fa fa-fw fa-${props.icon} ${props.iconClassName}`}
           ></i>
         </div>
-        <div className="timeline-item-head clearfix mb-0 pl-3">
+        <div className="timeline-item-head clearfix mb-0 ps-3">
           {/* Badge */}
           <div className="mb-2">
             <span className={`badge badge-${props.badgeColor} `}>

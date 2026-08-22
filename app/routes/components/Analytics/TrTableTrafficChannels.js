@@ -1,6 +1,6 @@
 import React from "react";
 import _ from "lodash";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Media, Avatar, AvatarAddOn } from "./../../../components";
 
 import { randomArray } from "./../../../utilities";
@@ -18,11 +18,11 @@ const TrTableTrafficChannels = () => (
         <td className="align-middle text-inverse">{randomArray(channel)}</td>
         <td className="text-inverse align-middle">{faker.finance.amount()}</td>
         <td className="align-middle">{faker.finance.amount()}</td>
-        <td className="align-middle text-right">
+        <td className="align-middle text-end">
           {randomArray(change)}{" "}
-          <i className="fa fa-caret-down text-danger ml-1"></i>
+          <i className="fa fa-caret-down text-danger ms-1"></i>
         </td>
-        <td className="text-right align-middle">
+        <td className="text-end align-middle">
           <TinyAreaChart />
         </td>
       </tr>

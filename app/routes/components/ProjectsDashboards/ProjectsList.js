@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import { Badge, Progress } from "./../../../components";

@@ -18,7 +18,7 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
     <Nav navbar accent={ accent } pills={ pills } { ...navbarProps }>
         <NavItem>
             <NavLink tag={ Link } to="/interface/navbars">
-                <span className={ classNames({ 'mr-3': !(pills || accent) }) }>
+                <span className={ classNames({ 'me-3': !(pills || accent) }) }>
                     <i className="fa fa-fw fa-home d-none d-md-inline"></i>
                     <span className="d-md-none">
                         Home
@@ -29,7 +29,7 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
         <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav>
                 Dashboards
-                <i className="fa fa-angle-down fa-fw ml-1"></i>
+                <i className="fa fa-angle-down fa-fw ms-1"></i>
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem tag={ Link } to="/dashboards/analytics">Analytics</DropdownItem>
@@ -40,7 +40,7 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
         <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav>
                 Interface
-                <i className="fa fa-angle-down fa-fw ml-1"></i>
+                <i className="fa fa-angle-down fa-fw ms-1"></i>
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem tag={ Link } to="/interface/colors">Colors</DropdownItem>
@@ -67,7 +67,7 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
         <NestedDropdown nav inNavbar>
             <DropdownToggle nav>
                 Apps
-                <i className="fa fa-angle-down fa-fw ml-1"></i>
+                <i className="fa fa-angle-down fa-fw ms-1"></i>
             </DropdownToggle>
             <DropdownMenu>
                 <NestedDropdown.Submenu title="Projects">
@@ -88,11 +88,6 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
                     <DropdownItem tag={ Link } to="/apps/search-results">Search Results</DropdownItem>
                     <DropdownItem tag={ Link } to="/apps/images-results">Images Results</DropdownItem>
                     <DropdownItem tag={ Link } to="/apps/videos-results">Videos Results</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/users-results">Users Results</DropdownItem>
-                </NestedDropdown.Submenu>
-                <NestedDropdown.Submenu title="Users">
-                    <DropdownItem tag={ Link } to="/apps/users/list">Users List</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/users/grid">Users Grid</DropdownItem>
                 </NestedDropdown.Submenu>
                 <NestedDropdown.Submenu title="Gallery">
                     <DropdownItem tag={ Link } to="/apps/gallery-grid">Gallery Grid</DropdownItem>
@@ -103,14 +98,6 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
                     <DropdownItem tag={ Link } to="/apps/new-email">New Email</DropdownItem>
                     <DropdownItem tag={ Link } to="/apps/email-details">Email Details</DropdownItem>
                 </NestedDropdown.Submenu>
-                <NestedDropdown.Submenu title="Profile">
-                    <DropdownItem tag={ Link } to="/apps/profile-details">Profile Details</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/profile-edit">Profile Edit</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/account-edit">Account Edit</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/billing-edit">Billing Edit</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/settings-edit">Settings Edit</DropdownItem>
-                    <DropdownItem tag={ Link } to="/apps/sessions-edit">Sessions Edit</DropdownItem>
-                </NestedDropdown.Submenu>
                 <DropdownItem tag={ Link } to="/apps/clients">Clients</DropdownItem>
                 <DropdownItem tag={ Link } to="/apps/chat">Chat</DropdownItem>
             </DropdownMenu>
@@ -119,7 +106,7 @@ const NavbarNavigation = ({ accent, pills, ...navbarProps }) => (
         <UncontrolledDropdown nav inNavbar>
             <DropdownToggle nav>
                 Layouts                                 
-                <i className="fa fa-angle-down fa-fw ml-1"></i>
+                <i className="fa fa-angle-down fa-fw ms-1"></i>
             </DropdownToggle>
             <DropdownMenu>
                 <DropdownItem tag={ Link } to="/layouts/navbar">Navbar</DropdownItem>

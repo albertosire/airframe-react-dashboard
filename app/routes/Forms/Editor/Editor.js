@@ -1,7 +1,6 @@
 import React from "react";
 import ReactQuill from "react-quill";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import { Container, Card } from "./../../../components";
 
 import { HeaderMain } from "../../components/HeaderMain";

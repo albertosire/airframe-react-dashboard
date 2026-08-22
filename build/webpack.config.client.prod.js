@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
-var OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+var CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 var TerserPlugin = require('terser-webpack-plugin');
 var CircularDependencyPlugin = require('circular-dependency-plugin');
 
@@ -11,22 +11,24 @@ var config = require('./../config');
 var BASE_PATH = process.env.BASE_PATH || '/';
 
 module.exports = {
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     mode: 'production',
     entry: {
-        app: ['react-hot-loader/patch', path.join(config.srcDir, 'index.js')]
+        app: [path.join(config.srcDir, 'index.js')]
     },
     output: {
         filename: '[name].bundle.js',
         chunkFilename: '[name].chunk.js',
         path: config.distDir,
-        publicPath: BASE_PATH
+        publicPath: BASE_PATH,
+        clean: true,
     },
     resolve: {
         modules: [
             'node_modules',
             config.srcDir
-        ]
+        ],
+        extensions: ['.js', '.jsx'],
     },
     plugins: [
         new CircularDependencyPlugin({
@@ -39,16 +41,17 @@ module.exports = {
             template: config.srcHtmlLayout,
             inject: false
         }),
-        new webpack.HashedModuleIdsPlugin(),
         new ExtractCssChunks(),
-        new OptimizeCssAssetsPlugin(),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production'),
             'process.env.BASE_PATH': JSON.stringify(BASE_PATH),
         })
     ],
     optimization: {
-        minimizer: [new TerserPlugin()]
+        minimizer: [
+            new TerserPlugin(),
+            new CssMinimizerPlugin(),
+        ],
     },
     module: {
         rules: [
@@ -58,7 +61,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: 'babel-loader'
             },
-            // Modular Styles
             {
                 test: /\.css$/,
                 use: [
@@ -87,19 +89,11 @@ module.exports = {
                         }
                     },
                     { loader: 'postcss-loader' },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sassOptions: {
-                                includePaths: config.scssIncludes
-                            }
-                        }
-                    }
+                    { loader: 'sass-loader' }
                 ],
                 exclude: [path.resolve(config.srcDir, 'styles')],
                 include: [config.srcDir]
             },
-            // Global Styles
             {
                 test: /\.css$/,
                 use: [
@@ -115,38 +109,31 @@ module.exports = {
                     ExtractCssChunks.loader,
                     { loader: 'css-loader' }, 
                     { loader: 'postcss-loader' }, 
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sassOptions: {
-                                includePaths: config.scssIncludes
-                            }
-                        }
-                    }
+                    { loader: 'sass-loader' }
                 ],
                 include: [path.resolve(config.srcDir, 'styles')]
             },
-            // Fonts
             {
                 test: /\.(ttf|eot|woff|woff2)$/,
-                loader: "file-loader",
-                options: {
-                    name: "fonts/[name].[ext]",
-                }
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext]',
+                },
             },
-            // Files
             {
                 test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
-                loader: "file-loader",
-                options: {
-                    name: "static/[name].[ext]",
-                }
+                type: 'asset/resource',
+                generator: {
+                    filename: 'static/[name][ext]',
+                },
             }
         ]
     },
     devServer: {
         hot: false,
-        contentBase: config.distDir,
+        static: {
+            directory: config.distDir,
+        },
         compress: true,
         historyApiFallback: {
             index: '/'

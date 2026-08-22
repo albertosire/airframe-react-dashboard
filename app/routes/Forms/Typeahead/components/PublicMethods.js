@@ -26,7 +26,7 @@ export class PublicMethods extends React.Component {
                         outline
                         color="secondary"
                         onClick={() => this._typeahead.getInstance().clear()}
-                        className="mr-2"
+                        className="me-2"
                     >
                         Clear
                     </Button>
@@ -34,7 +34,7 @@ export class PublicMethods extends React.Component {
                         outline
                         color="secondary"
                         onClick={() => this._typeahead.getInstance().focus()}
-                        className="mr-2"
+                        className="me-2"
                     >
                         Focus
                     </Button>
@@ -46,7 +46,7 @@ export class PublicMethods extends React.Component {
                             instance.focus();
                             setTimeout(() => instance.blur(), 1000);
                         }}
-                        className="mr-2"
+                        className="me-2"
                     >
                         Focus, then blur after 1 second
                     </Button>

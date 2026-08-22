@@ -80,7 +80,7 @@ export class Dropzone extends React.Component {
                                         Attachments
 
                                         <Badge
-                                            className="ml-1 text-white"
+                                            className="ms-1 text-white"
                                             pill
                                             color="secondary"
                                         >
@@ -88,7 +88,7 @@ export class Dropzone extends React.Component {
                                         </Badge>
                                     </div>
                                 </Divider>
-                                <ButtonGroup className="flex-grow-0 flex-shrink-0 pl-2">
+                                <ButtonGroup className="flex-grow-0 flex-shrink-0 ps-2">
                                     <Button
                                         active={ listStyle === 'list' }
                                         onClick={() => {this.setState({listStyle: 'list'})}}

@@ -19,7 +19,7 @@ import {
 
 const cardText = ({ cardNo }) => (
     <CardText>
-        <span className="mr-2 text-muted">
+        <span className="me-2 text-muted">
             #{ cardNo }
         </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nisl elit, porta a sapien eget, fringilla sagittis ex.
     </CardText>
@@ -140,7 +140,7 @@ const Cards = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Without Header 
-                                <span className="small ml-1">
+                                <span className="small ms-1">
                                     Optional
                                 </span>
                             </CardTitle>

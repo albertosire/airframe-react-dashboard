@@ -54,7 +54,7 @@ const InputGroups = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Input Groups: Text
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -158,7 +158,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -280,7 +280,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -351,7 +351,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Multiple
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </CardTitle>
@@ -440,7 +440,7 @@ const InputGroups = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Input Groups: Buttons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -473,7 +473,7 @@ const InputGroups = () => (
                                             <Input placeholder="Right Addon..." id="rightButton" />
                                             <InputGroupAddon addonType="append">
                                                  <Button color="secondary" outline>
-                                                    Add <i className="fa fa-angle-right ml-2"></i>
+                                                    Add <i className="fa fa-angle-right ms-2"></i>
                                                  </Button>
                                             </InputGroupAddon>
                                         </InputGroup>
@@ -495,7 +495,7 @@ const InputGroups = () => (
                                             <Input placeholder="Amount..." id="bothButtons" />
                                             <InputGroupAddon addonType="append">
                                                  <Button color="secondary" outline>
-                                                    Add <i className="fa fa-angle-right ml-2"></i>
+                                                    Add <i className="fa fa-angle-right ms-2"></i>
                                                  </Button>
                                             </InputGroupAddon>
                                         </InputGroup>
@@ -511,7 +511,7 @@ const InputGroups = () => (
                                         <InputGroup>
                                             <InputGroupAddon addonType="prepend">
                                                 <Button color="secondary" outline>
-                                                    <i className="fa fa-close mr-2"></i>
+                                                    <i className="fa fa-close me-2"></i>
                                                     Clear
                                                 </Button>
                                             </InputGroupAddon>
@@ -530,7 +530,7 @@ const InputGroups = () => (
                                             <Input type="textarea" name="text" id="rightButtonTextarea" />
                                             <InputGroupAddon addonType="append">
                                                 <Button color="secondary" outline>
-                                                    <i className="fa fa-close mr-2"></i>
+                                                    <i className="fa fa-close me-2"></i>
                                                     Clear
                                                 </Button>
                                             </InputGroupAddon>                                            
@@ -553,7 +553,7 @@ const InputGroups = () => (
                                             <Input type="textarea" name="text" id="bothButtonTextarea" />
                                             <InputGroupAddon addonType="append">
                                                 <Button color="secondary" outline>
-                                                    <i className="fa fa-close mr-2"></i>
+                                                    <i className="fa fa-close me-2"></i>
                                                     Clear
                                                 </Button>
                                             </InputGroupAddon>                                            
@@ -566,7 +566,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Buttons Dropdowns
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -588,23 +588,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -633,23 +633,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -678,20 +678,20 @@ const InputGroups = () => (
                                                         Select Priveleges:
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-circle-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-circle-o me-2"></i>
                                                         Administrator
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-o me-2"></i>
                                                         User
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-users mr-2"></i>
+                                                        <i className="fa fa-fw fa-users me-2"></i>
                                                         All
                                                     </DropdownItem>
                                                     <DropdownItem divider />
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-plus mr-2"></i>
+                                                        <i className="fa fa-fw fa-plus me-2"></i>
                                                         Add New User
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -708,23 +708,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -751,23 +751,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -796,23 +796,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -841,20 +841,20 @@ const InputGroups = () => (
                                                         Select Priveleges:
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-circle-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-circle-o me-2"></i>
                                                         Administrator
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-o me-2"></i>
                                                         User
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-users mr-2"></i>
+                                                        <i className="fa fa-fw fa-users me-2"></i>
                                                         All
                                                     </DropdownItem>
                                                     <DropdownItem divider />
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-plus mr-2"></i>
+                                                        <i className="fa fa-fw fa-plus me-2"></i>
                                                         Add New User
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -871,23 +871,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                     { /* END Dropdown Content */}
@@ -903,7 +903,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Segmented
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -932,23 +932,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -982,23 +982,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1032,20 +1032,20 @@ const InputGroups = () => (
                                                         Select Priveleges:
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-circle-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-circle-o me-2"></i>
                                                         Administrator
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-o me-2"></i>
                                                         User
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-users mr-2"></i>
+                                                        <i className="fa fa-fw fa-users me-2"></i>
                                                         All
                                                     </DropdownItem>
                                                     <DropdownItem divider />
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-plus mr-2"></i>
+                                                        <i className="fa fa-fw fa-plus me-2"></i>
                                                         Add New User
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1067,23 +1067,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1110,23 +1110,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1165,23 +1165,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1215,20 +1215,20 @@ const InputGroups = () => (
                                                         Select Priveleges:
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-circle-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-circle-o me-2"></i>
                                                         Administrator
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-user-o mr-2"></i>
+                                                        <i className="fa fa-fw fa-user-o me-2"></i>
                                                         User
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-users mr-2"></i>
+                                                        <i className="fa fa-fw fa-users me-2"></i>
                                                         All
                                                     </DropdownItem>
                                                     <DropdownItem divider />
                                                     <DropdownItem>
-                                                        <i className="fa fa-fw fa-plus mr-2"></i>
+                                                        <i className="fa fa-fw fa-plus me-2"></i>
                                                         Add New User
                                                     </DropdownItem>
                                                 { /* END Dropdown Content */}
@@ -1250,23 +1250,23 @@ const InputGroups = () => (
                                                     { /* START Dropdown Content */}
                                                     <DropdownItem header>Select Folder:</DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         Content
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Movies
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Documents
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Pictures
                                                     </DropdownItem>
                                                     <DropdownItem>
-                                                        <i className="fa fa-folder-o mr-2"></i>
+                                                        <i className="fa fa-folder-o me-2"></i>
                                                         My Music
                                                     </DropdownItem>
                                                     { /* END Dropdown Content */}
@@ -1309,7 +1309,7 @@ const InputGroups = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Input Groups: Sizes
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -1365,7 +1365,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Checkboxes and Radios
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -1497,7 +1497,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Custom Selects
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -1608,7 +1608,7 @@ const InputGroups = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Input Groups: Custom File Inputs
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -1623,7 +1623,7 @@ const InputGroups = () => (
                                         <InputGroup>
                                             <CustomInput type="file" id="leftFileInput" name="customFile" />
                                             <InputGroupAddon addonType="append">
-                                                <i className="fa fa-fw fa-info-circle mr-2"></i>
+                                                <i className="fa fa-fw fa-info-circle me-2"></i>
                                                 All Images Accepted
                                             </InputGroupAddon>
                                         </InputGroup>
@@ -1638,7 +1638,7 @@ const InputGroups = () => (
                                     <Col sm={9}>
                                         <InputGroup>
                                             <InputGroupAddon addonType="prepend">
-                                                <i className="fa fa-fw fa-file-pdf-o mr-2"></i>
+                                                <i className="fa fa-fw fa-file-pdf-o me-2"></i>
                                                 Only PDF Accepted
                                             </InputGroupAddon>
                                             <CustomInput type="file" id="rightFileInput" name="customFile" />
@@ -1660,7 +1660,7 @@ const InputGroups = () => (
                                             </InputGroupAddon>
                                             <CustomInput type="file" id="leftFileInput2" name="customFile" />
                                             <InputGroupAddon addonType="append">
-                                                <i className="fa fa-fw fa-info-circle mr-2"></i>
+                                                <i className="fa fa-fw fa-info-circle me-2"></i>
                                                 All Images Accepted
                                             </InputGroupAddon>
                                         </InputGroup>
@@ -1675,7 +1675,7 @@ const InputGroups = () => (
                                     <Col sm={9}>
                                         <InputGroup>
                                             <InputGroupAddon addonType="prepend">
-                                                <i className="fa fa-fw fa-file-pdf-o mr-2"></i>
+                                                <i className="fa fa-fw fa-file-pdf-o me-2"></i>
                                                 Only PDF Accepted
                                             </InputGroupAddon>
                                             <CustomInput type="file" id="rightFileInput" name="customFile" />

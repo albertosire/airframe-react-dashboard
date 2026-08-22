@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import { randomArray } from "./../../../utilities";
@@ -25,7 +25,7 @@ const TimelineDefault = (props) => (
           {/* END PILL Date */}
         </React.Fragment>
       )}
-      <div className="timeline-item pr-3">
+      <div className="timeline-item pe-3">
         {/* START Small ICON  */}
         <div className="timeline-icon">
           <i className={` fa fa-circle-o text-${props.smallIconColor}`}></i>
@@ -39,7 +39,7 @@ const TimelineDefault = (props) => (
           {/* START HOUR  */}
           <div className="timeline-item-head pb-0">
             {/* START ICON Circle  */}
-            <div className="pull-left mr-2">
+            <div className="pull-left me-2">
               <span className="fa-stack fa-lg">
                 <i
                   className={` fa fa-circle fa-stack-2x text-${props.iconCircleColor}`}

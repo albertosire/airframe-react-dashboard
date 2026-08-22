@@ -44,7 +44,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Defaults Colors
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -97,7 +97,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Social Colors
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -106,56 +106,56 @@ const Typography = () => (
                             </p>
                             <div>
                                 <p className="text-facebook">
-                                    <i className="fa fa-fw fa-facebook mr-1"></i>
+                                    <i className="fa fa-fw fa-facebook me-1"></i>
                                     This is an example for <code>.text-facebook</code>
                                 </p>
                                 <p className="text-twitter">
-                                    <i className="fa fa-fw fa-twitter mr-1"></i>
+                                    <i className="fa fa-fw fa-twitter me-1"></i>
                                     This is an example for <code>.text-twitter</code>
                                 </p>
                                 <p className="text-lastfm">
-                                    <i className="fa fa-fw fa-lastfm mr-1"></i>
+                                    <i className="fa fa-fw fa-lastfm me-1"></i>
                                     This is an example for <code>.text-lastfm</code>
                                 </p>
                                 <p className="text-pinterest">
-                                    <i className="fa fa-fw fa-pinterest mr-1"></i>
+                                    <i className="fa fa-fw fa-pinterest me-1"></i>
                                     This is an example for <code>.text-pinterest</code>
                                 </p>
                                 <p className="text-linkedin">
-                                    <i className="fa fa-fw fa-linkedin mr-1"></i>
+                                    <i className="fa fa-fw fa-linkedin me-1"></i>
                                     This is an example for <code>.text-linkedin</code>
                                 </p>
                                 <p className="text-medium">
-                                    <i className="fa fa-fw fa-medium mr-1"></i>
+                                    <i className="fa fa-fw fa-medium me-1"></i>
                                     This is an example for <code>.text-medium</code>
                                 </p>
                                 <p className="text-skype">
-                                    <i className="fa fa-fw fa-skype mr-1"></i>
+                                    <i className="fa fa-fw fa-skype me-1"></i>
                                     This is an example for <code>.text-skype</code>
                                 </p>
                                 <p className="text-foursquare">
-                                    <i className="fa fa-fw fa-foursquare mr-1"></i>
+                                    <i className="fa fa-fw fa-foursquare me-1"></i>
                                     This is an example for <code>.text-foursquare</code>
                                 </p>
                                 <p className="text-android">
-                                    <i className="fa fa-fw fa-android mr-1"></i>
+                                    <i className="fa fa-fw fa-android me-1"></i>
                                     This is an example for 
                                     <code>.text-android</code>
                                 </p>
                                 <p className="text-spotify">
-                                    <i className="fa fa-fw fa-spotify mr-1"></i>
+                                    <i className="fa fa-fw fa-spotify me-1"></i>
                                     This is an example for <code>.text-spotify</code>
                                 </p>
                                 <p className="text-youtube">
-                                    <i className="fa fa-fw fa-youtube mr-1"></i>
+                                    <i className="fa fa-fw fa-youtube me-1"></i>
                                     This is an example for <code>.text-youtube</code>
                                 </p>
                                 <p className="text-windows">
-                                    <i className="fa fa-fw fa-windows mr-1"></i>
+                                    <i className="fa fa-fw fa-windows me-1"></i>
                                     This is an example for <code>.text-windows</code>
                                 </p>
                                 <p className="text-amazon">
-                                    <i className="fa fa-fw fa-amazon mr-1"></i>
+                                    <i className="fa fa-fw fa-amazon me-1"></i>
                                     This is an example for <code>.text-amazon</code>
                                 </p>
                             </div>
@@ -169,7 +169,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Grays
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -215,7 +215,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Social Colors
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -279,7 +279,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header: Light
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -313,7 +313,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header: Displays
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -336,7 +336,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header: Regular
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -369,7 +369,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Header: Customizing
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -441,7 +441,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Justify
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -463,7 +463,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: No Wrap
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -479,7 +479,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Transform
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -501,7 +501,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Monospace
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.07
                                 </span>
                             </CardTitle>
@@ -517,7 +517,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Inline Text Elements
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.09
                                 </span>
                             </CardTitle>
@@ -540,23 +540,23 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Alignment
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
                             <p className="card-text">
-                                Add class <code>.text-left</code>, 
+                                Add class <code>.text-start</code>, 
                                 <code>.text-center</code> or 
-                                <code>.text-right</code>.
+                                <code>.text-end</code>.
                             </p>
                             <div>
-                                <p className="text-left">
+                                <p className="text-start">
                                     Left aligned text on all viewport sizes.
                                 </p>
                                 <p className="text-center">
                                     Center aligned text on all viewport sizes.
                                 </p>
-                                <p className="text-right">
+                                <p className="text-end">
                                     Right aligned text on all viewport sizes.
                                 </p>
                             </div>
@@ -566,7 +566,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Truncate
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -589,7 +589,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Transform
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.06
                                 </span>
                             </CardTitle>
@@ -597,13 +597,13 @@ const Typography = () => (
                                 <p className="card-text">
                                     Quickly change the weight (boldness) of text or italicize text.
                                 </p>
-                                <p className="font-weight-bold">
+                                <p className="fw-bold">
                                     Bold text.
                                 </p>
-                                <p className="font-weight-normal">
+                                <p className="fw-normal">
                                     Normal weight text.
                                 </p>
-                                <p className="font-weight-light">
+                                <p className="fw-light">
                                     Light weight text.
                                 </p>
                                 <p className="font-italic">
@@ -616,7 +616,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Lead
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.08
                                 </span>
                             </CardTitle>
@@ -633,7 +633,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Text: Abbreviations
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.10
                                 </span>
                             </CardTitle>
@@ -667,7 +667,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Blackquote: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -685,7 +685,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Blackquote: Alignment Center
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.03
                                 </span>
                             </CardTitle>
@@ -708,7 +708,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Blackquote: Naming a Source
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -730,14 +730,14 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Blackquote: Alignment Right
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.04
                                 </span>
                             </CardTitle>
                             <p className="card-text">
                                 Use text utilities as needed to change the alignment of your blockquote.
                             </p>
-                            <blockquote className="blockquote text-right">
+                            <blockquote className="blockquote text-end">
                                 <p className="mb-0">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
                                 </p>
@@ -769,7 +769,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Lists: Unstyled
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </CardTitle>
@@ -801,7 +801,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Lists: Inline
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.02
                                 </span>
                             </CardTitle>
@@ -823,7 +823,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Lists: Description List Alignment
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.03
                                 </span>
                             </CardTitle>
@@ -877,7 +877,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Code: Inline Code
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.01
                                 </span>
                             </CardTitle>
@@ -891,7 +891,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Code: Variables
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.03
                                 </span>
                             </CardTitle>
@@ -905,7 +905,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Code: User Input
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.04
                                 </span>
                             </CardTitle>
@@ -923,7 +923,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Code: Sample Output
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.05
                                 </span>
                             </CardTitle>
@@ -937,7 +937,7 @@ const Typography = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Code: Code Blocks
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.02
                                 </span>
                             </CardTitle>

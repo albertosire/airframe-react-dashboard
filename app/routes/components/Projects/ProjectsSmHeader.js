@@ -15,7 +15,7 @@ const ProjectsSmHeader = (props ) => (
     <React.Fragment>
         { /* START Header Nav */}
         <div className="d-flex flex-column flex-md-row mb-3 mb-md-0">
-            <Breadcrumb className="mr-auto d-flex align-items-center">
+            <Breadcrumb className="me-auto d-flex align-items-center">
                 { /* START 1st */}
                 <BreadcrumbItem active>
                     <Link to="/">
@@ -51,7 +51,7 @@ const ProjectsSmHeader = (props ) => (
                 { /* END 3rd */}
             </Breadcrumb>
             <ButtonToolbar>
-                <ButtonGroup className="mr-auto mr-md-2">
+                <ButtonGroup className="me-auto mr-md-2">
                     <Button tag={ NavLink } to={ `${ props.linkList }` } color="secondary" outline className="align-self-center" id="tooltipShowList">
                         <i className="fa-fw fa fa-bars"></i>
                     </Button>

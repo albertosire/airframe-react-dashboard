@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import { Media, CustomInput } from "./../../../components";
 const TasksMedia = (props) => (
   <React.Fragment>
     <Media>
-      <Media left className="mr-3">
+      <Media left className="me-3">
         <CustomInput
           className="pt-0 mt-0"
           type="checkbox"
@@ -24,7 +24,7 @@ const TasksMedia = (props) => (
         </div>
         <div className="mb-0">{faker.date.past().toString()}</div>
       </Media>
-      <Media right className="ml-3">
+      <Media right className="ms-3">
         <i className={`fa fa-fw fa-circle text-${props.iconColor}`}></i>
       </Media>
     </Media>

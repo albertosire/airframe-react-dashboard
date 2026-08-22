@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Link } from "react-router-dom";
 
 import {
@@ -37,18 +37,18 @@ const EmailDetails = () => (
             <CardBody>
               {/* START Header */}
               <div className="d-lg-flex justify-content-end mb-4">
-                <div className="mr-auto d-flex align-items-center mb-3 mb-xl-0">
+                <div className="me-auto d-flex align-items-center mb-3 mb-xl-0">
                   <Button
                     color="link"
                     tag={Link}
                     to="/apps/inbox"
                     className="text-decoration-none"
                   >
-                    <i className="fa fa-angle-left mr-2"></i> Inbox
+                    <i className="fa fa-angle-left me-2"></i> Inbox
                   </Button>
                 </div>
                 <ButtonToolbar>
-                  <ButtonGroup className="mr-2 mb-3 mb-sm-0">
+                  <ButtonGroup className="me-2 mb-3 mb-sm-0">
                     <Button
                       color="link"
                       className="text-decoration-none align-self-center"
@@ -76,7 +76,7 @@ const EmailDetails = () => (
                       Next Message
                     </UncontrolledTooltip>
                   </ButtonGroup>
-                  <ButtonGroup className="mr-2">
+                  <ButtonGroup className="me-2">
                     <Button
                       color="link"
                       className="text-decoration-none align-self-center"
@@ -127,7 +127,7 @@ const EmailDetails = () => (
                       Delete
                     </UncontrolledTooltip>
                   </ButtonGroup>
-                  <ButtonGroup className="ml-auto ml-lg-0">
+                  <ButtonGroup className="ms-auto ml-lg-0">
                     <Button
                       color="primary"
                       className="align-self-center"
@@ -151,7 +151,7 @@ const EmailDetails = () => (
               <div className="mb-4">
                 <div className="d-flex flex-column flex-md-row">
                   <Media>
-                    <Media left className="align-self-center mr-4">
+                    <Media left className="align-self-center me-4">
                       <Avatar.Image
                         size="md"
                         src={randomAvatar()}
@@ -176,7 +176,7 @@ const EmailDetails = () => (
                       <samp className="small">{faker.internet.email()}</samp>
                     </Media>
                   </Media>
-                  <div className="ml-md-auto align-self-start text-left text-md-right mt-2 mt-md-0">
+                  <div className="ml-md-auto align-self-start text-start text-md-right mt-2 mt-md-0">
                     18-Jun-2012
                     <br />
                     08:43 PM
@@ -188,7 +188,7 @@ const EmailDetails = () => (
                   <Badge
                     pill
                     color="primary"
-                    className="ml-auto align-self-start"
+                    className="ms-auto align-self-start"
                   >
                     Work
                   </Badge>
@@ -200,7 +200,7 @@ const EmailDetails = () => (
               {/* START Attachments */}
               <div>
                 <div className="mb-3">
-                  <span className="small mr-2">Attachments</span>
+                  <span className="small me-2">Attachments</span>
                   <Badge pill color="secondary">
                     3
                   </Badge>
@@ -245,8 +245,8 @@ const EmailDetails = () => (
                     Next Message
                   </UncontrolledTooltip>
                 </ButtonGroup>
-                <ButtonToolbar className="flex-column flex-sm-row ml-0 ml-lg-auto">
-                  <ButtonGroup className="mr-2 mb-2 mb-sm-0">
+                <ButtonToolbar className="flex-column flex-sm-row ms-0 ml-lg-auto">
+                  <ButtonGroup className="me-2 mb-2 mb-sm-0">
                     <Button
                       color="link"
                       className="text-decoration-none align-self-center"
@@ -297,7 +297,7 @@ const EmailDetails = () => (
                       Delete
                     </UncontrolledTooltip>
                   </ButtonGroup>
-                  <ButtonGroup className="ml-0 ml-md-auto m-lg-0">
+                  <ButtonGroup className="ms-0 ml-md-auto m-lg-0">
                     <Button
                       color="primary"
                       className="align-self-center"

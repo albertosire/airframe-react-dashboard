@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Card,
   CardImg,
@@ -73,22 +72,22 @@ const VideosResultsCard = () => (
             <div className="text-success mb-3">{faker.internet.url()}</div>
             <div className="mb-3">{faker.lorem.paragraph()}</div>
             <div>
-              {randomArray(stars)} <span className="ml-2">16 Reviews</span>
+              {randomArray(stars)} <span className="ms-2">16 Reviews</span>
             </div>
             <div className="mb-2">
-              <Badge color="secondary" pill className="mr-1">
+              <Badge color="secondary" pill className="me-1">
                 {faker.internet.domainName()}
               </Badge>
-              <Badge color="secondary" pill className="mr-1">
+              <Badge color="secondary" pill className="me-1">
                 {faker.internet.domainName()}
               </Badge>
-              <Badge color="secondary" pill className="mr-1">
+              <Badge color="secondary" pill className="me-1">
                 {faker.internet.domainName()}
               </Badge>
             </div>
             <div>
               <Media>
-                <Media left className="align-self-center mr-3">
+                <Media left className="align-self-center me-3">
                   <Avatar.Image
                     size="sm"
                     src={randomAvatar()}

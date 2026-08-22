@@ -66,7 +66,7 @@ class CustomizedRange extends React.Component {
             <div>
                 <Form inline className='mb-3 d-flex justify-content-between'>
                     <div className="d-flex">
-                        <FormGroup  className='mr-3'>
+                        <FormGroup  className='me-3'>
                             <Label>
                                 Lower Bound
                             </Label>
@@ -147,7 +147,7 @@ class DynamicBounds extends React.Component {
         return (
             <div>
                 <Form inline className="mb-3">
-                    <FormGroup className="mr-3">
+                    <FormGroup className="me-3">
                         <Label>
                             Min
                         </Label>

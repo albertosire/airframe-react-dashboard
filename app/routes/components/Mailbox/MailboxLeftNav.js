@@ -15,7 +15,7 @@ const MailboxLeftNav = () => (
                 <NavItem>
                     <NavLink href="#" active className="d-flex">
                         Inbox
-                        <Badge pill color="secondary" className="align-self-center ml-auto">
+                        <Badge pill color="secondary" className="align-self-center ms-auto">
                             12
                         </Badge>
                     </NavLink>
@@ -23,7 +23,7 @@ const MailboxLeftNav = () => (
                 <NavItem>
                     <NavLink href="#" className="d-flex">
                         Draft
-                        <Badge pill color="secondary" className="align-self-center ml-auto">
+                        <Badge pill color="secondary" className="align-self-center ms-auto">
                             12
                         </Badge>
                     </NavLink>
@@ -31,7 +31,7 @@ const MailboxLeftNav = () => (
                 <NavItem>
                     <NavLink href="#" className="d-flex">
                         Sent
-                        <Badge pill color="secondary" className="align-self-center ml-auto">
+                        <Badge pill color="secondary" className="align-self-center ms-auto">
                             2
                         </Badge>
                     </NavLink>
@@ -39,7 +39,7 @@ const MailboxLeftNav = () => (
                 <NavItem>
                     <NavLink href="#" className="d-flex">
                         Trash
-                        <Badge pill color="secondary" className="align-self-center ml-auto">
+                        <Badge pill color="secondary" className="align-self-center ms-auto">
                             45
                         </Badge>
                     </NavLink>
@@ -55,37 +55,37 @@ const MailboxLeftNav = () => (
             <Nav pills vertical>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-circle text-primary mr-2"></i>
+                        <i className="fa fa-fw fa-circle text-primary me-2"></i>
                         Family
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-circle text-info mr-2"></i>
+                        <i className="fa fa-fw fa-circle text-info me-2"></i>
                         Friends
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-circle text-success mr-2"></i>
+                        <i className="fa fa-fw fa-circle text-success me-2"></i>
                         Work
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-circle text-warning mr-2"></i>
+                        <i className="fa fa-fw fa-circle text-warning me-2"></i>
                         Trips
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-circle text-danger mr-2"></i>
+                        <i className="fa fa-fw fa-circle text-danger me-2"></i>
                         Other
                     </NavLink>
                 </NavItem>
                 <NavItem>
                     <NavLink href="#">
-                        <i className="fa fa-fw fa-plus mr-2"></i>
+                        <i className="fa fa-fw fa-plus me-2"></i>
                         Add New Label
                     </NavLink>
                 </NavItem>

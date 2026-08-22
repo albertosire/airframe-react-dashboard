@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 
 import { Badge } from "./../../../../components";
@@ -17,7 +17,7 @@ const TrTableHeads = () => (
         <td className="align-middle">{faker.person.lastName()}</td>
         <td className="align-middle">{faker.internet.email()}</td>
         <td className="align-middle">{faker.internet.userName()}</td>
-        <td className="align-middle text-right">
+        <td className="align-middle text-end">
           <Badge color={colorStatus[index % 4]}>{faker.person.jobType()}</Badge>
         </td>
       </tr>

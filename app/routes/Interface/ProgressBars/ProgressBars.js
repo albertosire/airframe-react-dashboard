@@ -42,7 +42,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Primary
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -57,7 +57,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Success
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -72,7 +72,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Info
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -91,7 +91,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Warning
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </CardTitle>
@@ -106,7 +106,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Danger
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.05
                                 </span>
                             </CardTitle>
@@ -121,7 +121,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Dark
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -140,7 +140,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Secondary
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -155,7 +155,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Custom Color
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -170,7 +170,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Social Colors
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -210,7 +210,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -225,7 +225,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: 5px
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -244,7 +244,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: 3px
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -259,7 +259,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: 1px
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.04
                                 </span>
                             </CardTitle>
@@ -279,7 +279,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: 4px
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.05
                                 </span>
                             </CardTitle>
@@ -294,7 +294,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: 2px
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.06
                                 </span>
                             </CardTitle>
@@ -334,7 +334,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Label
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -349,7 +349,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Label Icon
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -366,7 +366,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Multiple Bars
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -390,7 +390,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Striped
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.04
                                 </span>
                             </CardTitle>
@@ -404,7 +404,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Animated Striped
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.05
                                 </span>
                             </CardTitle>
@@ -418,7 +418,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Square Rounds
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.06
                                 </span>
                             </CardTitle>
@@ -436,7 +436,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Full Rounds
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.07
                                 </span>
                             </CardTitle>
@@ -475,7 +475,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Details Below
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -485,7 +485,7 @@ const ProgressBars = () => (
                             <Progress value="25" className="mb-2">25%</Progress>
                             <div className="d-flex">
                                 <p>Your Computer:</p>
-                                <p className="ml-auto text-inverse">
+                                <p className="ms-auto text-inverse">
                                     6GB/12GB
                                 </p>
                             </div>
@@ -499,7 +499,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Details Above
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -508,7 +508,7 @@ const ProgressBars = () => (
                             </p>
                             <div className="d-flex mb-0">
                                 <p>Your Disk:</p>
-                                <p className="ml-auto text-inverse">
+                                <p className="ms-auto text-inverse">
                                     4125GB
                                 </p>
                             </div>
@@ -523,7 +523,7 @@ const ProgressBars = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Progress Bars: Details Inline
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.03
                                 </span>
                             </CardTitle>
@@ -531,9 +531,9 @@ const ProgressBars = () => (
                                 A combined example that is often used in UI/UX.
                             </p>
                             <div className="d-flex justify-content-between">
-                                <span className="d-flex align-items-center mr-2">HDD</span>
+                                <span className="d-flex align-items-center me-2">HDD</span>
                                 <Progress value="55" color="success" className="mt-1 w-100">55%</Progress>
-                                <span className="ml-2 text-inverse">34GB</span>
+                                <span className="ms-2 text-inverse">34GB</span>
                             </div>
                         </CardBody>
                     </Card>

@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Media } from "./../../../components";
 
 const Activity = (props) => (
   <React.Fragment>
     <Media>
       <Media left>
-        <span className="fa-stack fa-lg fa-fw d-flex mr-3">
+        <span className="fa-stack fa-lg fa-fw d-flex me-3">
           <i
             className={`fa fa-fw fa-stack-2x fa-stack-2x text-${props.iconColorBelow} fa-${props.iconBelow}`}
           ></i>

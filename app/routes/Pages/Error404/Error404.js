@@ -49,10 +49,10 @@ const Error404 = () => (
             { /* END Form */}
             { /* START Bottom Links */}
             <div className="d-flex mb-5">
-                <Link to="/pages/login">
+                <Link to="/dashboards/projects">
                     Back to Home
                 </Link>
-                <Link to="/" className="ml-auto text-decoration-none">
+                <Link to="/" className="ms-auto text-decoration-none">
                     Support
                 </Link>
             </div>

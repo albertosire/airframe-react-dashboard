@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   InputGroup,
   Button,
@@ -36,13 +35,13 @@ const ProjectsLeftNav = () => (
       <Nav pills vertical>
         <NavItem>
           <NavLink href="#" active>
-            <i className="fa fa-fw fa-line-chart mr-2"></i>
+            <i className="fa fa-fw fa-line-chart me-2"></i>
             Overview
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#">
-            <i className="fa fa-fw fa-calendar-o mr-2"></i>
+            <i className="fa fa-fw fa-calendar-o me-2"></i>
             Calendar
           </NavLink>
         </NavItem>
@@ -55,34 +54,34 @@ const ProjectsLeftNav = () => (
       <Nav pills vertical>
         <NavItem>
           <NavLink href="#" className="d-flex">
-            <i className="fa fa-fw fa-star-o align-self-center mr-2"></i>
+            <i className="fa fa-fw fa-star-o align-self-center me-2"></i>
             Analytics Redesign
-            <Badge color="secondary" pill className="ml-auto align-self-center">
+            <Badge color="secondary" pill className="ms-auto align-self-center">
               12
             </Badge>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" className="d-flex">
-            <i className="fa fa-fw fa-star-o align-self-center mr-2"></i>
+            <i className="fa fa-fw fa-star-o align-self-center me-2"></i>
             New Website
-            <Badge color="secondary" pill className="ml-auto align-self-center">
+            <Badge color="secondary" pill className="ms-auto align-self-center">
               4
             </Badge>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" className="d-flex">
-            <i className="fa fa-fw fa-star-o align-self-center mr-2"></i>
+            <i className="fa fa-fw fa-star-o align-self-center me-2"></i>
             Chart for Newsletter
-            <Badge color="secondary" pill className="ml-auto align-self-center">
+            <Badge color="secondary" pill className="ms-auto align-self-center">
               9
             </Badge>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#">
-            <i className="fa fa-fw fa-plus mr-2"></i>
+            <i className="fa fa-fw fa-plus me-2"></i>
             Add New Project
           </NavLink>
         </NavItem>
@@ -96,7 +95,7 @@ const ProjectsLeftNav = () => (
         <NavItem>
           <NavLink href="#" className="d-flex">
             <Media>
-              <Media left middle className="mr-3 align-self-center">
+              <Media left middle className="me-3 align-self-center">
                 <Avatar.Image size="md" src={randomAvatar()} />
               </Media>
               <Media body>
@@ -108,13 +107,13 @@ const ProjectsLeftNav = () => (
                 </span>
               </Media>
             </Media>
-            <i className="fa fa-fw fa-circle text-success ml-auto align-self-center ml-2"></i>
+            <i className="fa fa-fw fa-circle text-success ms-auto align-self-center ms-2"></i>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" className="d-flex">
             <Media>
-              <Media left middle className="mr-3 align-self-center">
+              <Media left middle className="me-3 align-self-center">
                 <Avatar.Image size="md" src={randomAvatar()} />
               </Media>
               <Media body>
@@ -126,13 +125,13 @@ const ProjectsLeftNav = () => (
                 </span>
               </Media>
             </Media>
-            <i className="fa fa-fw fa-circle text-warning ml-auto align-self-center ml-2"></i>
+            <i className="fa fa-fw fa-circle text-warning ms-auto align-self-center ms-2"></i>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#" className="d-flex">
             <Media>
-              <Media left middle className="mr-3 align-self-center">
+              <Media left middle className="me-3 align-self-center">
                 <Avatar.Image size="md" src={randomAvatar()} />
               </Media>
               <Media body>
@@ -144,12 +143,12 @@ const ProjectsLeftNav = () => (
                 </span>
               </Media>
             </Media>
-            <i className="fa fa-fw fa-circle text-danger ml-auto align-self-center ml-2"></i>
+            <i className="fa fa-fw fa-circle text-danger ms-auto align-self-center ms-2"></i>
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#">
-            <i className="fa fa-fw fa-plus mr-2"></i>
+            <i className="fa fa-fw fa-plus me-2"></i>
             Add New People
           </NavLink>
         </NavItem>

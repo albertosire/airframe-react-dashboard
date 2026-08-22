@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import uid from "uuid/v4";
+import { v4 as uid } from 'uuid';
 import _ from "lodash";
-import { faker } from "@faker-js/faker";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { placeholder as faker } from '../../../../data/placeholders';
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import classNames from "classnames";
 
 import {
@@ -181,7 +181,7 @@ const DraggableRow = (props) => (
           isDragOccurring={snapshot.isDragging}
         >
           {_.map(props.skills, (skill, index) => (
-            <Badge key={index} className={`px-2 ${index > 0 && "ml-1"}`}>
+            <Badge key={index} className={`px-2 ${index > 0 && "ms-1"}`}>
               {skill}
             </Badge>
           ))}
@@ -194,7 +194,7 @@ const DraggableRow = (props) => (
           <span className="fw-500">{props.interviewProgress}%</span>
         </TableCell>
         <TableCell
-          className="text-right align-middle"
+          className="text-end align-middle"
           isDragOccurring={snapshot.isDragging}
         >
           {!_.isEmpty(props.portfolio) ? (
@@ -267,7 +267,7 @@ export class DraggableTable extends React.Component {
                 <th className="bt-0">Name</th>
                 <th className="bt-0">Skills</th>
                 <th className="bt-0">Interview Passed in</th>
-                <th className="bt-0 text-right">Portfolio</th>
+                <th className="bt-0 text-end">Portfolio</th>
               </tr>
             </thead>
             <Droppable droppableId="table">

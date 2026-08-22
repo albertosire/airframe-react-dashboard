@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../data/placeholders';
 import _ from "lodash";
 import PropTypes from "prop-types";
 
@@ -63,19 +63,19 @@ const NavbarMessages = (props) => (
             >
               <Media>
                 <Media left>
-                  <Avatar.Image src={faker.image.avatar()} className="mr-4" />
+                  <Avatar.Image src={faker.image.avatar()} className="me-4" />
                 </Media>
                 <Media body>
                   <span className="d-flex justify-content-start">
                     <i
-                      className={`fa fa-circle small ${messagesColors[index]} mr-2 d-flex align-items-center`}
+                      className={`fa fa-circle small ${messagesColors[index]} me-2 d-flex align-items-center`}
                     />
                     <span className="h6 pb-0 mb-0 d-flex align-items-center">
                       {faker.person.firstName()} {faker.person.lastName()}
                     </span>
 
-                    <span className="ml-1 small">(23)</span>
-                    <span className="ml-auto small">Now</span>
+                    <span className="ms-1 small">(23)</span>
+                    <span className="ms-auto small">Now</span>
                   </span>
                   <p className="mt-2 mb-1">{faker.lorem.sentences()}</p>
                 </Media>
@@ -91,7 +91,7 @@ const NavbarMessages = (props) => (
         to="/apps/inbox"
       >
         View All
-        <i className="fa fa-angle-right fa-fw ml-2" />
+        <i className="fa fa-angle-right fa-fw ms-2" />
       </ExtendedDropdown.Section>
     </ExtendedDropdown>
   </UncontrolledDropdown>

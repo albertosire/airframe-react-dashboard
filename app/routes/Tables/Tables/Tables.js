@@ -73,7 +73,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -92,7 +92,7 @@ const Tables = () => (
                                     <th className="bt-0">Leader</th>
                                     <th className="bt-0">Budget</th>
                                     <th className="bt-0">Status</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Actions
                                     </th>
                                 </tr>
@@ -114,7 +114,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Responsive
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -132,7 +132,7 @@ const Tables = () => (
                                     <th className="bt-0">IP</th>
                                     <th className="bt-0">Location</th>
                                     <th className="bt-0">Signed In</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Action
                                     </th>
                                 </tr>
@@ -154,7 +154,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Striped
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -169,7 +169,7 @@ const Tables = () => (
                                     <th className="bt-0">#</th>
                                     <th className="bt-0">Product Name</th>
                                     <th className="bt-0">Last Refresh</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Last Month
                                     </th>
                                 </tr>
@@ -191,7 +191,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Hoverable
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -206,7 +206,7 @@ const Tables = () => (
                                     <th className="bt-0">#</th>
                                     <th className="bt-0">Name</th>
                                     <th className="bt-0">Price</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Date
                                     </th>
                                 </tr>
@@ -231,7 +231,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </CardTitle>
@@ -246,7 +246,7 @@ const Tables = () => (
                                     <th className="bt-0">ID</th>
                                     <th className="bt-0">Name</th>
                                     <th className="bt-0">Amount</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Payment
                                     </th>
                                 </tr>
@@ -268,7 +268,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Borderless
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.01
                                 </span>
                             </CardTitle>
@@ -286,7 +286,7 @@ const Tables = () => (
                                     <th>Amount</th>
                                     <th>Description</th>
                                     <th>Payment Method</th>
-                                    <th className="text-right">
+                                    <th className="text-end">
                                         Receipt
                                     </th>
                                 </tr>
@@ -308,7 +308,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Bordered
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.01
                                 </span>
                             </CardTitle>
@@ -323,7 +323,7 @@ const Tables = () => (
                                         <th>Completion</th>
                                         <th>Create</th>
                                         <th>Deadline</th>
-                                        <th className="text-right">
+                                        <th className="text-end">
                                             Actions
                                         </th>
                                     </tr>
@@ -346,7 +346,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Heads
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #8.01
                                 </span>
                             </CardTitle>
@@ -365,7 +365,7 @@ const Tables = () => (
                                     <th className="bt-0">Last Name</th>
                                     <th className="bt-0">Email</th>
                                     <th className="bt-0">Nick</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Role
                                     </th>
                                 </tr>
@@ -380,7 +380,7 @@ const Tables = () => (
                                     <th className="bt-0">Last Name</th>
                                     <th className="bt-0">Email</th>
                                     <th className="bt-0">Nick</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Role
                                     </th>
                                 </tr>
@@ -402,7 +402,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Contextual
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #9.01
                                 </span>
                             </CardTitle>
@@ -419,7 +419,7 @@ const Tables = () => (
                                     <th className="bt-0">Date</th>
                                     <th className="bt-0">Price</th>
                                     <th className="bt-0">Status</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Country
                                     </th>
                                 </tr>
@@ -441,7 +441,7 @@ const Tables = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Table Inverse
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.10
                                 </span>
                             </CardTitle>
@@ -458,7 +458,7 @@ const Tables = () => (
                                     <th className="bt-0">Leader</th>
                                     <th className="bt-0">Budget</th>
                                     <th className="bt-0">Status</th>
-                                    <th className="text-right bt-0">
+                                    <th className="text-end bt-0">
                                         Actions
                                     </th>
                                 </tr>

@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 
 import { Progress, ButtonGroup, Button } from "./../../../../components";
@@ -24,7 +24,7 @@ const TrTableBordered = () => (
         <td className="align-middle">
           {faker.date.weekday()}, 12 {faker.date.month()}, 2018
         </td>
-        <td className="align-middle text-right">
+        <td className="align-middle text-end">
           <ButtonGroup>
             <Button color="link" className="text-decoration-none">
               <i className="fa fa-clone"></i>

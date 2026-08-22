@@ -65,8 +65,6 @@ import Tables from './Tables/Tables';
 import ExtendedTable from './Tables/ExtendedTable';
 import AgGrid from './Tables/AgGrid';
 
-import AccountEdit from './Apps/AccountEdit';
-import BillingEdit from './Apps/BillingEdit';
 import Chat from './Apps/Chat';
 import Clients from './Apps/Clients';
 import EmailDetails from './Apps/EmailDetails';
@@ -76,27 +74,17 @@ import GalleryTable from './Apps/GalleryTable';
 import ImagesResults from './Apps/ImagesResults';
 import Inbox from './Apps/Inbox';
 import NewEmail from './Apps/NewEmail';
-import ProfileDetails from './Apps/ProfileDetails';
-import ProfileEdit from './Apps/ProfileEdit';
 import Projects from './Apps/Projects';
 import SearchResults from './Apps/SearchResults';
-import SessionsEdit from './Apps/SessionsEdit';
-import SettingsEdit from './Apps/SettingsEdit';
 import Tasks from './Apps/Tasks';
 import TasksDetails from './Apps/TasksDetails';
 import TasksKanban from './Apps/TasksKanban';
-import Users from './Apps/Users';
-import UsersResults from './Apps/UsersResults';
 import VideosResults from './Apps/VideosResults';
 
 import ComingSoon from './Pages/ComingSoon';
 import Confirmation from './Pages/Confirmation';
 import Danger from './Pages/Danger';
 import Error404 from './Pages/Error404';
-import ForgotPassword from './Pages/ForgotPassword';
-import LockScreen from './Pages/LockScreen';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
 import Success from './Pages/Success';
 import Timeline from './Pages/Timeline';
 
@@ -183,8 +171,6 @@ export const RoutedContent = () => {
             <Route component={ AgGrid } path="/tables/ag-grid" />
 
             { /*    Apps Routes     */ }
-            <Route component={ AccountEdit } path="/apps/account-edit" />
-            <Route component={ BillingEdit } path="/apps/billing-edit" />
             <Route component={ Chat } path="/apps/chat" />
             <Route component={ Clients } path="/apps/clients" />
             <Route component={ EmailDetails } path="/apps/email-details" />
@@ -194,17 +180,11 @@ export const RoutedContent = () => {
             <Route component={ ImagesResults } path="/apps/images-results" />
             <Route component={ Inbox } path="/apps/inbox" />
             <Route component={ NewEmail } path="/apps/new-email" />
-            <Route component={ ProfileDetails } path="/apps/profile-details" />
-            <Route component={ ProfileEdit } path="/apps/profile-edit" />
             <Route component={ Projects } path="/apps/projects/:type" />
             <Route component={ SearchResults } path="/apps/search-results" />
-            <Route component={ SessionsEdit } path="/apps/sessions-edit" />
-            <Route component={ SettingsEdit } path="/apps/settings-edit" />
             <Route component={ Tasks } path="/apps/tasks/:type" />
             <Route component={ TasksDetails } path="/apps/task-details" />
             <Route component={ TasksKanban } path="/apps/tasks-kanban" />
-            <Route component={ Users } path="/apps/users/:type" />
-            <Route component={ UsersResults } path="/apps/users-results" />
             <Route component={ VideosResults } path="/apps/videos-results" />
 
             { /*    Pages Routes    */ }
@@ -212,10 +192,6 @@ export const RoutedContent = () => {
             <Route component={ Confirmation } path="/pages/confirmation" />
             <Route component={ Danger } path="/pages/danger" />
             <Route component={ Error404 } path="/pages/error-404" />
-            <Route component={ ForgotPassword } path="/pages/forgot-password" />
-            <Route component={ LockScreen } path="/pages/lock-screen" />
-            <Route component={ Login } path="/pages/login" />
-            <Route component={ Register } path="/pages/register" />
             <Route component={ Success } path="/pages/success" />
             <Route component={ Timeline } path="/pages/timeline" />
 

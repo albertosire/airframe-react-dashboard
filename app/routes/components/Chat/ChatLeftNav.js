@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Nav,
   NavItem,
@@ -39,7 +38,7 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat" active>
             <Media>
-              <Media left className="align-self-start mr-3">
+              <Media left className="align-self-start me-3">
                 <Avatar.Image
                   size="sm"
                   src={randomAvatar()}
@@ -69,7 +68,7 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-3">
+              <Media left className="align-self-start me-3">
                 <Avatar.Image
                   size="sm"
                   src={randomAvatar()}
@@ -99,7 +98,7 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-3">
+              <Media left className="align-self-start me-3">
                 <Avatar.Image
                   size="sm"
                   src={randomAvatar()}
@@ -128,7 +127,7 @@ const ChatLeftNav = () => (
         </NavItem>
         <NavItem>
           <NavLink href="/chat">
-            Show All <span className="small mr-2">(345)</span>
+            Show All <span className="small me-2">(345)</span>
             <i className="fa fa-angle-down"></i>
           </NavLink>
         </NavItem>
@@ -144,8 +143,8 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-1">
-                <span className="fa-stack fa-lg fa-fw d-flex align-self-center mr-3">
+              <Media left className="align-self-start me-1">
+                <span className="fa-stack fa-lg fa-fw d-flex align-self-center me-3">
                   <i className="fa fa-circle fa-fw fa-stack-2x text-warning"></i>
                   <i className="fa fa-exclamation fa-stack-1x fa-fw text-white"></i>
                 </span>
@@ -160,8 +159,8 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-1">
-                <span className="fa-stack fa-lg fa-fw d-flex align-self-center mr-3">
+              <Media left className="align-self-start me-1">
+                <span className="fa-stack fa-lg fa-fw d-flex align-self-center me-3">
                   <i className="fa fa-circle fa-fw fa-stack-2x text-danger"></i>
                   <i className="fa fa-close fa-stack-1x fa-fw text-white"></i>
                 </span>
@@ -176,8 +175,8 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-1">
-                <span className="fa-stack fa-lg fa-fw d-flex align-self-center mr-3">
+              <Media left className="align-self-start me-1">
+                <span className="fa-stack fa-lg fa-fw d-flex align-self-center me-3">
                   <i className="fa fa-circle fa-fw fa-stack-2x text-success"></i>
                   <i className="fa fa-check fa-stack-1x fa-fw text-white"></i>
                 </span>
@@ -192,8 +191,8 @@ const ChatLeftNav = () => (
         <NavItem>
           <NavLink href="/chat">
             <Media>
-              <Media left className="align-self-start mr-1">
-                <span className="fa-stack fa-lg fa-fw d-flex align-self-center mr-3">
+              <Media left className="align-self-start me-1">
+                <span className="fa-stack fa-lg fa-fw d-flex align-self-center me-3">
                   <i className="fa fa-circle fa-fw fa-stack-2x text-primary"></i>
                   <i className="fa fa-info fa-stack-1x fa-fw text-white"></i>
                 </span>
@@ -207,7 +206,7 @@ const ChatLeftNav = () => (
         </NavItem>
         <NavItem>
           <NavLink href="/chat">
-            Show All <span className="small mr-2">(12)</span>
+            Show All <span className="small me-2">(12)</span>
             <i className="fa fa-angle-down"></i>
           </NavLink>
         </NavItem>

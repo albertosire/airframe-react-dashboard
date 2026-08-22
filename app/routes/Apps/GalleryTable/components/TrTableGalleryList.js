@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import PropTypes from "prop-types";
 
 import {
@@ -43,20 +43,20 @@ const TrTableGalleryList = (props) => (
           <br />
           <span href="#">{faker.system.fileName()}</span>
           <br />
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
-          <Badge pill color={randomArray(badges)} className="mr-1">
+          <Badge pill color={randomArray(badges)} className="me-1">
             {faker.commerce.department()}
           </Badge>
         </span>
       </td>
       <td className="align-middle">
         <Media>
-          <Media left className="align-self-center mr-3">
+          <Media left className="align-self-center me-3">
             <Avatar.Image
               size="md"
               src={randomAvatar()}
@@ -90,7 +90,7 @@ const TrTableGalleryList = (props) => (
         <br />
         Format: .png
       </td>
-      <td className="align-middle text-right">
+      <td className="align-middle text-end">
         <Button color="link" id={`trTableGalleryListTooltip-${props.id}`}>
           <i className="fa fa-fw fa-download"></i>
         </Button>

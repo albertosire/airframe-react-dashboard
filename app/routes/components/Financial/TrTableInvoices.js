@@ -1,6 +1,6 @@
 import React from "react";
 import _ from "lodash";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { Media, Avatar, AvatarAddOn } from "./../../../components";
 
 import { randomAvatar } from "./../../../utilities";
@@ -18,7 +18,7 @@ const TrTableInvoices = () => (
         <td className="align-middle text-nowrap">25-May-2018</td>
         <td className="align-middle">
           <Media>
-            <Media left className="align-self-center mr-4">
+            <Media left className="align-self-center me-4">
               <Avatar.Image
                 size="md"
                 src={randomAvatar()}
@@ -53,7 +53,7 @@ const TrTableInvoices = () => (
           <br />
           {faker.phone.number()}
         </td>
-        <td className="text-right align-middle text-nowrap">
+        <td className="text-end align-middle text-nowrap">
           <a href="#" className="text-decoration-none">
             View <i className="fa fa-angle-right"></i>
           </a>

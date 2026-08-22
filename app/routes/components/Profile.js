@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../data/placeholders';
 import { Avatar, AvatarAddOn } from "./../../components";
 
 import { randomArray, randomAvatar } from "./../../utilities";
@@ -95,7 +94,7 @@ const Profile = () => {
         </a>
         <div className="text-center mt-2">{faker.person.jobTitle()}</div>
         <div className="text-center">
-          <i className="fa fa-map-marker mr-1"></i>
+          <i className="fa fa-map-marker me-1"></i>
           {faker.location.city()}
         </div>
       </div>

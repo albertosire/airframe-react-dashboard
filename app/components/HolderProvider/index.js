@@ -1,10 +1,9 @@
-import { HolderTextProvider } from './HolderTextProvider';
-import { HolderIconProvider } from './HolderIconProvider';
+import { HolderTextProvider, HolderIconProvider } from '../PlaceholderImage';
 
 const HolderProvider = {
-    Text: HolderTextProvider,
-    Icon: HolderIconProvider
+  Text: HolderTextProvider,
+  Icon: HolderIconProvider,
 };
 
+export { HolderTextProvider, HolderIconProvider };
 export default HolderProvider;
-

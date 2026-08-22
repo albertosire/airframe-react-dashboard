@@ -23,7 +23,7 @@ export const FilesList = ({ files, onFileRemove }) => (
                 <th className="bt-0">Size</th>
                 <th className="bt-0">Owner</th>
                 <th className="bt-0">Modified Date</th>
-                <th className="bt-0 text-right">Actions</th>
+                <th className="bt-0 text-end">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -47,7 +47,7 @@ export const FilesList = ({ files, onFileRemove }) => (
                     <td className="align-middle">
                         { moment(file.modifiedDate).format('DD-MMM-YYYY, HH:mm') }
                     </td>
-                    <td className="text-right align-middle">
+                    <td className="text-end align-middle">
                         <Button
                             color="link"
                             onClick={() => {onFileRemove(file)}}

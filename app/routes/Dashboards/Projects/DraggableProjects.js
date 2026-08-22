@@ -1,7 +1,7 @@
 import React from "react";
-import uid from "uuid/v4";
-import { faker } from "@faker-js/faker";
-import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { v4 as uid } from 'uuid';
+import { placeholder as faker } from '../../../data/placeholders';
+import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import _ from "lodash";
 
 import { ProjectsList } from "../../components/ProjectsDashboards/ProjectsList";

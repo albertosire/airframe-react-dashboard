@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Container,
   Row,
@@ -45,7 +44,7 @@ const TasksDetails = () => (
               <tbody>
                 <tr>
                   <td className="align-middle">Project</td>
-                  <td className="text-right">
+                  <td className="text-end">
                     <a href="#" className="text-decoration-none">
                       Analytics Redo
                     </a>
@@ -53,7 +52,7 @@ const TasksDetails = () => (
                 </tr>
                 <tr>
                   <td className="align-middle">Assigned by</td>
-                  <td className="text-right">
+                  <td className="text-end">
                     <a href="#" className="text-decoration-none">
                       {faker.person.firstName()} {faker.person.lastName()}
                     </a>
@@ -61,40 +60,40 @@ const TasksDetails = () => (
                 </tr>
                 <tr>
                   <td className="align-middle">Start Date</td>
-                  <td className="text-right">Thu 12 May 2016</td>
+                  <td className="text-end">Thu 12 May 2016</td>
                 </tr>
                 <tr>
                   <td className="align-middle">End Date</td>
-                  <td className="text-right">Wed 18 May 2016</td>
+                  <td className="text-end">Wed 18 May 2016</td>
                 </tr>
                 <tr>
                   <td className="align-middle">Priority</td>
-                  <td className="text-right">
+                  <td className="text-end">
                     <UncontrolledButtonDropdown>
                       <DropdownToggle
                         color="link"
                         className="p-0 text-decoration-none"
                       >
-                        <i className="fa fa-circle text-success mr-2"></i>
+                        <i className="fa fa-circle text-success me-2"></i>
                         Small
-                        <i className="fa fa-angle-down ml-2" />
+                        <i className="fa fa-angle-down ms-2" />
                       </DropdownToggle>
                       <DropdownMenu right>
                         <DropdownItem header>Select Priority</DropdownItem>
                         <DropdownItem>
-                          <i className="fa fa-circle text-danger mr-2"></i>
+                          <i className="fa fa-circle text-danger me-2"></i>
                           Big
                         </DropdownItem>
                         <DropdownItem>
-                          <i className="fa fa-circle text-warning mr-2"></i>
+                          <i className="fa fa-circle text-warning me-2"></i>
                           High
                         </DropdownItem>
                         <DropdownItem>
-                          <i className="fa fa-circle text-primary mr-2"></i>
+                          <i className="fa fa-circle text-primary me-2"></i>
                           Normal
                         </DropdownItem>
                         <DropdownItem active>
-                          <i className="fa fa-circle text-success mr-2"></i>
+                          <i className="fa fa-circle text-success me-2"></i>
                           Small
                         </DropdownItem>
                       </DropdownMenu>
@@ -103,15 +102,15 @@ const TasksDetails = () => (
                 </tr>
                 <tr>
                   <td className="align-middle">Progress</td>
-                  <td className="align-middle text-right">30%</td>
+                  <td className="align-middle text-end">30%</td>
                 </tr>
                 <tr>
                   <td className="align-middle">Task ID</td>
-                  <td className="align-middle text-right"># 6726746</td>
+                  <td className="align-middle text-end"># 6726746</td>
                 </tr>
                 <tr>
                   <td className="align-middle">Date Assigned</td>
-                  <td className="align-middle text-right">
+                  <td className="align-middle text-end">
                     Wed, 16 Dec 2015, 12:17 PM
                   </td>
                 </tr>
@@ -126,7 +125,7 @@ const TasksDetails = () => (
               <NavItem>
                 <NavLink href="#" className="d-flex">
                   <Media>
-                    <Media left middle className="mr-3 align-self-center">
+                    <Media left middle className="me-3 align-self-center">
                       <Avatar.Image size="md" src={randomAvatar()} />
                     </Media>
                     <Media body>
@@ -138,13 +137,13 @@ const TasksDetails = () => (
                       </span>
                     </Media>
                   </Media>
-                  <i className="fa fa-fw fa-circle text-success ml-auto align-self-center ml-2"></i>
+                  <i className="fa fa-fw fa-circle text-success ms-auto align-self-center ms-2"></i>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#" className="d-flex">
                   <Media>
-                    <Media left middle className="mr-3 align-self-center">
+                    <Media left middle className="me-3 align-self-center">
                       <Avatar.Image size="md" src={randomAvatar()} />
                     </Media>
                     <Media body>
@@ -156,13 +155,13 @@ const TasksDetails = () => (
                       </span>
                     </Media>
                   </Media>
-                  <i className="fa fa-fw fa-circle text-warning ml-auto align-self-center ml-2"></i>
+                  <i className="fa fa-fw fa-circle text-warning ms-auto align-self-center ms-2"></i>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#" className="d-flex">
                   <Media>
-                    <Media left middle className="mr-3 align-self-center">
+                    <Media left middle className="me-3 align-self-center">
                       <Avatar.Image size="md" src={randomAvatar()} />
                     </Media>
                     <Media body>
@@ -174,12 +173,12 @@ const TasksDetails = () => (
                       </span>
                     </Media>
                   </Media>
-                  <i className="fa fa-fw fa-circle text-danger ml-auto align-self-center ml-2"></i>
+                  <i className="fa fa-fw fa-circle text-danger ms-auto align-self-center ms-2"></i>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="#">
-                  <i className="fa fa-fw fa-plus mr-2"></i>
+                  <i className="fa fa-fw fa-plus me-2"></i>
                   Add New People
                 </NavLink>
               </NavItem>
@@ -208,16 +207,16 @@ const TasksDetails = () => (
                 <Media body>
                   <div className="mb-3">
                     <h5>
-                      <span className="mr-2">#{faker.number.int()}</span>
+                      <span className="me-2">#{faker.number.int()}</span>
                       {faker.hacker.phrase()}
                     </h5>
-                    <Badge pill color="primary" className="mr-1">
+                    <Badge pill color="primary" className="me-1">
                       {faker.commerce.department()}
                     </Badge>
-                    <Badge pill color="secondary" className="mr-1">
+                    <Badge pill color="secondary" className="me-1">
                       {faker.commerce.department()}
                     </Badge>
-                    <Badge pill color="secondary" className="mr-1">
+                    <Badge pill color="secondary" className="me-1">
                       {faker.commerce.department()}
                     </Badge>
                   </div>
@@ -231,7 +230,7 @@ const TasksDetails = () => (
               {/* START Atachemnts */}
               <div className="mb-4">
                 <div className="mb-3">
-                  <span className="small mr-3">Attachments</span>
+                  <span className="small me-3">Attachments</span>
                   <Badge pill color="secondary">
                     3
                   </Badge>
@@ -259,14 +258,14 @@ const TasksDetails = () => (
                 </div>
                 <div className="mb-5">
                   <a href="#">
-                    <i className="fa fa-plus mr-2"></i>
+                    <i className="fa fa-plus me-2"></i>
                     Add More Files to this Task
                   </a>
                 </div>
               </div>
               {/* END Atachemnts */}
               <div className="mb-3">
-                <span className="small mr-3">Comments</span>
+                <span className="small me-3">Comments</span>
                 <Badge pill color="secondary">
                   3
                 </Badge>

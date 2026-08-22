@@ -49,7 +49,7 @@ const Forms = () => (
                         <CardBody>
                             <CardTitle tag="h6" className="mb-4">
                                 Forms: Inputs
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -200,7 +200,7 @@ const Forms = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Forms: Selects
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -252,7 +252,7 @@ const Forms = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Forms: File Inputs
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -311,7 +311,7 @@ const Forms = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Forms: Text Helpers
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.04
                                 </span>
                             </CardTitle>
@@ -353,7 +353,7 @@ const Forms = () => (
                                                     id="inputHelper-3" 
                                                     placeholder="" 
                                                 />
-                                                <FormText color="muted text-right">
+                                                <FormText color="muted text-end">
                                                     Right Text Helper
                                                 </FormText>
                                             </Col>
@@ -376,7 +376,7 @@ const Forms = () => (
                                                     placeholder="" 
                                                 />
                                                 <FormText color="muted">
-                                                    <i className="fa fa-info-circle mr-2"></i>
+                                                    <i className="fa fa-info-circle me-2"></i>
                                                     We&apos;ll never share your email.
                                                 </FormText>
                                             </Col>
@@ -388,7 +388,7 @@ const Forms = () => (
                                                     placeholder="" 
                                                 />
                                                 <FormText color="muted text-center">
-                                                    <i className="fa fa-info-circle mr-2"></i>
+                                                    <i className="fa fa-info-circle me-2"></i>
                                                     We&apos;ll never share your email.
                                                 </FormText>
                                             </Col>
@@ -399,8 +399,8 @@ const Forms = () => (
                                                     id="inputIcon-3" 
                                                     placeholder="" 
                                                 />
-                                                <FormText color="muted text-right">
-                                                    <i className="fa fa-info-circle mr-2"></i>
+                                                <FormText color="muted text-end">
+                                                    <i className="fa fa-info-circle me-2"></i>
                                                     We&apos;ll never share your email.
                                                 </FormText>
                                             </Col>
@@ -448,7 +448,7 @@ const Forms = () => (
                                                     id="inputBadge-3" 
                                                     placeholder="" 
                                                 />
-                                                <FormText className="text-right">
+                                                <FormText className="text-end">
                                                     <Badge color="warning">
                                                         Right Badge Helper
                                                     </Badge>
@@ -507,7 +507,7 @@ const Forms = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Forms: Validations
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.05
                                 </span>
                             </CardTitle>
@@ -653,7 +653,7 @@ const Forms = () => (
 
                             <CardTitle tag="h6" className="mt-5 mb-4">
                                 Forms: Sizes
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.06
                                 </span>
                             </CardTitle>
@@ -829,7 +829,7 @@ const Forms = () => (
                                     <div className="mb-5">
                                         <CardTitle tag="h6">
                                             Forms: Checkboxes Stacked
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #2.01
                                             </span>
                                         </CardTitle>
@@ -861,7 +861,7 @@ const Forms = () => (
                                     <div>
                                         <CardTitle tag="h6">
                                             Forms: Checkboxes Inline
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #2.02
                                             </span>
                                         </CardTitle>
@@ -895,7 +895,7 @@ const Forms = () => (
                                     <div className="mb-5">
                                         <CardTitle tag="h6">
                                             Forms: Checkboxes Stacked Custom
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #2.03
                                             </span>
                                         </CardTitle>
@@ -925,7 +925,7 @@ const Forms = () => (
                                     <div>
                                         <CardTitle tag="h6">
                                             Forms: Checkboxes Inline
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #2.02
                                             </span>
                                         </CardTitle>
@@ -990,7 +990,7 @@ const Forms = () => (
                                     <div className="mb-5">
                                         <CardTitle tag="h6">
                                             Forms: Radio Stacked
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #3.01
                                             </span>
                                         </CardTitle>
@@ -1022,7 +1022,7 @@ const Forms = () => (
                                     <div>
                                         <CardTitle tag="h6">
                                             Forms: Radio Inline
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #3.02
                                             </span>
                                         </CardTitle>
@@ -1056,7 +1056,7 @@ const Forms = () => (
                                     <div className="mb-5">
                                         <CardTitle tag="h6">
                                             Forms: Radio Stacked Custom
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #3.03
                                             </span>
                                         </CardTitle>
@@ -1090,7 +1090,7 @@ const Forms = () => (
                                     <div>
                                         <CardTitle tag="h6">
                                             Forms: Radio Inline
-                                            <span className="small ml-1 text-muted">
+                                            <span className="small ms-1 text-muted">
                                                 #3.02
                                             </span>
                                         </CardTitle>

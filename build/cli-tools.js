@@ -1,7 +1,6 @@
-var program = require('commander');
-var rimraf = require('rimraf');
-var fs = require('fs');
-var mkdirp = require('mkdirp');
+var { Command } = require('commander');
+var { rimrafSync } = require('rimraf');
+var { mkdirpSync } = require('mkdirp');
 
 var config = require('./../config');
 
@@ -20,7 +19,7 @@ var commands = {
         var targetPath = dirParamToPath(value);
 
         if(targetPath) {
-            rimraf.sync(targetPath);
+            rimrafSync(targetPath);
 
             console.info('Cleared target directory: %s', targetPath);
         }
@@ -30,21 +29,24 @@ var commands = {
         var targetPath = dirParamToPath(value);
 
         if(targetPath) {
-            mkdirp.sync(targetPath);
+            mkdirpSync(targetPath);
 
             console.info('Created target directory: %s', targetPath);
         }
     }
 }
 
+var program = new Command();
+
 program
     .option('-c, --clear [serve/dist]')
     .option('-cr, --create [serve/dist]')
     .parse(process.argv);
 
+var options = program.opts();
+
 for (var commandName in commands) {
-    if (commands.hasOwnProperty(commandName) && program[commandName]) {
-        commands[commandName](program[commandName]);
+    if (commands.hasOwnProperty(commandName) && options[commandName]) {
+        commands[commandName](options[commandName]);
     }
 }
-

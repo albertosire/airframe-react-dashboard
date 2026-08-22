@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import { Badge, Media, Avatar, AvatarAddOn } from "./../../../components";
 import { randomAvatar } from "./../../../utilities";
 
@@ -9,11 +8,11 @@ const ProfileHeader = () => (
   <React.Fragment>
     {/* START Header */}
     <Media className="mb-3">
-      <Media left middle className="mr-3 align-self-center">
+      <Media left middle className="me-3 align-self-center">
         <Avatar.Image
           size="lg"
           src={randomAvatar()}
-          className="mr-2"
+          className="me-2"
           addOns={[
             <AvatarAddOn.Icon
               className="fa fa-circle"
@@ -35,7 +34,7 @@ const ProfileHeader = () => (
           </Link>{" "}
           <span className="text-muted mx-1"> / </span> Profile Edit
         </h5>
-        <Badge color="primary" pill className="mr-2">
+        <Badge color="primary" pill className="me-2">
           Premium
         </Badge>
         <span className="text-muted">Edit Your Name, Avatar, etc.</span>

@@ -45,7 +45,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Sizes: Large
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.01
                                 </span>
                             </CardTitle>
@@ -55,12 +55,12 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="lg"
@@ -74,7 +74,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Sizes: Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.02
                                 </span>
                             </CardTitle>
@@ -84,17 +84,17 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                         </CardBody>
                     </Card>
@@ -104,7 +104,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Sizes: Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #1.03
                                 </span>
                             </CardTitle>
@@ -114,17 +114,17 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                         </CardBody>
                     </Card>
@@ -157,7 +157,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Photos
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.01
                                 </span>
                             </CardTitle>
@@ -167,17 +167,17 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                              <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                             />
                         </CardBody>
                     </Card>
@@ -187,7 +187,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Text
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.02
                                 </span>
                             </CardTitle>
@@ -197,21 +197,21 @@ const Home = () => (
                             <Avatar.Font
                                 size="lg"
                                 bgColor="primary"
-                                className="mr-2"
+                                className="me-2"
                             >
                                 VN
                             </Avatar.Font>
                             <Avatar.Font
                                 size="md"
                                 bgColor="info"
-                                className="mr-2"
+                                className="me-2"
                             >
                                 FS
                             </Avatar.Font>
                             <Avatar.Font
                                 size="sm"
                                 bgColor="secondary"
-                                className="mr-2"
+                                className="me-2"
                             >
                                 +4
                             </Avatar.Font>
@@ -223,7 +223,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Icons
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #2.03
                                 </span>
                             </CardTitle>
@@ -233,21 +233,21 @@ const Home = () => (
                             <Avatar.Font
                                 size="lg"
                                 bgColor="200"
-                                className="mr-2"
+                                className="me-2"
                                 >
                                 <i className="fa fa-user" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 size="md"
                                 bgColor="200"
-                                className="mr-2"
+                                className="me-2"
                                 >
                                 <i className="fa fa-plus" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 size="sm"
                                 bgColor="200"
-                                className="mr-2"
+                                className="me-2"
                                 >
                                 <i className="fa fa-bars" />
                             </Avatar.Font>
@@ -282,7 +282,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Status Large
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.01
                                 </span>
                             </CardTitle>
@@ -292,7 +292,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -309,7 +309,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -326,7 +326,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -343,7 +343,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -365,7 +365,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Status Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.02
                                 </span>
                             </CardTitle>
@@ -375,7 +375,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -392,7 +392,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -409,7 +409,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -426,7 +426,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -448,7 +448,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Status Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #3.03
                                 </span>
                             </CardTitle>
@@ -458,7 +458,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -475,7 +475,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -492,7 +492,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -509,7 +509,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -554,7 +554,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Pills Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.01
                                 </span>
                             </CardTitle>
@@ -564,7 +564,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="primary" key="avatar-badge">
                                         4
@@ -574,7 +574,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="danger" key="avatar-badge">
                                         12
@@ -584,7 +584,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="secondary" key="avatar-badge">
                                         4
@@ -594,7 +594,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="success" key="avatar-badge">
                                         7
@@ -609,7 +609,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Pills Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.02
                                 </span>
                             </CardTitle>
@@ -619,7 +619,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="primary" key="avatar-badge">
                                         4
@@ -629,7 +629,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="danger" key="avatar-badge">
                                         12
@@ -639,7 +639,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="secondary" key="avatar-badge">
                                         4
@@ -649,7 +649,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="success" key="avatar-badge">
                                         7
@@ -664,7 +664,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Pills Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #4.03
                                 </span>
                             </CardTitle>
@@ -674,7 +674,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="primary" key="avatar-badge">
                                         4
@@ -684,7 +684,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="danger" key="avatar-badge">
                                         12
@@ -694,7 +694,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="secondary" key="avatar-badge">
                                         4
@@ -704,7 +704,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge pill color="success" key="avatar-badge">
                                         7
@@ -742,7 +742,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.01
                                 </span>
                             </CardTitle>
@@ -752,7 +752,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                                 addOns={[
                                     <AvatarAddOn.Badge color="primary" key="avatar-badge">
                                         4
@@ -762,7 +762,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                                 addOns={[
                                     <AvatarAddOn.Badge color="danger" key="avatar-badge">
                                         12
@@ -772,7 +772,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                                 addOns={[
                                     <AvatarAddOn.Badge color="secondary" key="avatar-badge">
                                         4
@@ -782,7 +782,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-2"
+                                className="me-2"
                                 addOns={[
                                     <AvatarAddOn.Badge color="success" key="avatar-badge">
                                         7
@@ -797,7 +797,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.02
                                 </span>
                             </CardTitle>
@@ -807,7 +807,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="primary" key="avatar-badge">
                                         4
@@ -817,7 +817,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="danger" key="avatar-badge">
                                         12
@@ -827,7 +827,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="secondary" key="avatar-badge">
                                         4
@@ -837,7 +837,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="success" key="avatar-badge">
                                         7
@@ -852,7 +852,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Badges Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #5.03
                                 </span>
                             </CardTitle>
@@ -862,7 +862,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="primary" key="avatar-badge">
                                         4
@@ -872,7 +872,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="danger" key="avatar-badge">
                                         12
@@ -882,7 +882,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="secondary" key="avatar-badge">
                                         4
@@ -892,7 +892,7 @@ const Home = () => (
                              <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Badge color="success" key="avatar-badge">
                                         7
@@ -930,7 +930,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Custom Icons Large
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.01
                                 </span>
                             </CardTitle>
@@ -940,7 +940,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -963,7 +963,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -986,7 +986,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1009,7 +1009,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1032,7 +1032,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="lg"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1060,7 +1060,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Custom Icons Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.02
                                 </span>
                             </CardTitle>
@@ -1070,7 +1070,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1093,7 +1093,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1116,7 +1116,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1139,7 +1139,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1162,7 +1162,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="md"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1190,7 +1190,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatar: Custom Icons Small
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #6.03
                                 </span>
                             </CardTitle>
@@ -1200,7 +1200,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1223,7 +1223,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1246,7 +1246,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1269,7 +1269,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1292,7 +1292,7 @@ const Home = () => (
                             <Avatar.Image
                                 size="sm"
                                 src={ randomAvatar() }
-                                className="mr-3"
+                                className="me-3"
                                 addOns={[
                                     <AvatarAddOn.Icon 
                                         className="fa fa-circle"
@@ -1343,7 +1343,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Colors Default
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.01
                                 </span>
                             </CardTitle>
@@ -1352,57 +1352,57 @@ const Home = () => (
                             </p>
                             <Avatar.Font
                                 bgColor="primary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 PR
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="info"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 IN
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="success"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 SU
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="warning"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 WA
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="danger"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 DA
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 SE
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="dark"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 DA
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="light"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 LI
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="white"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 WH
                             </Avatar.Font>
@@ -1415,7 +1415,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Gray Colors
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.02
                                 </span>
                             </CardTitle>
@@ -1425,63 +1425,63 @@ const Home = () => (
                             <Avatar.Font
                                 bgColor="100"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 100
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="200"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 200
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="300"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 300
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="400"
                                 fgColor="secondary"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 400
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="500"
                                 fgColor="dark"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 500
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="600"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 600
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="700"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 700
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="800"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 800
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="900"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 900
                             </Avatar.Font>
@@ -1493,7 +1493,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Other Colors 
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.03
                                 </span>
                             </CardTitle>
@@ -1502,31 +1502,31 @@ const Home = () => (
                             </p>
                             <Avatar.Font
                                 bgColor="indigo"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 IN
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="purple"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 PU
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="pink"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 PI
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="teal"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 TE
                             </Avatar.Font>
                             <Avatar.Font
                                 bgColor="cyan"
-                                className="mr-1"
+                                className="me-1"
                             >
                                 CY
                             </Avatar.Font>
@@ -1538,7 +1538,7 @@ const Home = () => (
                         <CardBody>
                             <CardTitle tag="h6">
                                 Avatars: Colors Social
-                                <span className="small ml-1 text-muted">
+                                <span className="small ms-1 text-muted">
                                     #7.04
                                 </span>
                             </CardTitle>
@@ -1548,105 +1548,105 @@ const Home = () => (
                             <Avatar.Font 
                                 bgColor="facebook"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-facebook" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="twitter"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-twitter" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="lastfm"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-lastfm" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="pinterest"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-pinterest" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="linkedin"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-linkedin" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="medium"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-medium" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="skype"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-skype" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="foursquare"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-foursquare" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="android"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-android" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="spotify"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-spotify" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="paypal"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-paypal" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="dribbble"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-dribbble" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="youtube"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-youtube" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="windows"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-windows" />
                             </Avatar.Font>
                             <Avatar.Font 
                                 bgColor="amazon"
                                 fgColor="white"
-                                className="mr-1"
+                                className="me-1"
                                 >
                                 <i className="fa fa-amazon" />
                             </Avatar.Font>

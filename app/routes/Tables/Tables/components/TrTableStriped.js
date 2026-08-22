@@ -1,14 +1,14 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../../data/placeholders';
 import _ from "lodash";
 
 /*eslint-disable */
 const lastMonth = [
-  <td className="align-middle text-right text-danger">
-    <i className="fa fa-fw fa-caret-down mr-1"></i>92.02%
+  <td className="align-middle text-end text-danger">
+    <i className="fa fa-fw fa-caret-down me-1"></i>92.02%
   </td>,
-  <td className="align-middle text-right text-success">
-    <i className="fa fa-fw fa-caret-up mr-1"></i>23.02%
+  <td className="align-middle text-end text-success">
+    <i className="fa fa-fw fa-caret-up me-1"></i>23.02%
   </td>,
 ];
 /*eslint-enable */

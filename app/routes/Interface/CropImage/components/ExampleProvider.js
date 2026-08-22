@@ -107,7 +107,7 @@ export class ExampleProvider extends React.Component {
                     <Button color="primary" onClick={ this._crop }>
                         Crop
                     </Button>
-                    <Button color="link" onClick={ this._reset } className="ml-2">
+                    <Button color="link" onClick={ this._reset } className="ms-2">
                         Reset
                     </Button>
                 </Col>

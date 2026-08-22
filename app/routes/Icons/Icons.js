@@ -25,7 +25,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         30 New Icons in 4.6
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.01
                         </span>
                     </CardTitle>
@@ -75,7 +75,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Web Application Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.02
                         </span>
                     </CardTitle>
@@ -497,7 +497,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Accessibility Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.03
                         </span>
                     </CardTitle>
@@ -530,7 +530,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Hand Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.04
                         </span>
                     </CardTitle>
@@ -561,7 +561,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Transportation Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.05
                         </span>
                     </CardTitle>
@@ -593,7 +593,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Gender Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.06
                         </span>
                     </CardTitle>
@@ -621,7 +621,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         File Type Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.07
                         </span>
                     </CardTitle>
@@ -653,7 +653,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Spinner Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.08
                         </span>
                     </CardTitle>
@@ -672,7 +672,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Form Control Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.09
                         </span>
                     </CardTitle>
@@ -697,7 +697,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Payment Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.10
                         </span>
                     </CardTitle>
@@ -723,7 +723,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Chart Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.11
                         </span>
                     </CardTitle>
@@ -742,7 +742,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Currency Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.12
                         </span>
                     </CardTitle>
@@ -782,7 +782,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Text Editor Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.13
                         </span>
                     </CardTitle>
@@ -845,7 +845,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Directional Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.14
                         </span>
                     </CardTitle>
@@ -912,7 +912,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Video Player Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.15
                         </span>
                     </CardTitle>
@@ -947,7 +947,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Brand Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.16
                         </span>
                     </CardTitle>
@@ -1137,7 +1137,7 @@ const Icons = () => (
                 <CardBody>
                     <CardTitle tag="h6" className="mb-4">
                         Medical Icons
-                        <span className="small ml-1 text-muted">
+                        <span className="small ms-1 text-muted">
                             #1.17
                         </span>
                     </CardTitle>

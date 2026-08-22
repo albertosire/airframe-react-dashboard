@@ -1,6 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
-
+import { placeholder as faker } from '../../../data/placeholders';
 import {
   Container,
   Row,
@@ -25,7 +24,7 @@ import { HeaderDemo } from "../../components/HeaderDemo";
 
 const cardText = ({ cardNo }) => (
   <CardText>
-    <span className="mr-2 text-muted">#{cardNo}</span> Lorem ipsum dolor sit
+    <span className="me-2 text-muted">#{cardNo}</span> Lorem ipsum dolor sit
     amet, consectetur adipiscing elit. Nulla nisl elit, porta a sapien eget,
     fringilla sagittis ex.
   </CardText>
@@ -61,7 +60,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Basic Example
-              <span className="small ml-1 text-muted">#1.01</span>
+              <span className="small ms-1 text-muted">#1.01</span>
             </h6>
             <p>
               The most basic list group is an unordered list with list items and
@@ -81,7 +80,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Disabled Items
-              <span className="small ml-1 text-muted">#1.03</span>
+              <span className="small ms-1 text-muted">#1.03</span>
             </h6>
             <p>
               Add <code>disabled</code> to a <code>ListGroupItem</code> to make
@@ -100,7 +99,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Links and Buttons (Disabled)
-              <span className="small ml-1 text-muted">#1.05</span>
+              <span className="small ms-1 text-muted">#1.05</span>
             </h6>
             <p>
               Add <code>active</code> to a <code>ListGroupItem</code> to make it
@@ -129,7 +128,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Contextual Classes
-              <span className="small ml-1 text-muted">#1.07</span>
+              <span className="small ms-1 text-muted">#1.07</span>
             </h6>
             <p>
               From the color palette, add to <code>&lt;ListGroupItem&gt;</code>{" "}
@@ -158,12 +157,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: With Badges
-              <span className="small ml-1 text-muted">#1.09</span>
+              <span className="small ms-1 text-muted">#1.09</span>
             </h6>
             <p>
               Add Badge, for example:
               <code>
-                &lt;Badge pill className="ml-auto
+                &lt;Badge pill className="ms-auto
                 align-self-center"&gt;14&lt;/Badge&gt;
               </code>
               .
@@ -171,19 +170,19 @@ const ListGroups = () => (
             <ListGroup>
               <ListGroupItem className="justify-content-between d-flex">
                 Cras justo odio
-                <Badge pill className="ml-auto align-self-center">
+                <Badge pill className="ms-auto align-self-center">
                   14
                 </Badge>
               </ListGroupItem>
               <ListGroupItem className="justify-content-between d-flex">
                 Dapibus ac facilisis in
-                <Badge pill className="ml-auto align-self-center">
+                <Badge pill className="ms-auto align-self-center">
                   2
                 </Badge>
               </ListGroupItem>
               <ListGroupItem className="justify-content-between d-flex">
                 Morbi leo risus
-                <Badge pill className="ml-auto align-self-center">
+                <Badge pill className="ms-auto align-self-center">
                   1
                 </Badge>
               </ListGroupItem>
@@ -198,7 +197,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Active Items (Anchors)
-              <span className="small ml-1 text-muted">#1.02</span>
+              <span className="small ms-1 text-muted">#1.02</span>
             </h6>
             <p>
               The most basic list group is an unordered list with list items and
@@ -232,7 +231,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Active Items (Buttons)
-              <span className="small ml-1 text-muted">#1.04</span>
+              <span className="small ms-1 text-muted">#1.04</span>
             </h6>
             <p>
               The most basic list group is an unordered list with list items and
@@ -266,7 +265,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Flush
-              <span className="small ml-1 text-muted">#1.06</span>
+              <span className="small ms-1 text-muted">#1.06</span>
             </h6>
             <p>
               Often used in combination with Cards. Just add to{" "}
@@ -295,7 +294,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Custom Content
-              <span className="small ml-1 text-muted">#1.09</span>
+              <span className="small ms-1 text-muted">#1.09</span>
             </h6>
             <p>
               Here is an example of combination
@@ -355,12 +354,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Default
-              <span className="small ml-1 text-muted">#2.01</span>
+              <span className="small ms-1 text-muted">#2.01</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -388,7 +387,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -416,7 +415,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -449,7 +448,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Color Header
-              <span className="small ml-1 text-muted">#2.02</span>
+              <span className="small ms-1 text-muted">#2.02</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
@@ -543,7 +542,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Color Text
-              <span className="small ml-1 text-muted">#2.04</span>
+              <span className="small ms-1 text-muted">#2.04</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
@@ -639,12 +638,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Status Icon
-              <span className="small ml-1 text-muted">#2.06</span>
+              <span className="small ms-1 text-muted">#2.06</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -675,7 +674,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -706,7 +705,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -742,12 +741,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Right Button
-              <span className="small ml-1 text-muted">#2.08</span>
+              <span className="small ms-1 text-muted">#2.08</span>
             </h6>
             <ListGroup>
               <ListGroupItem href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -771,7 +770,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <Button outline color="secondary" size="sm">
                       <i className="fa fa-user fa-fw"></i>
                     </Button>{" "}
@@ -780,7 +779,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -804,7 +803,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <Button outline color="secondary" size="sm">
                       <i className="fa fa-gear fa-fw"></i>
                     </Button>{" "}
@@ -813,7 +812,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -837,7 +836,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <Button outline color="secondary" size="sm">
                       <i className="fa fa-exclamation-circle fa-fw"></i>
                     </Button>{" "}
@@ -851,12 +850,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Left Icons Single
-              <span className="small ml-1 text-muted">#2.10</span>
+              <span className="small ms-1 text-muted">#2.10</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <i className="fa fa-file-pdf-o fa-fw fa-lg text-danger"></i>
                   </Media>
                   <Media body>
@@ -867,7 +866,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <i className="fa fa-file-word-o fa-fw fa-lg text-primary"></i>
                   </Media>
                   <Media body>
@@ -878,7 +877,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <i className="fa fa-file-excel-o fa-fw fa-lg text-success"></i>
                   </Media>
                   <Media body>
@@ -894,12 +893,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Right Radio
-              <span className="small ml-1 text-muted">#2.12</span>
+              <span className="small ms-1 text-muted">#2.12</span>
             </h6>
             <ListGroup>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -938,7 +937,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -976,7 +975,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1019,12 +1018,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Left Radio
-              <span className="small ml-1 text-muted">#2.14</span>
+              <span className="small ms-1 text-muted">#2.14</span>
             </h6>
             <ListGroup>
               <ListGroupItem>
                 <Media>
-                  <Media left className="mr-3">
+                  <Media left className="me-3">
                     <CustomInput
                       type="radio"
                       id="leftRadio1"
@@ -1043,7 +1042,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <CustomInput
                       type="radio"
                       id="leftRadio2"
@@ -1061,7 +1060,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <CustomInput
                       type="radio"
                       id="leftRadio3"
@@ -1088,7 +1087,7 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Left Default
-              <span className="small ml-1 text-muted">#2.02</span>
+              <span className="small ms-1 text-muted">#2.02</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
@@ -1099,7 +1098,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1127,7 +1126,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1155,7 +1154,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1182,12 +1181,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Right Badge
-              <span className="small ml-1 text-muted">#2.03</span>
+              <span className="small ms-1 text-muted">#2.03</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1218,7 +1217,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1249,7 +1248,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1285,12 +1284,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Right Icon
-              <span className="small ml-1 text-muted">#2.07</span>
+              <span className="small ms-1 text-muted">#2.07</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1314,14 +1313,14 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <i className="fa fa-user"></i>
                   </Media>
                 </Media>
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1345,14 +1344,14 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <i className="fa fa-gear"></i>
                   </Media>
                 </Media>
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1376,7 +1375,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media left top className="ml-2">
+                  <Media left top className="ms-2">
                     <i className="fa fa-exclamation-circle"></i>
                   </Media>
                 </Media>
@@ -1388,12 +1387,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Left Icon
-              <span className="small ml-1 text-muted">#2.09</span>
+              <span className="small ms-1 text-muted">#2.09</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <span className="fa-stack fa-lg">
                       <i className="fa fa-circle fa-stack-2x text-success"></i>
                       <i className="fa fa-check fa-stack-1x text-white"></i>
@@ -1407,7 +1406,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <span className="fa-stack fa-lg">
                       <i className="fa fa-circle fa-stack-2x text-danger"></i>
                       <i className="fa fa-close fa-stack-1x text-white"></i>
@@ -1421,7 +1420,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <span className="fa-stack fa-lg">
                       <i className="fa fa-circle fa-stack-2x text-warning"></i>
                       <i className="fa fa-exclamation fa-stack-1x text-white"></i>
@@ -1440,12 +1439,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Right Button
-              <span className="small ml-1 text-muted">#2.08</span>
+              <span className="small ms-1 text-muted">#2.08</span>
             </h6>
             <ListGroup>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1469,7 +1468,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <div>
                       <CustomInput
                         type="checkbox"
@@ -1483,7 +1482,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1507,7 +1506,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <div>
                       <CustomInput
                         type="checkbox"
@@ -1520,7 +1519,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem tag="button" action href="#">
                 <Media>
-                  <Media left top className="mr-4">
+                  <Media left top className="me-4">
                     <Avatar.Image
                       size="md"
                       src={randomAvatar()}
@@ -1544,7 +1543,7 @@ const ListGroups = () => (
                     </span>
                     <p className="mb-0">{faker.lorem.sentence()}</p>
                   </Media>
-                  <Media right top className="ml-2">
+                  <Media right top className="ms-2">
                     <div>
                       <CustomInput
                         type="checkbox"
@@ -1562,12 +1561,12 @@ const ListGroups = () => (
           <div className="mb-5">
             <h6>
               List Groups: Media: Left Checkbox
-              <span className="small ml-1 text-muted">#2.13</span>
+              <span className="small ms-1 text-muted">#2.13</span>
             </h6>
             <ListGroup>
               <ListGroupItem>
                 <Media>
-                  <Media left className="mr-3">
+                  <Media left className="me-3">
                     <CustomInput
                       className="pt-0 mt-0"
                       type="checkbox"
@@ -1586,7 +1585,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <CustomInput
                       className="pt-0 mt-0"
                       type="checkbox"
@@ -1605,7 +1604,7 @@ const ListGroups = () => (
               </ListGroupItem>
               <ListGroupItem>
                 <Media>
-                  <Media left top className="mr-3">
+                  <Media left top className="me-3">
                     <CustomInput
                       className="pt-0 mt-0"
                       type="checkbox"

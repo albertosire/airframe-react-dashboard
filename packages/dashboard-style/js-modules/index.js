@@ -1,5 +1,4 @@
 var dashboardVersion = require('./dashboard-version');
-var extendedFaker = require('./extended-faker');
 var SideMenuAnimate = require('./side-menu-animate');
 var SidebarEntryAnimate = require('./sidebar-entry-animate');
 var SlimSidebarAnimate = require('./slim-sidebar-animate');
@@ -11,7 +10,6 @@ var Colors = require('./colors');
 
 module.exports = {
     dashboardVersion: dashboardVersion,
-    faker: extendedFaker,
     SideMenuAnimate: SideMenuAnimate,
     SidebarEntryAnimate: SidebarEntryAnimate,
     SlimSidebarAnimate: SlimSidebarAnimate,

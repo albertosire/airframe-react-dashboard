@@ -1,5 +1,5 @@
 import React from "react";
-import { faker } from "@faker-js/faker";
+import { placeholder as faker } from '../../../data/placeholders';
 import { NavLink as RouterNavLink } from "react-router-dom";
 
 import {
@@ -21,7 +21,7 @@ const SearchResultsLeftNav = () => (
       <NavItem>
         <NavLink href="#" className="small d-flex px-1">
           <span>Navigation</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem>
@@ -31,7 +31,7 @@ const SearchResultsLeftNav = () => (
           className="d-flex"
         >
           All Results
-          <Badge pill color="secondary" className="ml-auto align-self-center">
+          <Badge pill color="secondary" className="ms-auto align-self-center">
             12
           </Badge>
         </NavLink>
@@ -43,7 +43,7 @@ const SearchResultsLeftNav = () => (
           className="d-flex"
         >
           Images
-          <Badge pill color="secondary" className="ml-auto align-self-center">
+          <Badge pill color="secondary" className="ms-auto align-self-center">
             5
           </Badge>
         </NavLink>
@@ -55,20 +55,8 @@ const SearchResultsLeftNav = () => (
           className="d-flex"
         >
           Videos
-          <Badge pill color="secondary" className="ml-auto align-self-center">
+          <Badge pill color="secondary" className="ms-auto align-self-center">
             10
-          </Badge>
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink
-          tag={RouterNavLink}
-          to="/apps/users-results"
-          className="d-flex"
-        >
-          Users
-          <Badge pill color="secondary" className="ml-auto align-self-center">
-            2
           </Badge>
         </NavLink>
       </NavItem>
@@ -79,13 +67,13 @@ const SearchResultsLeftNav = () => (
       <NavItem>
         <NavLink href="#" className="small d-flex px-1">
           <span>Category</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem>
         <NavLink href="#" className="d-flex">
           <span>{faker.commerce.department()}</span>
-          <span className="small ml-auto align-self-center text-body">
+          <span className="small ms-auto align-self-center text-body">
             ({faker.finance.mask()})
           </span>
         </NavLink>
@@ -93,7 +81,7 @@ const SearchResultsLeftNav = () => (
       <NavItem>
         <NavLink href="#" className="d-flex">
           <span>{faker.commerce.department()}</span>
-          <span className="small ml-auto align-self-center text-body">
+          <span className="small ms-auto align-self-center text-body">
             ({faker.finance.mask()})
           </span>
         </NavLink>
@@ -101,7 +89,7 @@ const SearchResultsLeftNav = () => (
       <NavItem>
         <NavLink href="#" className="d-flex">
           <span>{faker.commerce.department()}</span>
-          <span className="small ml-auto align-self-center text-body">
+          <span className="small ms-auto align-self-center text-body">
             ({faker.finance.mask()})
           </span>
         </NavLink>
@@ -113,7 +101,7 @@ const SearchResultsLeftNav = () => (
       <NavItem className="mb-2">
         <NavLink href="#" className="small d-flex px-1">
           <span>Rating</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem className="d-flex px-2 mb-2">
@@ -125,7 +113,7 @@ const SearchResultsLeftNav = () => (
           inline
           defaultChecked
         />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
@@ -137,7 +125,7 @@ const SearchResultsLeftNav = () => (
           label="Baby"
           inline
         />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
@@ -149,7 +137,7 @@ const SearchResultsLeftNav = () => (
           label="Jewelery"
           inline
         />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
@@ -161,7 +149,7 @@ const SearchResultsLeftNav = () => (
           label="Games"
           inline
         />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
@@ -172,7 +160,7 @@ const SearchResultsLeftNav = () => (
       <NavItem className="mb-2">
         <NavLink href="#" className="small d-flex px-1">
           <span>Tags</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem className="d-flex px-2 mb-2">
@@ -183,25 +171,25 @@ const SearchResultsLeftNav = () => (
           inline
           defaultChecked
         />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
       <NavItem className="d-flex px-2 mb-2">
         <CustomInput type="checkbox" id="checkbox2" label="Beauty" inline />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
       <NavItem className="d-flex px-2 mb-2">
         <CustomInput type="checkbox" id="checkbox3" label="Clothing" inline />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
       <NavItem className="d-flex px-2 mb-2">
         <CustomInput type="checkbox" id="checkbox4" label="Games" inline />
-        <span className="small ml-auto align-self-center">
+        <span className="small ms-auto align-self-center">
           ({faker.finance.mask()})
         </span>
       </NavItem>
@@ -212,7 +200,7 @@ const SearchResultsLeftNav = () => (
       <NavItem className="mb-2">
         <NavLink href="#" className="small d-flex px-1">
           <span>Price</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem className="d-flex p-0">
@@ -234,7 +222,7 @@ const SearchResultsLeftNav = () => (
       <NavItem className="mb-2">
         <NavLink href="#" className="small d-flex px-1">
           <span>Shipping</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem className="d-flex p-0">
@@ -253,7 +241,7 @@ const SearchResultsLeftNav = () => (
       <NavItem className="mb-2">
         <NavLink href="#" className="small d-flex px-1">
           <span>Sales</span>
-          <i className="fa fa-angle-down align-self-center ml-auto"></i>
+          <i className="fa fa-angle-down align-self-center ms-auto"></i>
         </NavLink>
       </NavItem>
       <NavItem className="d-flex p-0">
