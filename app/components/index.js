@@ -11,6 +11,7 @@ import FloatGrid from './FloatGrid';
 import HolderProvider from './HolderProvider';
 import IconWithBadge from './IconWithBadge';
 import InputGroupAddon from './InputGroupAddon';
+import { Jumbotron } from './Jumbotron/Jumbotron';
 import Layout, {
     withPageConfig,
     setupPage,
@@ -79,9 +80,7 @@ export {
     FormText,
     Input,
     InputGroup,
-    InputGroupButtonDropdown,
     InputGroupText,
-    Jumbotron,
     Label,
     ListGroup,
     ListGroupItem,
@@ -128,6 +127,7 @@ export {
     FloatGrid,
     IconWithBadge,
     InputGroupAddon,
+    Jumbotron,
     HolderProvider,
     Layout,
     Nav,

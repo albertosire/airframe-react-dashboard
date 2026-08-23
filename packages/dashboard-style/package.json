@@ -11,9 +11,9 @@
   "author": "webkom.co",
   "license": "ISC",
   "dependencies": {
-    "url-join": "^4.0.1",
-    "animejs": "^3.2.2",
-    "highcharts": "^11.4.8"
+    "url-join": "^5.0.0",
+    "animejs": "^4.0.2",
+    "highcharts": "^12.1.2"
   },
   "description": "Airframe dashboard styles and animation helpers"
 }

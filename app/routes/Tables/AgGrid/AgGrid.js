@@ -11,7 +11,6 @@ import {
 } from './../../../components';
 import {
     AgGridReact,
-    AgGridColumn,
 } from './../../../components/agGrid';
 import {
     HeaderMain,
@@ -58,6 +57,78 @@ const PROFICIENCY_VALUES = [
     PROFICIENCY_ABOVE40,
     PROFICIENCY_ABOVE60,
     PROFICIENCY_ABOVE80
+];
+
+const columnDefs = [
+    {
+        headerName: '',
+        width: 70,
+        checkboxSelection: true,
+        suppressHeaderMenuButton: true,
+    },
+    {
+        headerName: 'Employee',
+        children: [
+            {
+                headerName: 'Name',
+                field: 'name',
+                width: 150,
+                cellRenderer: nameRenderer,
+            },
+            {
+                headerName: 'Country',
+                field: 'country',
+                width: 150,
+                cellRenderer: countryCellRenderer,
+                filterParams: {
+                    cellRenderer: countryCellRenderer,
+                    cellHeight: 20,
+                },
+            },
+        ],
+    },
+    {
+        headerName: 'IT Skills',
+        children: [
+            {
+                headerName: 'Skills',
+                width: 125,
+                sortable: false,
+                cellRenderer: skillsCellRenderer,
+                filter: SkillFilter,
+            },
+            {
+                headerName: 'Proficiency',
+                field: 'proficiency',
+                width: 150,
+                cellRenderer: percentCellRenderer,
+                filter: ProficiencyFilter,
+            },
+        ],
+    },
+    {
+        headerName: 'Contact',
+        children: [
+            {
+                headerName: 'Mobile',
+                field: 'mobile',
+                width: 180,
+                filter: 'agTextColumnFilter',
+            },
+            {
+                headerName: 'Land-line',
+                field: 'landline',
+                width: 180,
+                filter: 'agTextColumnFilter',
+            },
+            {
+                headerName: 'Address',
+                field: 'address',
+                width: 180,
+                filter: 'agTextColumnFilter',
+            },
+        ],
+    },
 ];
 
 /*
@@ -350,7 +421,8 @@ export default class AgGridExample extends React.Component {
                     <div className="ag-theme-alpine" style={{ height: '600px' }}>
                         <AgGridReact
                             rowData={ rowData }
-                            rowSelection="multiple"
+                            columnDefs={ columnDefs }
+                            rowSelection={{ mode: 'multiRow' }}
                             onGridReady={ this.onGridReady }
                             onModelUpdated={ this.onModelUpdated }
                             defaultColDef={{
@@ -358,71 +430,7 @@ export default class AgGridExample extends React.Component {
                                 resizable: true,
                                 filter: true,
                             }}
-                        >
-                            <AgGridColumn
-                                headerName=""
-                                width={ 70 }
-                                checkboxSelection
-                                suppressMenu
-                            />
-
-                            <AgGridColumn headerName="Employee">
-                                <AgGridColumn
-                                    headerName="Name"
-                                    field="name"
-                                    width={ 150 }
-                                    cellRenderer={ nameRenderer }
-                                />
-                                <AgGridColumn
-                                    headerName="Country"
-                                    field="country"
-                                    width={ 150 }
-                                    cellRenderer={ countryCellRenderer }
-                                    filterParams={{
-                                        cellRenderer: countryCellRenderer,
-                                        cellHeight: 20
-                                    }}
-                                />
-                            </AgGridColumn>
-
-                            <AgGridColumn headerName="IT Skills">
-                                <AgGridColumn
-                                    headerName="Skills"
-                                    width={ 125 }
-                                    sortable={ false }
-                                    cellRenderer={ skillsCellRenderer }
-                                    filter={ SkillFilter }
-                                />
-                                <AgGridColumn
-                                    headerName="Proficiency"
-                                    field="proficiency"
-                                    width={ 150 }
-                                    cellRenderer={ percentCellRenderer }
-                                    filter={ ProficiencyFilter }
-                                />
-                            </AgGridColumn>
-
-                            <AgGridColumn headerName="Contact">
-                                <AgGridColumn
-                                    headerName="Mobile"
-                                    field="mobile"
-                                    width={ 180 }
-                                    filter="agTextColumnFilter"
-                                />
-                                <AgGridColumn
-                                    headerName="Land-line"
-                                    field="landline"
-                                    width={ 180 }
-                                    filter="agTextColumnFilter"
-                                />
-                                <AgGridColumn
-                                    headerName="Address"
-                                    field="address"
-                                    width={ 180 }
-                                    filter="agTextColumnFilter"
-                                />
-                            </AgGridColumn>
-                        </AgGridReact>
+                        />
                     </div>
                     <CardFooter className="bg-white text-center">
                         More examples of this table can be found <a href="https://www.ag-grid.com" target="_blank" rel="noopener noreferrer">Here</a>

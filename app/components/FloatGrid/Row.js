@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import {
-    WidthProvider,
     Responsive
 } from 'react-grid-layout';
+import { WidthProvider } from './WidthProvider';
 import { Row as BSRow } from 'reactstrap';
 
 import { FloatGridContext } from './floatGridContext';

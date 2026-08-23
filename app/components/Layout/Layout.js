@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Helmet } from 'react-helmet';
-import { withRouter } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import _ from 'lodash';
+
+import { withRouter } from './../../utilities/withRouter';
 
 import { LayoutContent } from './LayoutContent';
 import { LayoutNavbar } from './LayoutNavbar';
@@ -174,8 +174,7 @@ class Layout extends React.Component {
     }
 
     updateNavbarsPositions() {
-        // eslint-disable-next-line react/no-find-dom-node
-        const containerElement = ReactDOM.findDOMNode(this.containerRef.current);
+        const containerElement = this.containerRef.current;
         if (containerElement) {
             const navbarElements = containerElement.querySelectorAll(":scope .layout__navbar");
         

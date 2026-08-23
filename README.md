@@ -6,11 +6,14 @@ Fork do boilerplate [Airframe React](https://github.com/0wczar/airframe-react-da
 
 | Tecnologia | Versão |
 |------------|--------|
-| React | 18 |
+| React | 19 |
 | Webpack | 5 |
+| Babel | 8 |
 | Bootstrap | 5 |
 | reactstrap | 9 |
-| React Router | 5 |
+| React Router | 7 |
+| ag-grid | 36 |
+| recharts | 3 |
 
 ## O que mudou em relação ao boilerplate original
 
@@ -18,7 +21,7 @@ Fork do boilerplate [Airframe React](https://github.com/0wczar/airframe-react-da
 - Removidos `@faker-js/faker`, `holderjs` e `node-fetch`
 - Dados de exemplo substituídos por placeholders estáticos em [`app/data/placeholders.js`](app/data/placeholders.js)
 - Removidos componentes de demo externa (`VersionSelector`, seção "Versions" do menu)
-- Upgrade completo da toolchain e dependências de UI
+- Upgrade completo da toolchain e dependências de UI para as últimas versões disponíveis
 
 ## Instalação
 
@@ -28,7 +31,7 @@ Requer [Node.js](https://nodejs.org/) >= 18.
 npm install --legacy-peer-deps
 ```
 
-> Nota: `--legacy-peer-deps` é necessário por compatibilidade do `react-bootstrap-table2` com React 18.
+> Nota: `--legacy-peer-deps` é necessário por compatibilidade do `react-bootstrap-table2` com React 19.
 
 ## Desenvolvimento
 
@@ -45,6 +48,12 @@ npm run build:prod
 ```
 
 Os arquivos gerados ficam em `/dist/`.
+
+## Lint
+
+```bash
+npm run lint
+```
 
 ## Estrutura do projeto
 

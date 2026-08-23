@@ -1,15 +1,15 @@
 import React from 'react';
 import {
     Route,
-    Switch,
-    Redirect
-} from 'react-router';
+    Routes,
+    Navigate
+} from 'react-router-dom';
 
 // ----------- Pages Imports ---------------
 import Analytics from './Dashboards/Analytics';
 import ProjectsDashboard from './Dashboards/Projects';
 import System from './Dashboards/System';
-import Monitor from './Dashboards/Monitor'; 
+import Monitor from './Dashboards/Monitor';
 import Financial from './Dashboards/Financial';
 import Stock from './Dashboards/Stock';
 import Reports from './Dashboards/Reports';
@@ -98,148 +98,114 @@ import { SidebarANavbar } from './../layout/components/SidebarANavbar';
 import { SidebarASidebar } from './../layout/components/SidebarASidebar';
 
 //------ Route Definitions --------
-// eslint-disable-next-line no-unused-vars
 export const RoutedContent = () => {
     return (
-        <Switch>
-            <Redirect from="/" to="/dashboards/projects" exact />
-            
-            <Route path="/dashboards/analytics" exact component={Analytics} />
-            <Route path="/dashboards/projects" exact component={ProjectsDashboard} />
-            <Route path="/dashboards/system" exact component={System} />
-            <Route path="/dashboards/monitor" exact component={Monitor} />
-            <Route path="/dashboards/financial" exact component={Financial} />
-            <Route path="/dashboards/stock" exact component={Stock} />
-            <Route path="/dashboards/reports" exact component={Reports} />
+        <Routes>
+            <Route path="/" element={<Navigate to="/dashboards/projects" replace />} />
 
-            <Route path='/widgets' exact component={Widgets} />
-            
-            { /*    Cards Routes     */ }
-            <Route path='/cards/cards' exact component={Cards} />
-            <Route path='/cards/cardsheaders' exact component={CardsHeaders} />
-            
-            { /*    Layouts     */ }
-            <Route path='/layouts/navbar' component={NavbarOnly} />
-            <Route path='/layouts/sidebar' component={SidebarDefault} />
-            <Route path='/layouts/sidebar-a' component={SidebarA} />
-            <Route path="/layouts/sidebar-with-navbar" component={SidebarWithNavbar} />
-            <Route path='/layouts/dnd-layout' component={DragAndDropLayout} />
+            <Route path="/dashboards/analytics" element={<Analytics />} />
+            <Route path="/dashboards/projects" element={<ProjectsDashboard />} />
+            <Route path="/dashboards/system" element={<System />} />
+            <Route path="/dashboards/monitor" element={<Monitor />} />
+            <Route path="/dashboards/financial" element={<Financial />} />
+            <Route path="/dashboards/stock" element={<Stock />} />
+            <Route path="/dashboards/reports" element={<Reports />} />
 
-            { /*    Interface Routes   */ }
-            <Route component={ Accordions } path="/interface/accordions" />
-            <Route component={ Alerts } path="/interface/alerts" />
-            <Route component={ Avatars } path="/interface/avatars" />
-            <Route component={ BadgesLabels } path="/interface/badges-and-labels" />
-            <Route component={ Breadcrumbs } path="/interface/breadcrumbs" />
-            <Route component={ Buttons } path="/interface/buttons" />
-            <Route component={ Colors } path="/interface/colors" />
-            <Route component={ Dropdowns } path="/interface/dropdowns" />
-            <Route component={ Images } path="/interface/images" />
-            <Route component={ ListGroups } path="/interface/list-groups" />
-            <Route component={ MediaObjects } path="/interface/media-objects" />
-            <Route component={ Modals } path="/interface/modals" />
-            <Route component={ Navbars } path="/interface/navbars" />
-            <Route component={ Paginations } path="/interface/paginations" />
-            <Route component={ ProgressBars } path="/interface/progress-bars" />
-            <Route component={ TabsPills } path="/interface/tabs-pills" />
-            <Route component={ TooltipPopovers } path="/interface/tooltips-and-popovers" />
-            <Route component={ Typography } path="/interface/typography" />
-            <Route component={ Notifications } path="/interface/notifications" />
-            <Route component={ CropImage } path="/interface/crop-image" />
-            <Route component={ DragAndDropElements } path="/interface/drag-and-drop-elements" />
-            <Route component={ Calendar } path="/interface/calendar" />
+            <Route path="/widgets" element={<Widgets />} />
 
-            { /*    Forms Routes    */ }
-            <Route component={ Forms } path="/forms/forms" />
-            <Route component={ FormsLayouts } path="/forms/forms-layouts" />
-            <Route component={ InputGroups } path="/forms/input-groups" />
-            <Route component={ Wizard } path="/forms/wizard" />
-            <Route component={ TextMask } path="/forms/text-mask" />
-            <Route component={ Typeahead } path="/forms/typeahead" />
-            <Route component={ Toggles } path="/forms/toggles" />
-            <Route component={ Editor } path="/forms/editor" />
-            <Route component={ DatePicker } path="/forms/date-picker" />
-            <Route component={ Dropzone } path="/forms/dropzone" />
-            <Route component={ Sliders } path="/forms/sliders" />
-            
-            { /*    Graphs Routes   */ }
-            <Route component={ ReCharts } path="/graphs/re-charts" />
+            <Route path="/cards/cards" element={<Cards />} />
+            <Route path="/cards/cardsheaders" element={<CardsHeaders />} />
 
-            { /*    Tables Routes   */ }
-            <Route component={ Tables } path="/tables/tables" />
-            <Route component={ ExtendedTable } path="/tables/extended-table" />
-            <Route component={ AgGrid } path="/tables/ag-grid" />
+            <Route path="/layouts/navbar/*" element={<NavbarOnly />} />
+            <Route path="/layouts/sidebar/*" element={<SidebarDefault />} />
+            <Route path="/layouts/sidebar-a/*" element={<SidebarA />} />
+            <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar />} />
+            <Route path="/layouts/dnd-layout/*" element={<DragAndDropLayout />} />
 
-            { /*    Apps Routes     */ }
-            <Route component={ Chat } path="/apps/chat" />
-            <Route component={ Clients } path="/apps/clients" />
-            <Route component={ EmailDetails } path="/apps/email-details" />
-            <Route component={ Files } path="/apps/files/:type"/>
-            <Route component={ GalleryGrid } path="/apps/gallery-grid" />
-            <Route component={ GalleryTable } path="/apps/gallery-table" />
-            <Route component={ ImagesResults } path="/apps/images-results" />
-            <Route component={ Inbox } path="/apps/inbox" />
-            <Route component={ NewEmail } path="/apps/new-email" />
-            <Route component={ Projects } path="/apps/projects/:type" />
-            <Route component={ SearchResults } path="/apps/search-results" />
-            <Route component={ Tasks } path="/apps/tasks/:type" />
-            <Route component={ TasksDetails } path="/apps/task-details" />
-            <Route component={ TasksKanban } path="/apps/tasks-kanban" />
-            <Route component={ VideosResults } path="/apps/videos-results" />
+            <Route path="/interface/accordions" element={<Accordions />} />
+            <Route path="/interface/alerts" element={<Alerts />} />
+            <Route path="/interface/avatars" element={<Avatars />} />
+            <Route path="/interface/badges-and-labels" element={<BadgesLabels />} />
+            <Route path="/interface/breadcrumbs" element={<Breadcrumbs />} />
+            <Route path="/interface/buttons" element={<Buttons />} />
+            <Route path="/interface/colors" element={<Colors />} />
+            <Route path="/interface/dropdowns" element={<Dropdowns />} />
+            <Route path="/interface/images" element={<Images />} />
+            <Route path="/interface/list-groups" element={<ListGroups />} />
+            <Route path="/interface/media-objects" element={<MediaObjects />} />
+            <Route path="/interface/modals" element={<Modals />} />
+            <Route path="/interface/navbars" element={<Navbars />} />
+            <Route path="/interface/paginations" element={<Paginations />} />
+            <Route path="/interface/progress-bars" element={<ProgressBars />} />
+            <Route path="/interface/tabs-pills" element={<TabsPills />} />
+            <Route path="/interface/tooltips-and-popovers" element={<TooltipPopovers />} />
+            <Route path="/interface/typography" element={<Typography />} />
+            <Route path="/interface/notifications" element={<Notifications />} />
+            <Route path="/interface/crop-image" element={<CropImage />} />
+            <Route path="/interface/drag-and-drop-elements" element={<DragAndDropElements />} />
+            <Route path="/interface/calendar" element={<Calendar />} />
 
-            { /*    Pages Routes    */ }
-            <Route component={ ComingSoon } path="/pages/coming-soon" />
-            <Route component={ Confirmation } path="/pages/confirmation" />
-            <Route component={ Danger } path="/pages/danger" />
-            <Route component={ Error404 } path="/pages/error-404" />
-            <Route component={ Success } path="/pages/success" />
-            <Route component={ Timeline } path="/pages/timeline" />
+            <Route path="/forms/forms" element={<Forms />} />
+            <Route path="/forms/forms-layouts" element={<FormsLayouts />} />
+            <Route path="/forms/input-groups" element={<InputGroups />} />
+            <Route path="/forms/wizard" element={<Wizard />} />
+            <Route path="/forms/text-mask" element={<TextMask />} />
+            <Route path="/forms/typeahead" element={<Typeahead />} />
+            <Route path="/forms/toggles" element={<Toggles />} />
+            <Route path="/forms/editor" element={<Editor />} />
+            <Route path="/forms/date-picker" element={<DatePicker />} />
+            <Route path="/forms/dropzone" element={<Dropzone />} />
+            <Route path="/forms/sliders" element={<Sliders />} />
 
-            <Route path='/icons' exact component={Icons} />
+            <Route path="/graphs/re-charts" element={<ReCharts />} />
 
-            { /*    404    */ }
-            <Redirect to="/pages/error-404" />
-        </Switch>
+            <Route path="/tables/tables" element={<Tables />} />
+            <Route path="/tables/extended-table" element={<ExtendedTable />} />
+            <Route path="/tables/ag-grid" element={<AgGrid />} />
+
+            <Route path="/apps/chat" element={<Chat />} />
+            <Route path="/apps/clients" element={<Clients />} />
+            <Route path="/apps/email-details" element={<EmailDetails />} />
+            <Route path="/apps/files/:type" element={<Files />} />
+            <Route path="/apps/gallery-grid" element={<GalleryGrid />} />
+            <Route path="/apps/gallery-table" element={<GalleryTable />} />
+            <Route path="/apps/images-results" element={<ImagesResults />} />
+            <Route path="/apps/inbox" element={<Inbox />} />
+            <Route path="/apps/new-email" element={<NewEmail />} />
+            <Route path="/apps/projects/:type" element={<Projects />} />
+            <Route path="/apps/search-results" element={<SearchResults />} />
+            <Route path="/apps/tasks/:type" element={<Tasks />} />
+            <Route path="/apps/task-details" element={<TasksDetails />} />
+            <Route path="/apps/tasks-kanban" element={<TasksKanban />} />
+            <Route path="/apps/videos-results" element={<VideosResults />} />
+
+            <Route path="/pages/coming-soon" element={<ComingSoon />} />
+            <Route path="/pages/confirmation" element={<Confirmation />} />
+            <Route path="/pages/danger" element={<Danger />} />
+            <Route path="/pages/error-404" element={<Error404 />} />
+            <Route path="/pages/success" element={<Success />} />
+            <Route path="/pages/timeline" element={<Timeline />} />
+
+            <Route path="/icons" element={<Icons />} />
+
+            <Route path="*" element={<Navigate to="/pages/error-404" replace />} />
+        </Routes>
     );
 };
 
-//------ Custom Layout Parts --------
-export const RoutedNavbars  = () => (
-    <Switch>
-        { /* Other Navbars: */}
-        <Route
-            component={ SidebarANavbar }
-            path="/layouts/sidebar-a"
-        />
-        <Route
-            component={ NavbarOnly.Navbar }
-            path="/layouts/navbar"
-        />
-        <Route
-            component={ SidebarWithNavbar.Navbar }
-            path="/layouts/sidebar-with-navbar"
-        />
-        { /* Default Navbar: */}
-        <Route
-            component={ DefaultNavbar }
-        />
-    </Switch>  
+export const RoutedNavbars = () => (
+    <Routes>
+        <Route path="/layouts/sidebar-a/*" element={<SidebarANavbar />} />
+        <Route path="/layouts/navbar/*" element={<NavbarOnly.Navbar />} />
+        <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Navbar />} />
+        <Route path="*" element={<DefaultNavbar />} />
+    </Routes>
 );
 
 export const RoutedSidebars = () => (
-    <Switch>
-        { /* Other Sidebars: */}
-        <Route
-            component={ SidebarASidebar }
-            path="/layouts/sidebar-a"
-        />
-        <Route
-            component={ SidebarWithNavbar.Sidebar }
-            path="/layouts/sidebar-with-navbar"
-        />
-        { /* Default Sidebar: */}
-        <Route
-            component={ DefaultSidebar }
-        />
-    </Switch>
+    <Routes>
+        <Route path="/layouts/sidebar-a/*" element={<SidebarASidebar />} />
+        <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Sidebar />} />
+        <Route path="*" element={<DefaultSidebar />} />
+    </Routes>
 );

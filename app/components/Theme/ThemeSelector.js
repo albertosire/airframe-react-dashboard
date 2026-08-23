@@ -7,8 +7,9 @@ import {
     CardBody,
     Button,
     FormGroup,
-    CustomInput
 } from 'reactstrap';
+
+import CustomInput from '../CustomInput';
 
 import './../../styles/components/theme-selector.scss';
 import { Consumer } from './ThemeContext';

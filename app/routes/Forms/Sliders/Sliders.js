@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Slider, { Range } from 'rc-slider';
+import Slider from 'rc-slider';
+
+const Range = (props) => <Slider range {...props} />;
 
 import colors from './../../../colors';
 import {
