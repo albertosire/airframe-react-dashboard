@@ -1,6 +1,5 @@
 // Default import fix
-var anime = require('animejs').default ?
-    require('animejs').default : require('animejs');
+var anime = require('./anime-compat');
 var utils = require('./utilities');
 
 function NestedDropdownAnimate(config) {

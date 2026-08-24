@@ -1,6 +1,5 @@
 // Default import fix
-var anime = require('animejs').default ?
-    require('animejs').default : require('animejs');
+var anime = require('./anime-compat');
 
 var ANIMATION_DURATION = 150;
 var ANIMATION_STEP_OFFSET = 0.1;

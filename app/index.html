@@ -140,9 +140,9 @@
 
   <div id="root"><%= config.innerHtml || '' %></div>
 
-  <% for (var chunk in config.files.chunks) { %>
-  <script src="<%= config.files.chunks[chunk].entry %>" defer></script>
-  <% } %>
+  <% (config.files.js || []).forEach(function(src) { %>
+  <script src="<%= src %>" defer></script>
+  <% }) %>
 
   <% if (config.options.devServer) { %>
   <script src="<%= config.options.devServer%>/webpack-dev-server.js"></script>

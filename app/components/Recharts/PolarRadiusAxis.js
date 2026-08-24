@@ -1,10 +1,8 @@
-import { PolarRadiusAxis as RCPolarRadiusAxis} from 'recharts';
+import React from 'react';
+import { PolarRadiusAxis as RechartsPolarRadiusAxis } from 'recharts';
 
 import styleConfig from './config';
 
-export class PolarRadiusAxis extends RCPolarRadiusAxis {
-    static defaultProps = {
-        ...RCPolarRadiusAxis.defaultProps,
-        ...styleConfig.polarRadiusAxis
-    }
-}
+export const PolarRadiusAxis = (props) => (
+    <RechartsPolarRadiusAxis {...styleConfig.polarRadiusAxis} {...props} />
+);

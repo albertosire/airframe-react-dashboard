@@ -9,7 +9,7 @@ const ExtendedDropdownSection = (props) => {
             "extended-dropdown__section--list": list
         }
     );
-    const Tag = tag;
+    const Tag = tag || 'div';
 
     return (
         <Tag className={ sectionClass } { ...otherProps }>

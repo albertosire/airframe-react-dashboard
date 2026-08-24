@@ -1,4 +1,4 @@
-var anime = require('animejs').default ? require('animejs').default : require('animejs');
+var anime = require('./anime-compat');
 
 function SlimSidebarAnimate(options) {
     var timelineStage1,

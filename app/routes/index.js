@@ -5,103 +5,127 @@ import {
     Navigate
 } from 'react-router-dom';
 
-// ----------- Pages Imports ---------------
-import Analytics from './Dashboards/Analytics';
-import ProjectsDashboard from './Dashboards/Projects';
-import System from './Dashboards/System';
-import Monitor from './Dashboards/Monitor';
-import Financial from './Dashboards/Financial';
-import Stock from './Dashboards/Stock';
-import Reports from './Dashboards/Reports';
-
-import Widgets from './Widgets';
-
-import Cards from './Cards/Cards';
-import CardsHeaders from './Cards/CardsHeaders';
-
 import NavbarOnly from './Layouts/NavbarOnly';
 import SidebarDefault from './Layouts/SidebarDefault';
 import SidebarA from './Layouts/SidebarA';
 import DragAndDropLayout from './Layouts/DragAndDropLayout';
 import SidebarWithNavbar from './Layouts/SidebarWithNavbar';
 
-import Accordions from './Interface/Accordions';
-import Alerts from './Interface/Alerts';
-import Avatars from './Interface/Avatars';
-import BadgesLabels from './Interface/BadgesLabels';
-import Breadcrumbs from './Interface/Breadcrumbs';
-import Buttons from './Interface/Buttons';
-import Colors from './Interface/Colors';
-import Dropdowns from './Interface/Dropdowns';
-import Images from './Interface/Images';
-import ListGroups from './Interface/ListGroups';
-import MediaObjects from './Interface/MediaObjects';
-import Modals from './Interface/Modals';
-import Navbars from './Interface/Navbars';
-import Paginations from './Interface/Paginations';
-import ProgressBars from './Interface/ProgressBars';
-import TabsPills from './Interface/TabsPills';
-import TooltipPopovers from './Interface/TooltipsPopovers';
-import Typography from './Interface/Typography';
-import Notifications from './Interface/Notifications';
-import CropImage from './Interface/CropImage';
-import DragAndDropElements from './Interface/DragAndDropElements';
-import Calendar from './Interface/Calendar';
-import ReCharts from './Graphs/ReCharts';
+import {
+    Hub,
+    Exemplo1,
+    Exemplo2,
+    Exemplo3,
+    Placeholder
+} from './Propostas';
 
-import Forms from './Forms/Forms';
-import FormsLayouts from './Forms/FormsLayouts';
-import InputGroups from './Forms/InputGroups';
-import Wizard from './Forms/Wizard';
-import TextMask from './Forms/TextMask';
-import Typeahead from './Forms/Typeahead';
-import Toggles from './Forms/Toggles';
-import Editor from './Forms/Editor';
-import DatePicker from './Forms/DatePicker';
-import Dropzone from './Forms/Dropzone';
-import Sliders from './Forms/Sliders';
-
-import Tables from './Tables/Tables';
-import ExtendedTable from './Tables/ExtendedTable';
-import AgGrid from './Tables/AgGrid';
-
-import Chat from './Apps/Chat';
-import Clients from './Apps/Clients';
-import EmailDetails from './Apps/EmailDetails';
-import Files from './Apps/Files';
-import GalleryGrid from './Apps/GalleryGrid';
-import GalleryTable from './Apps/GalleryTable';
-import ImagesResults from './Apps/ImagesResults';
-import Inbox from './Apps/Inbox';
-import NewEmail from './Apps/NewEmail';
-import Projects from './Apps/Projects';
-import SearchResults from './Apps/SearchResults';
-import Tasks from './Apps/Tasks';
-import TasksDetails from './Apps/TasksDetails';
-import TasksKanban from './Apps/TasksKanban';
-import VideosResults from './Apps/VideosResults';
-
-import ComingSoon from './Pages/ComingSoon';
-import Confirmation from './Pages/Confirmation';
-import Danger from './Pages/Danger';
-import Error404 from './Pages/Error404';
-import Success from './Pages/Success';
-import Timeline from './Pages/Timeline';
-
-import Icons from './Icons';
-
-// ----------- Layout Imports ---------------
 import { DefaultNavbar } from './../layout/components/DefaultNavbar';
 import { DefaultSidebar } from './../layout/components/DefaultSidebar';
-
+import { CorporateNavbar } from './../layout/components/CorporateNavbar';
+import { CorporateSidebar } from './../layout/components/CorporateSidebar';
+import { HubNavbar } from './../layout/components/HubNavbar';
 import { SidebarANavbar } from './../layout/components/SidebarANavbar';
 import { SidebarASidebar } from './../layout/components/SidebarASidebar';
+import { PageLoader } from './../components';
+
+const Analytics = React.lazy(() => import('./Dashboards/Analytics'));
+const ProjectsDashboard = React.lazy(() => import('./Dashboards/Projects'));
+const System = React.lazy(() => import('./Dashboards/System'));
+const Monitor = React.lazy(() => import('./Dashboards/Monitor'));
+const Financial = React.lazy(() => import('./Dashboards/Financial'));
+const Stock = React.lazy(() => import('./Dashboards/Stock'));
+const Reports = React.lazy(() => import('./Dashboards/Reports'));
+const Widgets = React.lazy(() => import('./Widgets'));
+const Cards = React.lazy(() => import('./Cards/Cards'));
+const CardsHeaders = React.lazy(() => import('./Cards/CardsHeaders'));
+const Accordions = React.lazy(() => import('./Interface/Accordions'));
+const Alerts = React.lazy(() => import('./Interface/Alerts'));
+const Avatars = React.lazy(() => import('./Interface/Avatars'));
+const BadgesLabels = React.lazy(() => import('./Interface/BadgesLabels'));
+const Breadcrumbs = React.lazy(() => import('./Interface/Breadcrumbs'));
+const Buttons = React.lazy(() => import('./Interface/Buttons'));
+const Colors = React.lazy(() => import('./Interface/Colors'));
+const Dropdowns = React.lazy(() => import('./Interface/Dropdowns'));
+const Images = React.lazy(() => import('./Interface/Images'));
+const ListGroups = React.lazy(() => import('./Interface/ListGroups'));
+const MediaObjects = React.lazy(() => import('./Interface/MediaObjects'));
+const Modals = React.lazy(() => import('./Interface/Modals'));
+const Navbars = React.lazy(() => import('./Interface/Navbars'));
+const Paginations = React.lazy(() => import('./Interface/Paginations'));
+const ProgressBars = React.lazy(() => import('./Interface/ProgressBars'));
+const TabsPills = React.lazy(() => import('./Interface/TabsPills'));
+const TooltipPopovers = React.lazy(() => import('./Interface/TooltipsPopovers'));
+const Typography = React.lazy(() => import('./Interface/Typography'));
+const Notifications = React.lazy(() => import('./Interface/Notifications'));
+const CropImage = React.lazy(() => import('./Interface/CropImage'));
+const DragAndDropElements = React.lazy(() => import('./Interface/DragAndDropElements'));
+const Calendar = React.lazy(() => import('./Interface/Calendar'));
+const ReCharts = React.lazy(() => import('./Graphs/ReCharts'));
+const Forms = React.lazy(() => import('./Forms/Forms'));
+const FormsLayouts = React.lazy(() => import('./Forms/FormsLayouts'));
+const InputGroups = React.lazy(() => import('./Forms/InputGroups'));
+const Wizard = React.lazy(() => import('./Forms/Wizard'));
+const TextMask = React.lazy(() => import('./Forms/TextMask'));
+const Typeahead = React.lazy(() => import('./Forms/Typeahead'));
+const Toggles = React.lazy(() => import('./Forms/Toggles'));
+const Editor = React.lazy(() => import('./Forms/Editor'));
+const DatePicker = React.lazy(() => import('./Forms/DatePicker'));
+const Dropzone = React.lazy(() => import('./Forms/Dropzone'));
+const Sliders = React.lazy(() => import('./Forms/Sliders'));
+const Tables = React.lazy(() => import('./Tables/Tables'));
+const ExtendedTable = React.lazy(() => import('./Tables/ExtendedTable'));
+const AgGrid = React.lazy(() => import('./Tables/AgGrid'));
+const Chat = React.lazy(() => import('./Apps/Chat'));
+const Clients = React.lazy(() => import('./Apps/Clients'));
+const EmailDetails = React.lazy(() => import('./Apps/EmailDetails'));
+const Files = React.lazy(() => import('./Apps/Files'));
+const GalleryGrid = React.lazy(() => import('./Apps/GalleryGrid'));
+const GalleryTable = React.lazy(() => import('./Apps/GalleryTable'));
+const ImagesResults = React.lazy(() => import('./Apps/ImagesResults'));
+const Inbox = React.lazy(() => import('./Apps/Inbox'));
+const NewEmail = React.lazy(() => import('./Apps/NewEmail'));
+const Projects = React.lazy(() => import('./Apps/Projects'));
+const SearchResults = React.lazy(() => import('./Apps/SearchResults'));
+const Tasks = React.lazy(() => import('./Apps/Tasks'));
+const TasksDetails = React.lazy(() => import('./Apps/TasksDetails'));
+const TasksKanban = React.lazy(() => import('./Apps/TasksKanban'));
+const VideosResults = React.lazy(() => import('./Apps/VideosResults'));
+const ComingSoon = React.lazy(() => import('./Pages/ComingSoon'));
+const Confirmation = React.lazy(() => import('./Pages/Confirmation'));
+const Danger = React.lazy(() => import('./Pages/Danger'));
+const Error404 = React.lazy(() => import('./Pages/Error404'));
+const Success = React.lazy(() => import('./Pages/Success'));
+const Timeline = React.lazy(() => import('./Pages/Timeline'));
+const Icons = React.lazy(() => import('./Icons'));
+
+const PROPOSTA_SECTIONS = [
+    'fluxo-de-trabalho',
+    'capacitacao',
+    'indicadores-do-prefixo',
+    'relatorios',
+    'baixar-tabelas',
+    'documentacao',
+    'sugestoes'
+];
 
 //------ Route Definitions --------
 export const RoutedContent = () => {
     return (
+        <React.Suspense fallback={<PageLoader />}>
         <Routes>
-            <Route path="/" element={<Navigate to="/dashboards/projects" replace />} />
+            <Route path="/" element={<Hub />} />
+            <Route path="/exemplo1" element={<Exemplo1 />} />
+            <Route path="/exemplo2" element={<Exemplo2 />} />
+            <Route path="/exemplo3" element={<Exemplo3 />} />
+            {['exemplo1', 'exemplo2', 'exemplo3'].flatMap((slug) =>
+                PROPOSTA_SECTIONS.map((section) => (
+                    <Route
+                        key={`${slug}-${section}`}
+                        path={`/${slug}/${section}`}
+                        element={<Placeholder />}
+                    />
+                ))
+            )}
 
             <Route path="/dashboards/analytics" element={<Analytics />} />
             <Route path="/dashboards/projects" element={<ProjectsDashboard />} />
@@ -190,11 +214,16 @@ export const RoutedContent = () => {
 
             <Route path="*" element={<Navigate to="/pages/error-404" replace />} />
         </Routes>
+        </React.Suspense>
     );
 };
 
 export const RoutedNavbars = () => (
     <Routes>
+        <Route path="/" element={<HubNavbar />} />
+        <Route path="/exemplo1/*" element={<CorporateNavbar />} />
+        <Route path="/exemplo2/*" element={<CorporateNavbar />} />
+        <Route path="/exemplo3/*" element={<CorporateNavbar />} />
         <Route path="/layouts/sidebar-a/*" element={<SidebarANavbar />} />
         <Route path="/layouts/navbar/*" element={<NavbarOnly.Navbar />} />
         <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Navbar />} />
@@ -204,6 +233,10 @@ export const RoutedNavbars = () => (
 
 export const RoutedSidebars = () => (
     <Routes>
+        <Route path="/" element={null} />
+        <Route path="/exemplo1/*" element={<CorporateSidebar />} />
+        <Route path="/exemplo2/*" element={<CorporateSidebar />} />
+        <Route path="/exemplo3/*" element={<CorporateSidebar />} />
         <Route path="/layouts/sidebar-a/*" element={<SidebarASidebar />} />
         <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Sidebar />} />
         <Route path="*" element={<DefaultSidebar />} />

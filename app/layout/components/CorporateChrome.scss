@@ -1,0 +1,27 @@
+.userLink,
+.userLinkSlim {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.userName {
+    line-height: 1.2;
+}
+
+:global(.sidebar-menu__divider) {
+    list-style: none;
+    height: 1px;
+    margin: 0.75rem 1.25rem;
+    background: currentColor;
+    opacity: 0.18;
+}
+
+:global(.sidebar-menu--slim) :global(.sidebar-menu__divider) {
+    margin: 0.5rem 0.65rem;
+}

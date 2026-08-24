@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useLocation } from 'react-router-dom';
 
 import {
     Layout,
@@ -17,6 +18,27 @@ import {
     RoutedNavbars,
     RoutedSidebars,
 } from './../routes';
+
+const isCorporatePath = (pathname) =>
+    pathname === '/' || pathname.startsWith('/exemplo');
+
+const RoutedThemeSelector = () => {
+    const { pathname } = useLocation();
+
+    if (isCorporatePath(pathname)) {
+        return null;
+    }
+
+    return (
+        <PageConfigConsumer>
+            {
+                ({ sidebarHidden, navbarHidden }) => (
+                    <ThemeSelector styleDisabled={ sidebarHidden && navbarHidden } />
+                )
+            }
+        </PageConfigConsumer>
+    );
+};
 
 const favIcons = [
     { rel: 'icon', type: 'image/x-icon', href: require('./../images/favicons/favicon.ico') },
@@ -53,13 +75,7 @@ class AppLayout extends React.Component {
                     </Layout.Content>
 
                     { /* -- Theme Selector (DEMO) ----*/ }
-                    <PageConfigConsumer>
-                    {
-                        ({ sidebarHidden, navbarHidden }) => (
-                            <ThemeSelector styleDisabled={ sidebarHidden && navbarHidden } />
-                        )
-                    }
-                    </PageConfigConsumer>
+                    <RoutedThemeSelector />
                 </Layout>
             </ThemeProvider>
         );

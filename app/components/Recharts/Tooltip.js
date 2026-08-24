@@ -1,10 +1,8 @@
-import { Tooltip as RCTooltip } from 'recharts';
+import React from 'react';
+import { Tooltip as RechartsTooltip } from 'recharts';
 
 import styleConfig from './config';
 
-export class Tooltip extends RCTooltip {
-    static defaultProps = {
-        ...RCTooltip.defaultProps,
-        ...styleConfig.tooltip
-    }
-}
+export const Tooltip = (props) => (
+    <RechartsTooltip {...styleConfig.tooltip} {...props} />
+);

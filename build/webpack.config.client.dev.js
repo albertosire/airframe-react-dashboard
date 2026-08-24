@@ -9,6 +9,11 @@ var config = require("./../config");
 
 var BASE_PATH = process.env.BASE_PATH || "/";
 
+var cssModules = {
+  namedExport: false,
+  exportLocalsConvention: "as-is",
+};
+
 module.exports = {
   name: "client",
   devtool: "eval-cheap-module-source-map",
@@ -73,7 +78,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true,
+              modules: cssModules,
               importLoaders: 1,
             },
           },
@@ -89,7 +94,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true,
+              modules: cssModules,
               importLoaders: 1,
             },
           },
@@ -133,6 +138,12 @@ module.exports = {
   devServer: {
     hot: true,
     webSocketServer: 'ws',
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
     static: {
       directory: config.serveDir,
     },
