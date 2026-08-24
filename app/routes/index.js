@@ -90,18 +90,51 @@ import Timeline from './Pages/Timeline';
 
 import Icons from './Icons';
 
+import {
+    Hub,
+    Exemplo1,
+    Exemplo2,
+    Exemplo3,
+    Placeholder
+} from './Propostas';
+
 // ----------- Layout Imports ---------------
 import { DefaultNavbar } from './../layout/components/DefaultNavbar';
 import { DefaultSidebar } from './../layout/components/DefaultSidebar';
+import { CorporateNavbar } from './../layout/components/CorporateNavbar';
+import { CorporateSidebar } from './../layout/components/CorporateSidebar';
+import { HubNavbar } from './../layout/components/HubNavbar';
 
 import { SidebarANavbar } from './../layout/components/SidebarANavbar';
 import { SidebarASidebar } from './../layout/components/SidebarASidebar';
+
+const PROPOSTA_SECTIONS = [
+    'fluxo-de-trabalho',
+    'capacitacao',
+    'indicadores-do-prefixo',
+    'relatorios',
+    'baixar-tabelas',
+    'documentacao',
+    'sugestoes'
+];
 
 //------ Route Definitions --------
 export const RoutedContent = () => {
     return (
         <Routes>
-            <Route path="/" element={<Navigate to="/dashboards/projects" replace />} />
+            <Route path="/" element={<Hub />} />
+            <Route path="/exemplo1" element={<Exemplo1 />} />
+            <Route path="/exemplo2" element={<Exemplo2 />} />
+            <Route path="/exemplo3" element={<Exemplo3 />} />
+            {['exemplo1', 'exemplo2', 'exemplo3'].flatMap((slug) =>
+                PROPOSTA_SECTIONS.map((section) => (
+                    <Route
+                        key={`${slug}-${section}`}
+                        path={`/${slug}/${section}`}
+                        element={<Placeholder />}
+                    />
+                ))
+            )}
 
             <Route path="/dashboards/analytics" element={<Analytics />} />
             <Route path="/dashboards/projects" element={<ProjectsDashboard />} />
@@ -195,6 +228,10 @@ export const RoutedContent = () => {
 
 export const RoutedNavbars = () => (
     <Routes>
+        <Route path="/" element={<HubNavbar />} />
+        <Route path="/exemplo1/*" element={<CorporateNavbar />} />
+        <Route path="/exemplo2/*" element={<CorporateNavbar />} />
+        <Route path="/exemplo3/*" element={<CorporateNavbar />} />
         <Route path="/layouts/sidebar-a/*" element={<SidebarANavbar />} />
         <Route path="/layouts/navbar/*" element={<NavbarOnly.Navbar />} />
         <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Navbar />} />
@@ -204,6 +241,9 @@ export const RoutedNavbars = () => (
 
 export const RoutedSidebars = () => (
     <Routes>
+        <Route path="/exemplo1/*" element={<CorporateSidebar />} />
+        <Route path="/exemplo2/*" element={<CorporateSidebar />} />
+        <Route path="/exemplo3/*" element={<CorporateSidebar />} />
         <Route path="/layouts/sidebar-a/*" element={<SidebarASidebar />} />
         <Route path="/layouts/sidebar-with-navbar/*" element={<SidebarWithNavbar.Sidebar />} />
         <Route path="*" element={<DefaultSidebar />} />
