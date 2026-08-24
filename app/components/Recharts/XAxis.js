@@ -1,10 +1,8 @@
-import { XAxis as RCXAxis } from 'recharts';
+import React from 'react';
+import { XAxis as RechartsXAxis } from 'recharts';
 
 import styleConfig from './config';
 
-export class XAxis extends RCXAxis {
-    static defaultProps = {
-        ...RCXAxis.defaultProps,
-        ...styleConfig.axis
-    }
-}
+export const XAxis = (props) => (
+    <RechartsXAxis {...styleConfig.axis} {...props} />
+);

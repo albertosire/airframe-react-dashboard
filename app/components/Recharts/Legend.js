@@ -1,10 +1,8 @@
-import { Legend as RCLegend } from 'recharts';
+import React from 'react';
+import { Legend as RechartsLegend } from 'recharts';
 
 import styleConfig from './config';
 
-export class Legend extends RCLegend {
-    static defaultProps = {
-        ...RCLegend.defaultProps,
-        ...styleConfig.legend
-    }
-}
+export const Legend = (props) => (
+    <RechartsLegend {...styleConfig.legend} {...props} />
+);

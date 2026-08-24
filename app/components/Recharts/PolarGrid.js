@@ -1,12 +1,10 @@
-import { PolarGrid  } from 'recharts';
+import React from 'react';
+import { PolarGrid as RechartsPolarGrid } from 'recharts';
 
 import styleConfig from './config';
 
-class CustomPolarGrid extends PolarGrid {
-    static defaultProps = {
-        ...PolarGrid.defaultProps,
-        ...styleConfig.polarGrid
-    }
-}
+const PolarGrid = (props) => (
+    <RechartsPolarGrid {...styleConfig.polarGrid} {...props} />
+);
 
-export { CustomPolarGrid as PolarGrid };
+export { PolarGrid };

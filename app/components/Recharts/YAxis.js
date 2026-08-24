@@ -1,10 +1,8 @@
-import { YAxis as RCYAxis } from 'recharts';
+import React from 'react';
+import { YAxis as RechartsYAxis } from 'recharts';
 
 import styleConfig from './config';
 
-export class YAxis extends RCYAxis {
-    static defaultProps = {
-        ...RCYAxis.defaultProps,
-        ...styleConfig.axis
-    }
-}
+export const YAxis = (props) => (
+    <RechartsYAxis {...styleConfig.axis} {...props} />
+);

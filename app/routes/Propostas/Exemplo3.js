@@ -22,7 +22,7 @@ import {
     CartesianGrid,
     Tooltip,
     Legend
-} from './../../components/recharts';
+} from 'recharts';
 import { HeaderMain } from '../components/HeaderMain';
 import colors from './../../colors';
 import {

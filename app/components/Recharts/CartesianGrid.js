@@ -1,12 +1,10 @@
-import { CartesianGrid  } from 'recharts';
+import React from 'react';
+import { CartesianGrid as RechartsCartesianGrid } from 'recharts';
 
 import styleConfig from './config';
 
-class CustomCartesianGrid extends CartesianGrid {
-    static defaultProps = {
-        ...CartesianGrid.defaultProps,
-        ...styleConfig.grid,
-    }
-}
+const CartesianGrid = (props) => (
+    <RechartsCartesianGrid {...styleConfig.grid} {...props} />
+);
 
-export { CustomCartesianGrid as CartesianGrid };
+export { CartesianGrid };

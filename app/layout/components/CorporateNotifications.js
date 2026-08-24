@@ -8,8 +8,7 @@ import {
     Badge,
     ExtendedDropdown,
     ListGroup,
-    ListGroupItem,
-    Media
+    ListGroupItem
 } from './../../components';
 
 import { notificacoesCorporativas } from './../../data/corporateMetrics';
@@ -45,19 +44,17 @@ export const CorporateNotifications = (props) => (
                 <ListGroup>
                     {notificacoesCorporativas.map((item) => (
                         <ListGroupItem key={item.id} action tag={Link} to="/exemplo1">
-                            <Media>
-                                <Media left>
-                                    <span className="fa-stack fa-lg fa-fw d-flex me-3">
-                                        <i className={`fa fa-circle fa-fw fa-stack-2x ${tomClass[item.tom]}`}></i>
-                                        <i className={`fa ${item.icone} fa-stack-1x fa-fw text-white`}></i>
-                                    </span>
-                                </Media>
-                                <Media body>
+                            <div className="d-flex">
+                                <span className="fa-stack fa-lg fa-fw d-flex me-3">
+                                    <i className={`fa fa-circle fa-fw fa-stack-2x ${tomClass[item.tom]}`}></i>
+                                    <i className={`fa ${item.icone} fa-stack-1x fa-fw text-white`}></i>
+                                </span>
+                                <div>
                                     <span className="h6">{item.titulo}</span>
                                     <p className="mt-2 mb-1">{item.texto}</p>
                                     <div className="small mt-2">{item.quando}</div>
-                                </Media>
-                            </Media>
+                                </div>
+                            </div>
                         </ListGroupItem>
                     ))}
                 </ListGroup>
