@@ -1,0 +1,54 @@
+import React from "react";
+import PropTypes from "prop-types";
+
+import { placeholder as faker } from '../../../data/placeholders';
+import { Card, Media, Avatar, AvatarAddOn } from "./../../../components";
+
+import { randomArray, randomAvatar } from "./../../../utilities";
+
+const status = ["warning", "danger", "success", "secondary"];
+
+const ChatLeft = (props) => (
+  <React.Fragment>
+    <Media className="mb-2">
+      <Media left className="me-3">
+        <Avatar.Image
+          size="md"
+          src={randomAvatar()}
+          className="me-2"
+          addOns={[
+            <AvatarAddOn.Icon
+              icon="circle"
+              color="white"
+              key="avatar-icon-bg"
+            />,
+            <AvatarAddOn.Icon
+              icon="circle"
+              color={randomArray(status)}
+              key="avatar-icon-fg"
+            />,
+          ]}
+        />
+      </Media>
+      <Media body>
+        <Card body className={`mb-2 ${props.cardClassName}`}>
+          <p className="mb-0">{faker.lorem.paragraph()}</p>
+        </Card>
+        <div className="mb-2">
+          <span className="text-inverse me-2">
+            {faker.person.firstName()} {faker.person.firstName()}
+          </span>
+          <span className="small">13-Jun-2015, 08:13</span>
+        </div>
+      </Media>
+    </Media>
+  </React.Fragment>
+);
+ChatLeft.propTypes = {
+  cardClassName: PropTypes.node,
+};
+ChatLeft.defaultProps = {
+  cardClassName: "bg-white",
+};
+
+export { ChatLeft };

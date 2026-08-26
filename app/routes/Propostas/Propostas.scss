@@ -1,0 +1,104 @@
+.kpiCard {
+    height: 100%;
+    border: 0;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.04);
+}
+
+.kpiValue {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.statusRow {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.statusItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.statusDot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    margin-top: 0.35rem;
+    flex: 0 0 auto;
+}
+
+.kanban {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.kanbanColumn {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    min-height: 18rem;
+}
+
+.kanbanCard {
+    background: #fff;
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.hubHero {
+    padding: 2.5rem 0 1.5rem;
+}
+
+.hubCard {
+    height: 100%;
+    border: 0;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.1);
+    }
+}
+
+.hubPreview {
+    height: 8.5rem;
+    border-radius: 0.4rem 0.4rem 0 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    color: #fff;
+}
+
+.scoreBar {
+    height: 0.45rem;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.scoreBarFill {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.placeholderWrap {
+    min-height: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 991.98px) {
+    .statusRow,
+    .kanban {
+        grid-template-columns: 1fr;
+    }
+}

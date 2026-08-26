@@ -1,0 +1,47 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { placeholder as faker } from '../../../data/placeholders';
+import { Badge, Media, Avatar, AvatarAddOn } from "./../../../components";
+import { randomAvatar } from "./../../../utilities";
+
+const ProfileHeader = () => (
+  <React.Fragment>
+    {/* START Header */}
+    <Media className="mb-3">
+      <Media left middle className="me-3 align-self-center">
+        <Avatar.Image
+          size="lg"
+          src={randomAvatar()}
+          className="me-2"
+          addOns={[
+            <AvatarAddOn.Icon
+              icon="circle"
+              color="white"
+              key="avatar-icon-bg"
+            />,
+            <AvatarAddOn.Icon
+              icon="circle"
+              color="success"
+              key="avatar-icon-fg"
+            />,
+          ]}
+        />
+      </Media>
+      <Media body>
+        <h5 className="mb-1 mt-0">
+          <Link to="/apps/profile-details">
+            {faker.person.firstName()} {faker.person.lastName()}
+          </Link>{" "}
+          <span className="text-muted mx-1"> / </span> Profile Edit
+        </h5>
+        <Badge color="primary" pill className="me-2">
+          Premium
+        </Badge>
+        <span className="text-muted">Edit Your Name, Avatar, etc.</span>
+      </Media>
+    </Media>
+    {/* END Header */}
+  </React.Fragment>
+);
+
+export { ProfileHeader };

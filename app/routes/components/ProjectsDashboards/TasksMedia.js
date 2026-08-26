@@ -1,0 +1,43 @@
+import React from "react";
+import { placeholder as faker } from '../../../data/placeholders';
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
+
+import { Media, CustomInput } from "./../../../components";
+import { FaIcon } from '../../../components/Icon';
+
+const TasksMedia = (props) => (
+  <React.Fragment>
+    <Media className="align-items-start">
+      <Media left className="me-3">
+        <CustomInput
+          className="pt-0 mt-0"
+          type="checkbox"
+          id={`taskMedia-${props.id}`}
+          label=""
+        />
+      </Media>
+      <Media body>
+        <div className="mt-0 mb-2">
+          <Link to="/apps/tasks/tasks-details" className="text-decoration-none">
+            {faker.hacker.phrase()}
+          </Link>
+        </div>
+        <div className="mb-0">{faker.date.past().toString()}</div>
+      </Media>
+      <Media right className="ms-3">
+        <FaIcon icon="circle" className={`text-${props.iconColor}`} style={{ fontSize: '0.55rem' }} />
+      </Media>
+    </Media>
+  </React.Fragment>
+);
+TasksMedia.propTypes = {
+  iconColor: PropTypes.node,
+  id: PropTypes.node,
+};
+TasksMedia.defaultProps = {
+  iconColor: "muted",
+  id: "1",
+};
+
+export { TasksMedia };

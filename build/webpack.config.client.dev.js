@@ -1,0 +1,181 @@
+var path = require("path");
+var webpack = require("webpack");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+var CircularDependencyPlugin = require("circular-dependency-plugin");
+var ExtractCssChunks = require("extract-css-chunks-webpack-plugin");
+var ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+
+var config = require("./../config");
+
+var BASE_PATH = process.env.BASE_PATH || "/";
+var quillDeltaCjs = path.resolve(
+  __dirname,
+  "../node_modules/@quill-next/delta-es/dist/index.js"
+);
+
+var cssModules = {
+  namedExport: false,
+  exportLocalsConvention: "as-is",
+};
+
+module.exports = {
+  name: "client",
+  devtool: "eval-cheap-module-source-map",
+  target: "web",
+  mode: "development",
+  ignoreWarnings: [
+    { module: /react-datepicker/, message: /Critical dependency/ },
+  ],
+  entry: {
+    app: [path.join(config.srcDir, "index.js")],
+  },
+  output: {
+    filename: "[name].bundle.js",
+    chunkFilename: "[name].chunk.js",
+    path: config.distDir,
+    publicPath: BASE_PATH,
+    clean: false,
+  },
+  resolve: {
+    modules: ["node_modules", config.srcDir],
+    extensions: [".js", ".jsx"],
+    alias: {
+      "@quill-next/delta-es$": quillDeltaCjs,
+      [path.resolve(
+        __dirname,
+        "../node_modules/@quill-next/delta-es/dist/index.mjs"
+      )]: quillDeltaCjs,
+    },
+  },
+  plugins: [
+    new webpack.NormalModuleReplacementPlugin(
+      /@quill-next[\\/]delta-es/,
+      (resource) => {
+        resource.request = quillDeltaCjs;
+        if (resource.createData) {
+          resource.createData.resource = quillDeltaCjs;
+        }
+      }
+    ),
+    new CircularDependencyPlugin({
+      exclude: /a\.js|node_modules/,
+      failOnError: true,
+      allowAsyncCycles: false,
+      cwd: process.cwd(),
+    }),
+    new HtmlWebpackPlugin({
+      template: config.srcHtmlLayout,
+      inject: false,
+    }),
+    new webpack.DefinePlugin({
+      "process.env.NODE_ENV": JSON.stringify("development"),
+      "process.env.BASE_PATH": JSON.stringify(BASE_PATH),
+    }),
+    new ReactRefreshWebpackPlugin({
+      overlay: false,
+    }),
+    new ExtractCssChunks(),
+  ],
+  module: {
+    rules: [
+      // Allow webpack 4 to consume dependencies shipped as .mjs (e.g. react-draggable)
+      {
+        test: /\.mjs$/,
+        include: /node_modules/,
+        exclude: /@quill-next[\\/]delta-es/,
+        type: "javascript/auto",
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true,
+          },
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              modules: cssModules,
+              importLoaders: 1,
+            },
+          },
+          { loader: "postcss-loader" },
+        ],
+        exclude: [path.resolve(config.srcDir, "styles")],
+        include: [config.srcDir],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },
+          {
+            loader: "css-loader",
+            options: {
+              modules: cssModules,
+              importLoaders: 1,
+            },
+          },
+          { loader: "postcss-loader" },
+          config.sassLoader,
+        ],
+        exclude: [path.resolve(config.srcDir, "styles")],
+        include: [config.srcDir],
+      },
+      {
+        test: /\.css$/,
+        use: [ExtractCssChunks.loader, "css-loader", "postcss-loader"],
+        include: [path.resolve(config.srcDir, "styles")],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          ExtractCssChunks.loader,
+          "css-loader",
+          "postcss-loader",
+          config.sassLoader,
+        ],
+        include: [path.resolve(config.srcDir, "styles")],
+      },
+      {
+        test: /\.(ttf|eot|woff|woff2)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg|ico)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "static/[name][ext]",
+        },
+      },
+    ],
+  },
+  devServer: {
+    hot: true,
+    webSocketServer: 'ws',
+    client: {
+      overlay: {
+        errors: true,
+        warnings: false,
+      },
+    },
+    static: {
+      directory: config.serveDir,
+    },
+    compress: true,
+    historyApiFallback: {
+      index: BASE_PATH,
+    },
+    host: "0.0.0.0",
+    port: 4100,
+  },
+};

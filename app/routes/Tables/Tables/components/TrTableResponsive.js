@@ -1,0 +1,74 @@
+import React from "react";
+import { placeholder as faker } from '../../../../data/placeholders';
+import _ from "lodash";
+
+import { UncontrolledTooltip, Media } from "./../../../../components";
+import { FaIcon } from '../../../../components/Icon';
+
+/*eslint-disable */
+const browserOs = ["Safari", "Firefox", "Opera", "Chrome"];
+/*eslint-enable */
+/*eslint-disable */
+const browserIcon = ["desktop", "laptop", "mobile", "tablet"];
+/*eslint-enable */
+/*eslint-disable */
+const colorStatus = ["danger", "success", "warning", "secondary"];
+/*eslint-enable */
+
+const TrTableResponsive = () => (
+  <React.Fragment>
+    {_.times(4, (index) => (
+      <tr key={index}>
+        <td className="align-middle">
+          <i
+            className={`fa fa -fw fa-circle text-${colorStatus[index % 4]}`}
+          ></i>
+        </td>
+        <td className="align-middle">
+          <Media>
+            <Media left className="align-self-center me-3">
+              <FaIcon icon={browserIcon[index % 4]} fixedWidth className="fa-lg" />
+            </Media>
+            <Media body>
+              <div className="mt-0 d-flex">
+                <span className="text-inverse">{browserOs[index % 4]}</span> /
+                {faker.system.semver()}
+              </div>
+              <span>macOs {faker.system.semver()}</span>
+            </Media>
+          </Media>
+        </td>
+        <td className="align-middle">
+          <div>
+            <samp>{faker.internet.ip()}</samp>
+          </div>
+          <span>-</span>
+        </td>
+        <td className="align-middle">
+          <div>{faker.location.city()}</div>
+          <span>
+            {faker.location.state()}, {faker.location.country()}
+          </span>
+        </td>
+        <td className="align-middle">
+          {faker.date.weekday()}, 12 {faker.date.month()}, 2018
+          <br />
+          12:34 PM
+        </td>
+        <td className="align-middle text-end">
+          <a href="#" id="UncontrolledTooltipRevoke">
+            <FaIcon icon="close" fixedWidth className="text-danger" />
+          </a>
+          <UncontrolledTooltip
+            placement="left"
+            target="UncontrolledTooltipRevoke"
+          >
+            Revoke
+          </UncontrolledTooltip>
+        </td>
+      </tr>
+    ))}
+  </React.Fragment>
+);
+
+export { TrTableResponsive };
